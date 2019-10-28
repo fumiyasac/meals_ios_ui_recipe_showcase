@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		DE066B11236711090029383E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B10236711090029383E /* AppDelegate.swift */; };
 		DE066B13236711090029383E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B12236711090029383E /* SceneDelegate.swift */; };
-		DE066B15236711090029383E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B14236711090029383E /* ViewController.swift */; };
+		DE066B15236711090029383E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B14236711090029383E /* MainViewController.swift */; };
 		DE066B18236711090029383E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE066B16236711090029383E /* Main.storyboard */; };
 		DE066B1A2367110C0029383E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE066B192367110C0029383E /* Assets.xcassets */; };
 		DE066B1D2367110C0029383E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE066B1B2367110C0029383E /* LaunchScreen.storyboard */; };
 		DE066B282367110C0029383E /* MediaStyleInfiniteTabScrollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B272367110C0029383E /* MediaStyleInfiniteTabScrollTests.swift */; };
 		DE066B332367110C0029383E /* MediaStyleInfiniteTabScrollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B322367110C0029383E /* MediaStyleInfiniteTabScrollUITests.swift */; };
+		DE066BC2236716840029383E /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BC1236716840029383E /* CustomViewBase.swift */; };
+		DE066BC42367183E0029383E /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BC32367183E0029383E /* NSObjectProtocolExtension.swift */; };
+		DE066BC6236718740029383E /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BC5236718740029383E /* UICollectionViewExtension.swift */; };
+		DE066BC8236718AD0029383E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BC7236718AD0029383E /* UIColorExtension.swift */; };
+		DE066BCA236719420029383E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BC9236719420029383E /* UIViewControllerExtension.swift */; };
+		DE066BCF23671C910029383E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BCE23671C910029383E /* DetailViewController.swift */; };
+		DE066BD3236727B30029383E /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE066BD1236727B30029383E /* Detail.storyboard */; };
+		DE066BD823673AA10029383E /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE066BD623673AA10029383E /* List.storyboard */; };
+		DE066BDA23673B040029383E /* MainScrollTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BD923673B040029383E /* MainScrollTabViewController.swift */; };
+		DE066BDC23673B110029383E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BDB23673B110029383E /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,7 @@
 		DE066B0D236711090029383E /* MediaStyleInfiniteTabScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaStyleInfiniteTabScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE066B10236711090029383E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE066B12236711090029383E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE066B14236711090029383E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE066B14236711090029383E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DE066B17236711090029383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE066B192367110C0029383E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE066B1C2367110C0029383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,16 @@
 		DE066B2E2367110C0029383E /* MediaStyleInfiniteTabScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaStyleInfiniteTabScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE066B322367110C0029383E /* MediaStyleInfiniteTabScrollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStyleInfiniteTabScrollUITests.swift; sourceTree = "<group>"; };
 		DE066B342367110C0029383E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE066BC1236716840029383E /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
+		DE066BC32367183E0029383E /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
+		DE066BC5236718740029383E /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		DE066BC7236718AD0029383E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DE066BC9236719420029383E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		DE066BCE23671C910029383E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DE066BD2236727B30029383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
+		DE066BD723673AA10029383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/List.storyboard; sourceTree = "<group>"; };
+		DE066BD923673B040029383E /* MainScrollTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTabViewController.swift; sourceTree = "<group>"; };
+		DE066BDB23673B110029383E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +119,19 @@
 		DE066B0F236711090029383E /* MediaStyleInfiniteTabScroll */ = {
 			isa = PBXGroup;
 			children = (
+				DE066B1E2367110C0029383E /* Info.plist */,
 				DE066B10236711090029383E /* AppDelegate.swift */,
 				DE066B12236711090029383E /* SceneDelegate.swift */,
-				DE066B14236711090029383E /* ViewController.swift */,
-				DE066B16236711090029383E /* Main.storyboard */,
 				DE066B192367110C0029383E /* Assets.xcassets */,
-				DE066B1B2367110C0029383E /* LaunchScreen.storyboard */,
-				DE066B1E2367110C0029383E /* Info.plist */,
+				DE066BBC2367161C0029383E /* Entity */,
+				DE066BB9236714E00029383E /* Enum */,
+				DE066BB8236714D40029383E /* Extension */,
+				DE066BC0236716530029383E /* JsonData */,
+				DE066BBA2367160C0029383E /* Modules */,
+				DE066BBB236716150029383E /* Presenter */,
+				DE066BBD2367162E0029383E /* Storyboard */,
+				DE066BBE236716350029383E /* View */,
+				DE066BBF236716440029383E /* ViewController */,
 			);
 			path = MediaStyleInfiniteTabScroll;
 			sourceTree = "<group>";
@@ -126,6 +152,106 @@
 				DE066B342367110C0029383E /* Info.plist */,
 			);
 			path = MediaStyleInfiniteTabScrollUITests;
+			sourceTree = "<group>";
+		};
+		DE066BB8236714D40029383E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE066BC32367183E0029383E /* NSObjectProtocolExtension.swift */,
+				DE066BC5236718740029383E /* UICollectionViewExtension.swift */,
+				DE066BC7236718AD0029383E /* UIColorExtension.swift */,
+				DE066BC9236719420029383E /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DE066BB9236714E00029383E /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		DE066BBA2367160C0029383E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DE066BBB236716150029383E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE066BBC2367161C0029383E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DE066BBD2367162E0029383E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE066BD1236727B30029383E /* Detail.storyboard */,
+				DE066B1B2367110C0029383E /* LaunchScreen.storyboard */,
+				DE066BD623673AA10029383E /* List.storyboard */,
+				DE066B16236711090029383E /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DE066BBE236716350029383E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE066BC1236716840029383E /* CustomViewBase.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE066BBF236716440029383E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE066BD023671C940029383E /* Detail */,
+				DE066BDD23673B6C0029383E /* List */,
+				DE066BCB23671C700029383E /* Main */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DE066BC0236716530029383E /* JsonData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JsonData;
+			sourceTree = "<group>";
+		};
+		DE066BCB23671C700029383E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DE066B14236711090029383E /* MainViewController.swift */,
+				DE066BD923673B040029383E /* MainScrollTabViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DE066BD023671C940029383E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DE066BCE23671C910029383E /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DE066BDD23673B6C0029383E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DE066BDB23673B110029383E /* ListViewController.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +361,8 @@
 				DE066B1D2367110C0029383E /* LaunchScreen.storyboard in Resources */,
 				DE066B1A2367110C0029383E /* Assets.xcassets in Resources */,
 				DE066B18236711090029383E /* Main.storyboard in Resources */,
+				DE066BD3236727B30029383E /* Detail.storyboard in Resources */,
+				DE066BD823673AA10029383E /* List.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE066B15236711090029383E /* ViewController.swift in Sources */,
+				DE066BCF23671C910029383E /* DetailViewController.swift in Sources */,
+				DE066BDC23673B110029383E /* ListViewController.swift in Sources */,
+				DE066BC2236716840029383E /* CustomViewBase.swift in Sources */,
+				DE066BC8236718AD0029383E /* UIColorExtension.swift in Sources */,
+				DE066B15236711090029383E /* MainViewController.swift in Sources */,
 				DE066B11236711090029383E /* AppDelegate.swift in Sources */,
+				DE066BCA236719420029383E /* UIViewControllerExtension.swift in Sources */,
+				DE066BDA23673B040029383E /* MainScrollTabViewController.swift in Sources */,
 				DE066B13236711090029383E /* SceneDelegate.swift in Sources */,
+				DE066BC6236718740029383E /* UICollectionViewExtension.swift in Sources */,
+				DE066BC42367183E0029383E /* NSObjectProtocolExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +447,22 @@
 				DE066B1C2367110C0029383E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DE066BD1236727B30029383E /* Detail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE066BD2236727B30029383E /* Base */,
+			);
+			name = Detail.storyboard;
+			sourceTree = "<group>";
+		};
+		DE066BD623673AA10029383E /* List.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE066BD723673AA10029383E /* Base */,
+			);
+			name = List.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

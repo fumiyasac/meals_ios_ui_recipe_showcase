@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  MediaStyleInfiniteTabScroll
 //
 //  Created by 酒井文也 on 2019/10/28.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class DetailViewController: UIViewController {
+
+    // MARK: - Override
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
