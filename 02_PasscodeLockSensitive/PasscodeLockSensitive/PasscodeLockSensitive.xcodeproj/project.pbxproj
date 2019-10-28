@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE066B4D236711E30029383E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B4C236711E30029383E /* AppDelegate.swift */; };
+		DE066B4F236711E30029383E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B4E236711E30029383E /* SceneDelegate.swift */; };
+		DE066B51236711E30029383E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B50236711E30029383E /* ViewController.swift */; };
+		DE066B54236711E30029383E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE066B52236711E30029383E /* Main.storyboard */; };
+		DE066B56236711E40029383E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE066B55236711E40029383E /* Assets.xcassets */; };
+		DE066B59236711E40029383E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE066B57236711E40029383E /* LaunchScreen.storyboard */; };
+		DE066B64236711E40029383E /* PasscodeLockSensitiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B63236711E40029383E /* PasscodeLockSensitiveTests.swift */; };
+		DE066B6F236711E40029383E /* PasscodeLockSensitiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B6E236711E40029383E /* PasscodeLockSensitiveUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE066B60236711E40029383E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE066B41236711E30029383E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE066B48236711E30029383E;
+			remoteInfo = PasscodeLockSensitive;
+		};
+		DE066B6B236711E40029383E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE066B41236711E30029383E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE066B48236711E30029383E;
+			remoteInfo = PasscodeLockSensitive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE066B49236711E30029383E /* PasscodeLockSensitive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeLockSensitive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE066B4C236711E30029383E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE066B4E236711E30029383E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE066B50236711E30029383E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE066B53236711E30029383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE066B55236711E40029383E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE066B58236711E40029383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE066B5A236711E40029383E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE066B5F236711E40029383E /* PasscodeLockSensitiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasscodeLockSensitiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE066B63236711E40029383E /* PasscodeLockSensitiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeLockSensitiveTests.swift; sourceTree = "<group>"; };
+		DE066B65236711E40029383E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE066B6A236711E40029383E /* PasscodeLockSensitiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasscodeLockSensitiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE066B6E236711E40029383E /* PasscodeLockSensitiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeLockSensitiveUITests.swift; sourceTree = "<group>"; };
+		DE066B70236711E40029383E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE066B46236711E30029383E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE066B5C236711E40029383E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE066B67236711E40029383E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE066B40236711E30029383E = {
+			isa = PBXGroup;
+			children = (
+				DE066B4B236711E30029383E /* PasscodeLockSensitive */,
+				DE066B62236711E40029383E /* PasscodeLockSensitiveTests */,
+				DE066B6D236711E40029383E /* PasscodeLockSensitiveUITests */,
+				DE066B4A236711E30029383E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE066B4A236711E30029383E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE066B49236711E30029383E /* PasscodeLockSensitive.app */,
+				DE066B5F236711E40029383E /* PasscodeLockSensitiveTests.xctest */,
+				DE066B6A236711E40029383E /* PasscodeLockSensitiveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE066B4B236711E30029383E /* PasscodeLockSensitive */ = {
+			isa = PBXGroup;
+			children = (
+				DE066B4C236711E30029383E /* AppDelegate.swift */,
+				DE066B4E236711E30029383E /* SceneDelegate.swift */,
+				DE066B50236711E30029383E /* ViewController.swift */,
+				DE066B52236711E30029383E /* Main.storyboard */,
+				DE066B55236711E40029383E /* Assets.xcassets */,
+				DE066B57236711E40029383E /* LaunchScreen.storyboard */,
+				DE066B5A236711E40029383E /* Info.plist */,
+			);
+			path = PasscodeLockSensitive;
+			sourceTree = "<group>";
+		};
+		DE066B62236711E40029383E /* PasscodeLockSensitiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE066B63236711E40029383E /* PasscodeLockSensitiveTests.swift */,
+				DE066B65236711E40029383E /* Info.plist */,
+			);
+			path = PasscodeLockSensitiveTests;
+			sourceTree = "<group>";
+		};
+		DE066B6D236711E40029383E /* PasscodeLockSensitiveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE066B6E236711E40029383E /* PasscodeLockSensitiveUITests.swift */,
+				DE066B70236711E40029383E /* Info.plist */,
+			);
+			path = PasscodeLockSensitiveUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE066B48236711E30029383E /* PasscodeLockSensitive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE066B73236711E40029383E /* Build configuration list for PBXNativeTarget "PasscodeLockSensitive" */;
+			buildPhases = (
+				DE066B45236711E30029383E /* Sources */,
+				DE066B46236711E30029383E /* Frameworks */,
+				DE066B47236711E30029383E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasscodeLockSensitive;
+			productName = PasscodeLockSensitive;
+			productReference = DE066B49236711E30029383E /* PasscodeLockSensitive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE066B5E236711E40029383E /* PasscodeLockSensitiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE066B76236711E40029383E /* Build configuration list for PBXNativeTarget "PasscodeLockSensitiveTests" */;
+			buildPhases = (
+				DE066B5B236711E40029383E /* Sources */,
+				DE066B5C236711E40029383E /* Frameworks */,
+				DE066B5D236711E40029383E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE066B61236711E40029383E /* PBXTargetDependency */,
+			);
+			name = PasscodeLockSensitiveTests;
+			productName = PasscodeLockSensitiveTests;
+			productReference = DE066B5F236711E40029383E /* PasscodeLockSensitiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE066B69236711E40029383E /* PasscodeLockSensitiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE066B79236711E40029383E /* Build configuration list for PBXNativeTarget "PasscodeLockSensitiveUITests" */;
+			buildPhases = (
+				DE066B66236711E40029383E /* Sources */,
+				DE066B67236711E40029383E /* Frameworks */,
+				DE066B68236711E40029383E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE066B6C236711E40029383E /* PBXTargetDependency */,
+			);
+			name = PasscodeLockSensitiveUITests;
+			productName = PasscodeLockSensitiveUITests;
+			productReference = DE066B6A236711E40029383E /* PasscodeLockSensitiveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE066B41236711E30029383E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "酒井文也";
+				TargetAttributes = {
+					DE066B48236711E30029383E = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					DE066B5E236711E40029383E = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = DE066B48236711E30029383E;
+					};
+					DE066B69236711E40029383E = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = DE066B48236711E30029383E;
+					};
+				};
+			};
+			buildConfigurationList = DE066B44236711E30029383E /* Build configuration list for PBXProject "PasscodeLockSensitive" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE066B40236711E30029383E;
+			productRefGroup = DE066B4A236711E30029383E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE066B48236711E30029383E /* PasscodeLockSensitive */,
+				DE066B5E236711E40029383E /* PasscodeLockSensitiveTests */,
+				DE066B69236711E40029383E /* PasscodeLockSensitiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE066B47236711E30029383E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE066B59236711E40029383E /* LaunchScreen.storyboard in Resources */,
+				DE066B56236711E40029383E /* Assets.xcassets in Resources */,
+				DE066B54236711E30029383E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE066B5D236711E40029383E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE066B68236711E40029383E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE066B45236711E30029383E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE066B51236711E30029383E /* ViewController.swift in Sources */,
+				DE066B4D236711E30029383E /* AppDelegate.swift in Sources */,
+				DE066B4F236711E30029383E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE066B5B236711E40029383E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE066B64236711E40029383E /* PasscodeLockSensitiveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE066B66236711E40029383E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE066B6F236711E40029383E /* PasscodeLockSensitiveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE066B61236711E40029383E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE066B48236711E30029383E /* PasscodeLockSensitive */;
+			targetProxy = DE066B60236711E40029383E /* PBXContainerItemProxy */;
+		};
+		DE066B6C236711E40029383E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE066B48236711E30029383E /* PasscodeLockSensitive */;
+			targetProxy = DE066B6B236711E40029383E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE066B52236711E30029383E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE066B53236711E30029383E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE066B57236711E40029383E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE066B58236711E40029383E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE066B71236711E40029383E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE066B72236711E40029383E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE066B74236711E40029383E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5BF5553KY;
+				INFOPLIST_FILE = PasscodeLockSensitive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.PasscodeLockSensitive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE066B75236711E40029383E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5BF5553KY;
+				INFOPLIST_FILE = PasscodeLockSensitive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.PasscodeLockSensitive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE066B77236711E40029383E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5BF5553KY;
+				INFOPLIST_FILE = PasscodeLockSensitiveTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.PasscodeLockSensitiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasscodeLockSensitive.app/PasscodeLockSensitive";
+			};
+			name = Debug;
+		};
+		DE066B78236711E40029383E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5BF5553KY;
+				INFOPLIST_FILE = PasscodeLockSensitiveTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.PasscodeLockSensitiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasscodeLockSensitive.app/PasscodeLockSensitive";
+			};
+			name = Release;
+		};
+		DE066B7A236711E40029383E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5BF5553KY;
+				INFOPLIST_FILE = PasscodeLockSensitiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.PasscodeLockSensitiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasscodeLockSensitive;
+			};
+			name = Debug;
+		};
+		DE066B7B236711E40029383E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5BF5553KY;
+				INFOPLIST_FILE = PasscodeLockSensitiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.PasscodeLockSensitiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PasscodeLockSensitive;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE066B44236711E30029383E /* Build configuration list for PBXProject "PasscodeLockSensitive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE066B71236711E40029383E /* Debug */,
+				DE066B72236711E40029383E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE066B73236711E40029383E /* Build configuration list for PBXNativeTarget "PasscodeLockSensitive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE066B74236711E40029383E /* Debug */,
+				DE066B75236711E40029383E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE066B76236711E40029383E /* Build configuration list for PBXNativeTarget "PasscodeLockSensitiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE066B77236711E40029383E /* Debug */,
+				DE066B78236711E40029383E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE066B79236711E40029383E /* Build configuration list for PBXNativeTarget "PasscodeLockSensitiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE066B7A236711E40029383E /* Debug */,
+				DE066B7B236711E40029383E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE066B41236711E30029383E /* Project object */;
+}

@@ -1,0 +1,27 @@
+# Xcode (from gitignore.io)
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Others
+*.swp
+!.gitkeep
+.DS_Store
+
+# CocoaPod
+/01_MediaStyleInfiniteTabScroll/MediaStyleInfiniteTabScroll/Pods/*
+/02_PasscodeLockSensitive/PasscodeLockSensitive/Pods/*
+/03_MosaicPhotoGalleryLayouts/MosaicPhotoGalleryLayouts/Pods/*
