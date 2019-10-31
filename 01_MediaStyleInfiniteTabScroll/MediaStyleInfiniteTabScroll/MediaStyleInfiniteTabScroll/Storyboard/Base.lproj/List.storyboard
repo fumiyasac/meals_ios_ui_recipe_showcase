@@ -14,9 +14,31 @@
                     <view key="view" contentMode="scaleToFill" id="F4S-pC-Zpx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1BO-o8-d1F">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kvv-Jn-zgX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1BO-o8-d1F" secondAttribute="trailing" id="Fep-eT-Kl7"/>
+                            <constraint firstItem="1BO-o8-d1F" firstAttribute="top" secondItem="F4S-pC-Zpx" secondAttribute="top" id="Qr0-im-D20"/>
+                            <constraint firstAttribute="bottom" secondItem="1BO-o8-d1F" secondAttribute="bottom" id="rSr-1l-rB5"/>
+                            <constraint firstItem="1BO-o8-d1F" firstAttribute="leading" secondItem="F4S-pC-Zpx" secondAttribute="leading" id="uEK-BD-9B5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yX8-sc-IpV"/>
                     </view>
+                    <connections>
+                        <outlet property="listCollectionView" destination="1BO-o8-d1F" id="nFn-2D-vT6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5EB-Dl-59B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -25,6 +25,11 @@
 		DE066BD823673AA10029383E /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE066BD623673AA10029383E /* List.storyboard */; };
 		DE066BDA23673B040029383E /* MainScrollTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BD923673B040029383E /* MainScrollTabViewController.swift */; };
 		DE066BDC23673B110029383E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BDB23673B110029383E /* ListViewController.swift */; };
+		DE24898E236A4BFC0081751C /* MainScrollTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE24898C236A4BFC0081751C /* MainScrollTabCollectionViewCell.swift */; };
+		DE24898F236A4BFC0081751C /* MainScrollTabCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE24898D236A4BFC0081751C /* MainScrollTabCollectionViewCell.xib */; };
+		DE248993236A4C890081751C /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE248991236A4C890081751C /* ListCollectionViewCell.swift */; };
+		DE248994236A4C890081751C /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE248992236A4C890081751C /* ListCollectionViewCell.xib */; };
+		DE3CC8A9236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		DE066BD723673AA10029383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/List.storyboard; sourceTree = "<group>"; };
 		DE066BD923673B040029383E /* MainScrollTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTabViewController.swift; sourceTree = "<group>"; };
 		DE066BDB23673B110029383E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DE24898C236A4BFC0081751C /* MainScrollTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTabCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE24898D236A4BFC0081751C /* MainScrollTabCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScrollTabCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE248991236A4C890081751C /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE248992236A4C890081751C /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTabCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				DE066BC1236716840029383E /* CustomViewBase.swift */,
+				DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */,
+				DE248990236A4C060081751C /* ListCollectionViewCell */,
+				DE248988236A4BB90081751C /* MainScrollTabCollectionViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +265,24 @@
 				DE066BDB23673B110029383E /* ListViewController.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		DE248988236A4BB90081751C /* MainScrollTabCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE24898C236A4BFC0081751C /* MainScrollTabCollectionViewCell.swift */,
+				DE24898D236A4BFC0081751C /* MainScrollTabCollectionViewCell.xib */,
+			);
+			path = MainScrollTabCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		DE248990236A4C060081751C /* ListCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE248991236A4C890081751C /* ListCollectionViewCell.swift */,
+				DE248992236A4C890081751C /* ListCollectionViewCell.xib */,
+			);
+			path = ListCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,7 +390,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE066B1D2367110C0029383E /* LaunchScreen.storyboard in Resources */,
+				DE248994236A4C890081751C /* ListCollectionViewCell.xib in Resources */,
 				DE066B1A2367110C0029383E /* Assets.xcassets in Resources */,
+				DE24898F236A4BFC0081751C /* MainScrollTabCollectionViewCell.xib in Resources */,
 				DE066B18236711090029383E /* Main.storyboard in Resources */,
 				DE066BD3236727B30029383E /* Detail.storyboard in Resources */,
 				DE066BD823673AA10029383E /* List.storyboard in Resources */,
@@ -388,15 +421,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE066BCF23671C910029383E /* DetailViewController.swift in Sources */,
+				DE3CC8A9236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift in Sources */,
 				DE066BDC23673B110029383E /* ListViewController.swift in Sources */,
 				DE066BC2236716840029383E /* CustomViewBase.swift in Sources */,
 				DE066BC8236718AD0029383E /* UIColorExtension.swift in Sources */,
 				DE066B15236711090029383E /* MainViewController.swift in Sources */,
 				DE066B11236711090029383E /* AppDelegate.swift in Sources */,
 				DE066BCA236719420029383E /* UIViewControllerExtension.swift in Sources */,
+				DE248993236A4C890081751C /* ListCollectionViewCell.swift in Sources */,
 				DE066BDA23673B040029383E /* MainScrollTabViewController.swift in Sources */,
 				DE066B13236711090029383E /* SceneDelegate.swift in Sources */,
 				DE066BC6236718740029383E /* UICollectionViewExtension.swift in Sources */,
+				DE24898E236A4BFC0081751C /* MainScrollTabCollectionViewCell.swift in Sources */,
 				DE066BC42367183E0029383E /* NSObjectProtocolExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

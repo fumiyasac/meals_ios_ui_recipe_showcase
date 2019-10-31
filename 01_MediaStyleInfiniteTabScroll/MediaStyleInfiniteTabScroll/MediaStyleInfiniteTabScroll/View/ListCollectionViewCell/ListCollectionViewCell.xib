@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListCollectionViewCell" customModule="MediaStyleInfiniteTabScroll" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="178"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGg-iI-Zts">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="178"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epG-cS-QQ7">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="178"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SIG-aI-1i6">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="112.5"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SIG-aI-1i6" secondAttribute="height" multiplier="4:3" id="gB3-Hi-hb2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFw-ko-wIM">
+                                <rect key="frame" x="8" y="88.5" width="134" height="12"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-70-i6c">
+                                <rect key="frame" x="8" y="116.5" width="134" height="57.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キャッチコピー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u33-84-VTX">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="19"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリー名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sps-R1-vFS">
+                                        <rect key="frame" x="0.0" y="19" width="134" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018.12.25" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARH-G5-KpL">
+                                        <rect key="frame" x="0.0" y="38.5" width="134" height="19"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tcc-70-i6c" firstAttribute="leading" secondItem="cGg-iI-Zts" secondAttribute="leading" constant="8" id="A9M-LD-ODY"/>
+                            <constraint firstItem="SIG-aI-1i6" firstAttribute="bottom" secondItem="WFw-ko-wIM" secondAttribute="bottom" constant="12" id="ELU-71-vZ4"/>
+                            <constraint firstItem="epG-cS-QQ7" firstAttribute="top" secondItem="cGg-iI-Zts" secondAttribute="top" id="GY4-o8-Ion"/>
+                            <constraint firstItem="WFw-ko-wIM" firstAttribute="leading" secondItem="cGg-iI-Zts" secondAttribute="leading" constant="8" id="HVX-xO-nxo"/>
+                            <constraint firstItem="SIG-aI-1i6" firstAttribute="leading" secondItem="cGg-iI-Zts" secondAttribute="leading" id="HqY-Jr-KUa"/>
+                            <constraint firstAttribute="trailing" secondItem="SIG-aI-1i6" secondAttribute="trailing" id="LQP-bE-VGp"/>
+                            <constraint firstItem="SIG-aI-1i6" firstAttribute="top" secondItem="cGg-iI-Zts" secondAttribute="top" id="SUt-Jg-2dl"/>
+                            <constraint firstAttribute="bottom" secondItem="Tcc-70-i6c" secondAttribute="bottom" constant="4" id="Ujc-G4-Bry"/>
+                            <constraint firstItem="Tcc-70-i6c" firstAttribute="top" secondItem="SIG-aI-1i6" secondAttribute="bottom" constant="4" id="Xnx-WH-vK6"/>
+                            <constraint firstAttribute="trailing" secondItem="Tcc-70-i6c" secondAttribute="trailing" constant="8" id="jEe-B1-clT"/>
+                            <constraint firstAttribute="trailing" secondItem="WFw-ko-wIM" secondAttribute="trailing" constant="8" id="pLt-Zq-ZmU"/>
+                            <constraint firstAttribute="bottom" secondItem="epG-cS-QQ7" secondAttribute="bottom" id="spe-d3-clO"/>
+                            <constraint firstAttribute="trailing" secondItem="epG-cS-QQ7" secondAttribute="trailing" id="wWb-E5-rtd"/>
+                            <constraint firstItem="epG-cS-QQ7" firstAttribute="leading" secondItem="cGg-iI-Zts" secondAttribute="leading" id="yLI-dy-3pq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cGg-iI-Zts" secondAttribute="bottom" id="WhD-TP-t2I"/>
+                <constraint firstItem="cGg-iI-Zts" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="m1Z-V3-o5t"/>
+                <constraint firstAttribute="trailing" secondItem="cGg-iI-Zts" secondAttribute="trailing" id="nte-s5-YZT"/>
+                <constraint firstItem="cGg-iI-Zts" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ryg-QF-saW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <point key="canvasLocation" x="132" y="151"/>
+        </collectionViewCell>
+    </objects>
+</document>

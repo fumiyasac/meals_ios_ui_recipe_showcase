@@ -21,7 +21,7 @@
                                     <constraint firstAttribute="height" constant="46" id="TFp-01-DmR"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="3Jb-UU-cbW" kind="embed" id="rnR-hm-eSa"/>
+                                    <segue destination="3Jb-UU-cbW" kind="embed" identifier="MainScrollTabViewContainer" id="rnR-hm-eSa"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAq-Yd-F8w">
@@ -36,7 +36,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vAq-Yd-F8w" secondAttribute="trailing" id="480-FQ-aYB"/>
                             <constraint firstItem="v34-iC-Zy2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hg3-OV-rrm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v34-iC-Zy2" secondAttribute="trailing" id="MRE-KD-nEX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vAq-Yd-F8w" secondAttribute="bottom" id="WPZ-AJ-DTw"/>
+                            <constraint firstAttribute="bottom" secondItem="vAq-Yd-F8w" secondAttribute="bottom" id="WPZ-AJ-DTw"/>
                             <constraint firstItem="v34-iC-Zy2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ytl-wA-zMr"/>
                             <constraint firstItem="vAq-Yd-F8w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cBZ-UF-dqP"/>
                             <constraint firstItem="vAq-Yd-F8w" firstAttribute="top" secondItem="v34-iC-Zy2" secondAttribute="bottom" id="zu8-iW-cih"/>
@@ -76,7 +76,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2VO-kX-sHx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DxZ-Gh-BLr">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DxZ-Gh-BLr" customClass="MainScrollTabCollectionViewFlowLayout" customModule="MediaStyleInfiniteTabScroll" customModuleProvider="target">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -112,7 +112,12 @@
                             <constraint firstAttribute="bottom" secondItem="a9D-PC-lRM" secondAttribute="bottom" id="ui3-zo-PWK"/>
                             <constraint firstAttribute="bottom" secondItem="2VO-kX-sHx" secondAttribute="bottom" id="wrF-BD-Ndd"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="CXm-BV-hkk"/>
                     </view>
+                    <connections>
+                        <outlet property="mainScrollTabCollectionView" destination="2VO-kX-sHx" id="iD7-IL-Qne"/>
+                        <outlet property="selectedUnderlineWidth" destination="gg5-ke-Bm4" id="ean-xB-YQr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBn-YL-e9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,7 +126,7 @@
         <!--Page View Controller-->
         <scene sceneID="ayq-Gy-GJY">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="wcC-Gf-i2b" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="wcC-Gf-i2b" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ZK-dS-MxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="881" y="192"/>
