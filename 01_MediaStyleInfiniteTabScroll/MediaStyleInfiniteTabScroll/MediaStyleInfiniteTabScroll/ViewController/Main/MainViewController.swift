@@ -14,12 +14,12 @@ final class MainViewController: UIViewController {
 
     // 表示対象データ
     private let categories: [String] = [
-        "テスト1",
-        "テストA",
-        "テストa",
-        "テスト一",
-        "テストあ",
-        "テストX",
+        "安心して食べられる",
+        "食べすぎ注意",
+        "間食はだめよん",
+        "太るよ太るよ",
+        "大根スケッチの刑",
+        "角砂糖イッキ",
     ]
 
     // 現在表示しているViewControllerのタグ番号
@@ -36,7 +36,7 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupNavigationBarTitle("3時のおやつアーカイブ集")
+        setupNavigationBarTitle("出会った美味しいものコレクション")
         removeBackButtonText()
         setupPageViewController()
     }
@@ -100,13 +100,13 @@ final class MainViewController: UIViewController {
 
 extension MainViewController: UIPageViewControllerDelegate {
     
-    // ページが動いたタイミング（この場合はスワイプアニメーションに該当）に発動する処理を記載するメソッド
+    // MEMO: ページが動いたタイミング（この場合はスワイプアニメーションに該当）に発動する処理を記載する
     // （実装例）http://c-geru.com/as_blind_side/2014/09/uipageviewcontroller.html
     // （実装例に関する解説）http://chaoruko-tech.hatenablog.com/entry/2014/05/15/103811
     // （公式ドキュメント）https://developer.apple.com/reference/uikit/uipageviewcontrollerdelegate
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
 
-        // スワイプアニメーションが完了していない時には処理をさせなくする
+        // スワイプアニメーションが完了していない時は以降の処理は実施しない
         if !completed { return }
 
         // ここから先はUIPageViewControllerのスワイプアニメーション完了時に発動する
@@ -186,6 +186,12 @@ extension MainViewController: MainScrollTabViewControllerDelegate {
         currentCategoryIndex = selectedCollectionViewIndex % categories.count
 
         // 表示対象インデックス値に該当する画面を表示する
-        pageViewController!.setViewControllers([targetViewControllerLists[currentCategoryIndex]], direction: targetDirection, animated: withAnimated, completion: nil)
+        // MEMO: メインスレッドで実行するようにしてクラッシュを防止する対策を施している
+        DispatchQueue.main.async {
+            if let targetPageViewController = self.pageViewController {
+                targetPageViewController.setViewControllers([self.targetViewControllerLists[self.currentCategoryIndex]], direction: targetDirection, animated: withAnimated, completion: nil)
+            }
+        }
+
     }
 }

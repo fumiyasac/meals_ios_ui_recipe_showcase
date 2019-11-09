@@ -125,6 +125,13 @@ final class MainScrollTabViewController: UIViewController {
             currentSelectIndex = targetCollectionViewCellMinIndex
         }
 
+        // MEMO: タブがスクロールされている状態でUIPageViewControllerがスワイプされた場合の考慮
+        // → スクロール中である場合には強制的に慣性スクロールを停止させる
+        let isScrolling = (mainScrollTabCollectionView.isDragging || mainScrollTabCollectionView.isDecelerating)
+        if isScrolling {
+            mainScrollTabCollectionView.setContentOffset(mainScrollTabCollectionView.contentOffset, animated: true)
+        }
+
         // 押下した場所のインデックス値を持っておく
         currentSelectIndex = targetIndex
         //print("コンテンツ表示側のインデックスを元にした現在のインデックス値:", currentSelectIndex)
@@ -140,13 +147,17 @@ final class MainScrollTabViewController: UIViewController {
 
     // UICollectionViewに関する設定
     private func setupMainScrollTabCollectionView() {
+
         mainScrollTabCollectionView.delegate = self
         mainScrollTabCollectionView.dataSource = self
         mainScrollTabCollectionView.registerCustomCell(MainScrollTabCollectionViewCell.self)
-        mainScrollTabCollectionView.showsHorizontalScrollIndicator = false
 
         // MEMO: タブ内のスクロール移動を許可する場合はtrueにし、許可しない場合はfalseとする
-        mainScrollTabCollectionView.isScrollEnabled = true
+        // 注意: trueにした際にはタブ表示部分をスクロール中にUIPageViewControllerをスワイプする際のクラッシュ回避が必要です
+        mainScrollTabCollectionView.isScrollEnabled = true //false
+
+        // MEMO: 水平方向のスクロールインジケーターを非表示にする
+        mainScrollTabCollectionView.showsHorizontalScrollIndicator = false
 
         // MEMO: このサンプルでInterfaceBuilderで設定しているもの
         // - 1. レイアウト属性 → 独自に定義した「MainScrollTabCollectionViewFlowLayoutクラス」を「Collection View Flow Layout」の部分に適用する
@@ -243,7 +254,7 @@ extension MainScrollTabViewController: UICollectionViewDataSource {
         // 押下した場所のインデックス値を現在のインデックス値を格納している変数(currentSelectIndex)にセットする
         currentSelectIndex = indexPath.row
         //print("タブ押下時の中央インデックス値:", currentSelectIndex)
-        
+
         // 変数(currentSelectIndex)を基準にして位置情報を更新する
         updateMainScrollTabCollectionViewPosition(withAnimated: true)
 
