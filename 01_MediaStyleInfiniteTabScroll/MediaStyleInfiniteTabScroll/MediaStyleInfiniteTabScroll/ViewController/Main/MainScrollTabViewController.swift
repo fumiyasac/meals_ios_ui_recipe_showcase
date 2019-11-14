@@ -337,7 +337,7 @@ extension MainScrollTabViewController: UIScrollViewDelegate {
         //print("スクロールが慣性で停止した時の中央インデックス値:", currentSelectIndex)
 
         // 変数(currentSelectIndex)を基準にして位置情報を更新する
-        updateMainScrollTabCollectionViewPosition(withAnimated: true)
+        updateMainScrollTabCollectionViewPosition(withAnimated: false)
 
         // 算出した現在のインデックス値・動かす方向の値を元に、UIPageViewControllerで表示しているインデックスの画面へ遷移する
         self.delegate?.moveToMainContents(
