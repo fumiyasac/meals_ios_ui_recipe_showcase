@@ -30,6 +30,7 @@
 		DE248993236A4C890081751C /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE248991236A4C890081751C /* ListCollectionViewCell.swift */; };
 		DE248994236A4C890081751C /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE248992236A4C890081751C /* ListCollectionViewCell.xib */; };
 		DE3CC8A9236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */; };
+		DEAEB7862381F78C007924B2 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		DE248991236A4C890081751C /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE248992236A4C890081751C /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
 		DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTabCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				DE066BC1236716840029383E /* CustomViewBase.swift */,
+				DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */,
 				DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */,
 				DE248990236A4C060081751C /* ListCollectionViewCell */,
 				DE248988236A4BB90081751C /* MainScrollTabCollectionViewCell */,
@@ -434,6 +437,7 @@
 				DE066BC6236718740029383E /* UICollectionViewExtension.swift in Sources */,
 				DE24898E236A4BFC0081751C /* MainScrollTabCollectionViewCell.swift in Sources */,
 				DE066BC42367183E0029383E /* NSObjectProtocolExtension.swift in Sources */,
+				DEAEB7862381F78C007924B2 /* DetailHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

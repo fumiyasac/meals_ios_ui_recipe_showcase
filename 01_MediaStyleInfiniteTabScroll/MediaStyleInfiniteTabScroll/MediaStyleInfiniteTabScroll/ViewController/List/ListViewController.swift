@@ -55,7 +55,7 @@ extension ListViewController: UICollectionViewDataSource {
 
     // 配置するセルの個数を設定する
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30 //selectedCategoryArticles.count
+        return 16 //selectedCategoryArticles.count
     }
 
     // 配置するセルの表示内容を設定する
@@ -70,6 +70,9 @@ extension ListViewController: UICollectionViewDataSource {
     // セル押下時の処理内容を記載する
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
+        let sb = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! DetailViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -98,4 +101,3 @@ extension ListViewController: UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
     }
 }
-
