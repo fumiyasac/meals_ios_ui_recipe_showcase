@@ -32,6 +32,10 @@
 		DE3CC8A9236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */; };
 		DE86A94123882E5600086622 /* DetailSwitchButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE86A94023882E5600086622 /* DetailSwitchButtonsView.xib */; };
 		DE86A94323882E6300086622 /* DetailSwitchButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86A94223882E6300086622 /* DetailSwitchButtonsView.swift */; };
+		DE8DBDEF238902C600E09AD7 /* DetailInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8DBDED238902C600E09AD7 /* DetailInformationTableViewCell.swift */; };
+		DE8DBDF0238902C600E09AD7 /* DetailInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE8DBDEE238902C600E09AD7 /* DetailInformationTableViewCell.xib */; };
+		DE8DBDF4238902F900E09AD7 /* DetailCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8DBDF2238902F900E09AD7 /* DetailCommentTableViewCell.swift */; };
+		DE8DBDF5238902F900E09AD7 /* DetailCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE8DBDF3238902F900E09AD7 /* DetailCommentTableViewCell.xib */; };
 		DEAEB7862381F78C007924B2 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +88,10 @@
 		DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTabCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		DE86A94023882E5600086622 /* DetailSwitchButtonsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSwitchButtonsView.xib; sourceTree = "<group>"; };
 		DE86A94223882E6300086622 /* DetailSwitchButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSwitchButtonsView.swift; sourceTree = "<group>"; };
+		DE8DBDED238902C600E09AD7 /* DetailInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationTableViewCell.swift; sourceTree = "<group>"; };
+		DE8DBDEE238902C600E09AD7 /* DetailInformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInformationTableViewCell.xib; sourceTree = "<group>"; };
+		DE8DBDF2238902F900E09AD7 /* DetailCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommentTableViewCell.swift; sourceTree = "<group>"; };
+		DE8DBDF3238902F900E09AD7 /* DetailCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCommentTableViewCell.xib; sourceTree = "<group>"; };
 		DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +231,8 @@
 		DE066BBE236716350029383E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE8DBDF1238902D200E09AD7 /* DetailCommentTableViewCell */,
+				DE8DBDEC2389028C00E09AD7 /* DetailInformationTableViewCell */,
 				DE066BC1236716840029383E /* CustomViewBase.swift */,
 				DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */,
 				DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */,
@@ -296,10 +306,28 @@
 		DE86A93F23882E0B00086622 /* DetailSwitchButtonsView */ = {
 			isa = PBXGroup;
 			children = (
-				DE86A94023882E5600086622 /* DetailSwitchButtonsView.xib */,
 				DE86A94223882E6300086622 /* DetailSwitchButtonsView.swift */,
+				DE86A94023882E5600086622 /* DetailSwitchButtonsView.xib */,
 			);
 			path = DetailSwitchButtonsView;
+			sourceTree = "<group>";
+		};
+		DE8DBDEC2389028C00E09AD7 /* DetailInformationTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE8DBDED238902C600E09AD7 /* DetailInformationTableViewCell.swift */,
+				DE8DBDEE238902C600E09AD7 /* DetailInformationTableViewCell.xib */,
+			);
+			path = DetailInformationTableViewCell;
+			sourceTree = "<group>";
+		};
+		DE8DBDF1238902D200E09AD7 /* DetailCommentTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE8DBDF2238902F900E09AD7 /* DetailCommentTableViewCell.swift */,
+				DE8DBDF3238902F900E09AD7 /* DetailCommentTableViewCell.xib */,
+			);
+			path = DetailCommentTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,8 +435,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE066B1D2367110C0029383E /* LaunchScreen.storyboard in Resources */,
+				DE8DBDF0238902C600E09AD7 /* DetailInformationTableViewCell.xib in Resources */,
 				DE248994236A4C890081751C /* ListCollectionViewCell.xib in Resources */,
 				DE86A94123882E5600086622 /* DetailSwitchButtonsView.xib in Resources */,
+				DE8DBDF5238902F900E09AD7 /* DetailCommentTableViewCell.xib in Resources */,
 				DE066B1A2367110C0029383E /* Assets.xcassets in Resources */,
 				DE24898F236A4BFC0081751C /* MainScrollTabCollectionViewCell.xib in Resources */,
 				DE066B18236711090029383E /* Main.storyboard in Resources */,
@@ -442,11 +472,13 @@
 				DE3CC8A9236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift in Sources */,
 				DE066BDC23673B110029383E /* ListViewController.swift in Sources */,
 				DE066BC2236716840029383E /* CustomViewBase.swift in Sources */,
+				DE8DBDF4238902F900E09AD7 /* DetailCommentTableViewCell.swift in Sources */,
 				DE066BC8236718AD0029383E /* UIColorExtension.swift in Sources */,
 				DE066B15236711090029383E /* MainViewController.swift in Sources */,
 				DE066B11236711090029383E /* AppDelegate.swift in Sources */,
 				DE066BCA236719420029383E /* UIViewControllerExtension.swift in Sources */,
 				DE248993236A4C890081751C /* ListCollectionViewCell.swift in Sources */,
+				DE8DBDEF238902C600E09AD7 /* DetailInformationTableViewCell.swift in Sources */,
 				DE066BDA23673B040029383E /* MainScrollTabViewController.swift in Sources */,
 				DE066B13236711090029383E /* SceneDelegate.swift in Sources */,
 				DE066BC6236718740029383E /* UICollectionViewExtension.swift in Sources */,

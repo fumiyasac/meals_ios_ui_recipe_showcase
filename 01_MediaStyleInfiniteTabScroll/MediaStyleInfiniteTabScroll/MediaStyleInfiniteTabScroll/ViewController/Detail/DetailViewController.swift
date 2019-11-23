@@ -182,6 +182,34 @@ extension DetailViewController: UIScrollViewDelegate {
             }
         }
 
+        // MEMO: このサンプル内で組み込んでいないがNavigationBarの色や文字色をスクロールを伴って変更させる場合
+        /*
+        基本的な実装方針の参考: https://www.youtube.com/watch?v=rNy6aQQYbuY
+        ① UINavigationBarに関する初期設定
+        '''
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        '''
+        ※1) 前後のUINavigationControllerとの兼ね合いで遷移元に影響が出ない様に注意する
+        ※2) StatusBar部分にも色を付ける場合にはiOS13の対応が必要
+        https://freakycoder.com/ios-notes-13-how-to-change-status-bar-color-1431c185e845
+
+        ② scrollViewDidScroll内で実行する処理
+        '''
+        var offset = ...（0~1の間に収まるようにscrollView.contentOffset.yの値を利用して算出する）...
+        if offset > 1 {
+            offset = 1
+            let color = UIColor.init(code: "#ff6600", alpha: offset)
+            self.navigationController?.navigationBar.tintColor = UIColor.init(hue: 1, saturation: offset, brightness: 1, alpha: 1)
+            self.navigationController?.navigationBar.backgroundColor = color
+        } else {
+            let color = UIColor.init(code: "#ff6600", alpha: offset)
+            self.navigationController?.navigationBar.tintColor = UIColor.init(hue: 1, saturation: offset, brightness: 1, alpha: 1)
+            self.navigationController?.navigationBar.backgroundColor = color
+        }
+        '''
+        */
     }
 }
 
