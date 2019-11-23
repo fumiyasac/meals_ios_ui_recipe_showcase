@@ -18,7 +18,7 @@ final class MainScrollTabCollectionViewCell: UICollectionViewCell {
         height: 48.0
     )
 
-    // MARK: - @IBOutlet
+    // MARK: - @IBOutlets
 
     @IBOutlet weak private var titleLabel: UILabel!
 

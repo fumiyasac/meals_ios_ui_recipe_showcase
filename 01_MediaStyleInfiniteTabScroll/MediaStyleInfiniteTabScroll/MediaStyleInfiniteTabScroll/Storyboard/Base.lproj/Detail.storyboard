@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RVb-c6-Mtw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RVb-c6-Mtw">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,89 +40,45 @@
                                     <constraint firstItem="kiZ-UY-FOz" firstAttribute="height" secondItem="IIR-8B-ePU" secondAttribute="height" id="yH0-p1-gdM"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhe-i2-OSz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-nH-bvF">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="260" id="u9w-cb-vh6"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6i-Hh-kfC">
-                                        <rect key="frame" x="0.0" y="260" width="375" height="40"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xhi-ve-YiG">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbi-ML-to2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="40"/>
-                                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="12"/>
-                                                        <state key="normal" title="Button">
-                                                            <color key="titleColor" red="0.91752451660000001" green="0.44062179330000001" blue="0.4399811924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUY-Yu-WAb">
-                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="40"/>
-                                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="12"/>
-                                                        <state key="normal" title="Button">
-                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiZ-Pc-PV1">
-                                                <rect key="frame" x="0.0" y="38" width="187.5" height="2"/>
-                                                <color key="backgroundColor" red="0.91752451660000001" green="0.44062179330000001" blue="0.4399811924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="2" id="2Bd-KS-rlU"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="xhi-ve-YiG" firstAttribute="leading" secondItem="y6i-Hh-kfC" secondAttribute="leading" id="9yK-iJ-0bd"/>
-                                            <constraint firstAttribute="trailing" secondItem="xhi-ve-YiG" secondAttribute="trailing" id="DcR-Qh-bbT"/>
-                                            <constraint firstItem="xhi-ve-YiG" firstAttribute="top" secondItem="y6i-Hh-kfC" secondAttribute="top" id="Iah-wt-WdM"/>
-                                            <constraint firstAttribute="bottom" secondItem="RiZ-Pc-PV1" secondAttribute="bottom" id="Y56-RA-TjX"/>
-                                            <constraint firstItem="RiZ-Pc-PV1" firstAttribute="leading" secondItem="y6i-Hh-kfC" secondAttribute="leading" id="bsS-MA-WZ1"/>
-                                            <constraint firstAttribute="bottom" secondItem="xhi-ve-YiG" secondAttribute="bottom" id="fvK-Sw-eTJ"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-nH-bvF" customClass="DetailHeaderView" customModule="MediaStyleInfiniteTabScroll" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="PbG-nH-bvF" secondAttribute="trailing" id="4tu-lj-NaQ"/>
-                                    <constraint firstItem="PbG-nH-bvF" firstAttribute="leading" secondItem="Rhe-i2-OSz" secondAttribute="leading" id="61w-Lx-ZIw"/>
-                                    <constraint firstAttribute="height" constant="300" id="9Jh-xC-uVC"/>
-                                    <constraint firstAttribute="bottom" secondItem="y6i-Hh-kfC" secondAttribute="bottom" id="YK7-y1-SDy"/>
-                                    <constraint firstItem="y6i-Hh-kfC" firstAttribute="top" secondItem="PbG-nH-bvF" secondAttribute="bottom" id="cDp-Kk-Ay6"/>
-                                    <constraint firstItem="PbG-nH-bvF" firstAttribute="top" secondItem="Rhe-i2-OSz" secondAttribute="top" id="pYA-m8-kvE"/>
-                                    <constraint firstItem="y6i-Hh-kfC" firstAttribute="leading" secondItem="Rhe-i2-OSz" secondAttribute="leading" id="qwu-sm-s4t"/>
-                                    <constraint firstAttribute="trailing" secondItem="y6i-Hh-kfC" secondAttribute="trailing" id="zVK-K3-8Yj"/>
+                                    <constraint firstAttribute="height" constant="260" id="u9w-cb-vh6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6i-Hh-kfC" customClass="DetailSwitchButtonsView" customModule="MediaStyleInfiniteTabScroll" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="260" width="375" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ABR-m8-M54"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="IIR-8B-ePU" firstAttribute="top" secondItem="mGT-hx-PTj" secondAttribute="top" id="1WH-lM-gE7"/>
+                            <constraint firstItem="y6i-Hh-kfC" firstAttribute="leading" secondItem="mGT-hx-PTj" secondAttribute="leading" id="2wf-Jz-XOo"/>
                             <constraint firstItem="TdA-VS-tUg" firstAttribute="width" secondItem="a7S-Bj-cHk" secondAttribute="width" id="45L-tV-Pnt"/>
-                            <constraint firstItem="mGT-hx-PTj" firstAttribute="trailing" secondItem="Rhe-i2-OSz" secondAttribute="trailing" id="AnU-ck-3qZ"/>
+                            <constraint firstItem="y6i-Hh-kfC" firstAttribute="top" secondItem="PbG-nH-bvF" secondAttribute="bottom" id="IBx-iL-erN"/>
+                            <constraint firstItem="PbG-nH-bvF" firstAttribute="trailing" secondItem="mGT-hx-PTj" secondAttribute="trailing" id="Sxt-Lg-Xcq"/>
                             <constraint firstItem="IIR-8B-ePU" firstAttribute="leading" secondItem="mGT-hx-PTj" secondAttribute="leading" id="bwU-eB-eCI"/>
                             <constraint firstItem="IIR-8B-ePU" firstAttribute="bottom" secondItem="a7S-Bj-cHk" secondAttribute="bottom" id="g8M-Rt-8bS"/>
-                            <constraint firstItem="RiZ-Pc-PV1" firstAttribute="width" secondItem="a7S-Bj-cHk" secondAttribute="width" multiplier="0.5" id="kYz-SV-H4X"/>
-                            <constraint firstItem="Rhe-i2-OSz" firstAttribute="leading" secondItem="mGT-hx-PTj" secondAttribute="leading" id="o7H-8Y-IIa"/>
-                            <constraint firstItem="Rhe-i2-OSz" firstAttribute="top" secondItem="mGT-hx-PTj" secondAttribute="top" id="twC-Nz-nlU"/>
+                            <constraint firstItem="y6i-Hh-kfC" firstAttribute="trailing" secondItem="mGT-hx-PTj" secondAttribute="trailing" id="gTE-XH-hb0"/>
                             <constraint firstItem="z1E-jU-OUR" firstAttribute="width" secondItem="a7S-Bj-cHk" secondAttribute="width" id="wvZ-9U-XXO"/>
                             <constraint firstItem="IIR-8B-ePU" firstAttribute="trailing" secondItem="mGT-hx-PTj" secondAttribute="trailing" id="xO1-9C-4hH"/>
+                            <constraint firstItem="PbG-nH-bvF" firstAttribute="top" secondItem="mGT-hx-PTj" secondAttribute="top" id="z1u-x3-ZxG"/>
+                            <constraint firstItem="PbG-nH-bvF" firstAttribute="leading" secondItem="mGT-hx-PTj" secondAttribute="leading" id="zWE-gC-j0P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mGT-hx-PTj"/>
                     </view>
                     <connections>
                         <outlet property="detailCommentTableView" destination="z1E-jU-OUR" id="n1E-Nh-RJW"/>
+                        <outlet property="detailHeaderView" destination="PbG-nH-bvF" id="Wsj-oR-VwD"/>
                         <outlet property="detailInformationTableView" destination="TdA-VS-tUg" id="3k0-hL-R1j"/>
                         <outlet property="detailScrollView" destination="IIR-8B-ePU" id="B32-uc-4hM"/>
+                        <outlet property="detailSwitchButtonsView" destination="y6i-Hh-kfC" id="bYn-DK-WsH"/>
+                        <outlet property="headerViewTopConstraint" destination="z1u-x3-ZxG" id="jQr-9l-fqd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sz-TS-Jad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

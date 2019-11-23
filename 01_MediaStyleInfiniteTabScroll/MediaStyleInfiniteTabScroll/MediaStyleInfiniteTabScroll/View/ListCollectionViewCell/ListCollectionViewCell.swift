@@ -10,7 +10,7 @@ import UIKit
 
 final class ListCollectionViewCell: UICollectionViewCell {
 
-    // MARK: - Propertoes
+    // MARK: - Properties
 
     // 各々のセル間につけるマージンの値
     static let cellMargin: CGFloat = 12.0
@@ -18,7 +18,7 @@ final class ListCollectionViewCell: UICollectionViewCell {
     // UIImageViewに付与するグラデーション
     private var gradient: CAGradientLayer = CAGradientLayer()
 
-    // MARK: - @IBOutlet
+    // MARK: - @IBOutlets
 
     @IBOutlet weak private var thumbnailImageView: UIImageView!
     @IBOutlet weak private var titleLabel: UILabel!
