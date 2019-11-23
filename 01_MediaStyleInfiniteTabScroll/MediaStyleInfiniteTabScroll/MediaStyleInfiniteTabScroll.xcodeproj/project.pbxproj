@@ -223,10 +223,10 @@
 		DE066BBE236716350029383E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DE86A93F23882E0B00086622 /* DetailSwitchButtonsView */,
 				DE066BC1236716840029383E /* CustomViewBase.swift */,
 				DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */,
 				DE3CC8A8236ADDA4000D4254 /* MainScrollTabCollectionViewFlowLayout.swift */,
+				DE86A93F23882E0B00086622 /* DetailSwitchButtonsView */,
 				DE248990236A4C060081751C /* ListCollectionViewCell */,
 				DE248988236A4BB90081751C /* MainScrollTabCollectionViewCell */,
 			);

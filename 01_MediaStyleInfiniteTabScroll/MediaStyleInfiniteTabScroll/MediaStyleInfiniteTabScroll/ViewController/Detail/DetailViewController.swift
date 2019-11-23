@@ -136,7 +136,6 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-
 // MARK: - UIScrollViewDelegate
 
 extension DetailViewController: UIScrollViewDelegate {
