@@ -14,12 +14,12 @@ final class MainViewController: UIViewController {
 
     // 表示対象データ
     private let categories: [String] = [
-        "安心して食べられる",
-        "食べすぎ注意",
-        "間食はだめよん",
-        "太るよ太るよ",
-        "大根スケッチの刑",
-        "角砂糖イッキ",
+        "コンテンツ一覧1",
+        "コンテンツ一覧2",
+        "コンテンツ一覧3",
+        "コンテンツ一覧4",
+        "コンテンツ一覧5",
+        "コンテンツ一覧6",
     ]
 
     // 現在表示しているViewControllerのタグ番号
@@ -47,8 +47,8 @@ final class MainViewController: UIViewController {
         switch segue.identifier {
 
         // ContainerViewで接続されたViewController側に定義したプロトコルを適用する
-        case "MainScrollTabViewContainer":
-            let vc = segue.destination as! MainScrollTabViewController
+        case "MainScrollTitleViewContainer":
+            let vc = segue.destination as! MainScrollTitleViewController
             vc.delegate = self
 
         default:
@@ -83,14 +83,27 @@ final class MainViewController: UIViewController {
             // 最初に表示する画面として配列の先頭のViewControllerを設定する
             targetPageViewController.setViewControllers([targetViewControllerLists[0]], direction: .forward, animated: false, completion: nil)
         }
+
+        // 初期状態でのタイトル表示を反映する
+        updateMainScrollTitleView(categories[0])
     }
 
-    // 配置されているタブ表示のUICollectionViewの位置を更新する
+    // 配置されているタブ表示のタイトルを更新する
     // MEMO: ContainerViewで配置しているViewControllerの親子関係を利用する
-    private func updateMainScrollTabPosition(isIncrement: Bool) {
+    private func updateMainScrollTitleView(_ title: String) {
         for child in children {
-            if let targetViewController = child as? MainScrollTabViewController {
-                targetViewController.moveToMainScrollTab(isIncrement: isIncrement)
+            if let targetViewController = child as? MainScrollTitleViewController {
+                targetViewController.setTitleFromParent(title)
+            }
+        }
+    }
+
+    // 表示対象インデックス値に該当する画面を表示する
+    // MEMO: メインスレッドで実行するようにしてクラッシュを防止する対策を施している
+    private func moveToCurrentPageIndex(targetDirection: UIPageViewController.NavigationDirection) {
+        DispatchQueue.main.async {
+            if let targetPageViewController = self.pageViewController {
+                targetPageViewController.setViewControllers([self.targetViewControllerLists[self.currentCategoryIndex]], direction: targetDirection, animated: true, completion: nil)
             }
         }
     }
@@ -113,25 +126,11 @@ extension MainViewController: UIPageViewControllerDelegate {
         if let targetViewControllers = pageViewController.viewControllers {
             if let targetViewController = targetViewControllers.last {
 
-                // Case1: UIPageViewControllerで表示する画面のインデックス値が左スワイプで 0 → 最大インデックス値
-                if targetViewController.view.tag - currentCategoryIndex == -categories.count + 1 {
-                    updateMainScrollTabPosition(isIncrement: true)
-
-                // Case2: UIPageViewControllerで表示する画面のインデックス値が右スワイプで 最大インデックス値 → 0
-                } else if targetViewController.view.tag - currentCategoryIndex == categories.count - 1 {
-                    updateMainScrollTabPosition(isIncrement: false)
-
-                // Case3: UIPageViewControllerで表示する画面のインデックス値が +1
-                } else if targetViewController.view.tag - currentCategoryIndex > 0 {
-                    updateMainScrollTabPosition(isIncrement: true)
-
-                // Case4: UIPageViewControllerで表示する画面のインデックス値が -1
-                } else if targetViewController.view.tag - currentCategoryIndex < 0 {
-                    updateMainScrollTabPosition(isIncrement: false)
-                }
-
                 // 受け取ったインデックス値を元にコンテンツ表示を更新する
                 currentCategoryIndex = targetViewController.view.tag
+
+                // インデックス値の変更に伴ってタイトル表示を反映する
+                updateMainScrollTitleView(categories[currentCategoryIndex])
             }
         }
     }
@@ -174,24 +173,41 @@ extension MainViewController: UIPageViewControllerDataSource {
     }
 }
 
-// MARK: - MainScrollTabViewControllerDelegate
+// MARK: - MainScrollTitleViewControllerDelegate
 
-extension MainViewController: MainScrollTabViewControllerDelegate {
+extension MainViewController: MainScrollTitleViewControllerDelegate {
 
-    // タブ側のViewControllerで選択されたインデックス値とスクロール方向を元に表示する位置を調整する
-    func moveToMainContents(selectedCollectionViewIndex: Int, targetDirection: UIPageViewController.NavigationDirection, withAnimated: Bool) {
+    func moveToPrevIndex(targetDirection: UIPageViewController.NavigationDirection) {
 
-        // UIPageViewControllerに設定した画面の表示対象インデックス値を設定する
-        // MEMO: タブ表示のUICollectionViewCellのインデックス値をカテゴリーの個数で割った剰余
-        currentCategoryIndex = selectedCollectionViewIndex % categories.count
-
-        // 表示対象インデックス値に該当する画面を表示する
-        // MEMO: メインスレッドで実行するようにしてクラッシュを防止する対策を施している
-        DispatchQueue.main.async {
-            if let targetPageViewController = self.pageViewController {
-                targetPageViewController.setViewControllers([self.targetViewControllerLists[self.currentCategoryIndex]], direction: targetDirection, animated: withAnimated, completion: nil)
-            }
+        // MainScrollTitleViewControllerで戻るボタン押下時のインデックス値の再計算をする
+        let targetIndex = currentCategoryIndex - 1
+        if targetIndex < 0 {
+            currentCategoryIndex = categories.count - 1
+        } else {
+            currentCategoryIndex = targetIndex
         }
 
+        // インデックス値の変更に伴ってタイトル表示を反映する
+        updateMainScrollTitleView(categories[currentCategoryIndex])
+
+        // インデックス値と対応する画面を表示する
+        moveToCurrentPageIndex(targetDirection: targetDirection)
+    }
+    
+    func moveToNextIndex(targetDirection: UIPageViewController.NavigationDirection) {
+
+        // MainScrollTitleViewControllerで進むボタン押下時のインデックス値の再計算をする
+        let targetIndex = currentCategoryIndex + 1
+        if targetIndex == categories.count {
+            currentCategoryIndex = 0
+        } else {
+            currentCategoryIndex = targetIndex
+        }
+
+        // インデックス値の変更に伴ってタイトル表示を反映する
+        updateMainScrollTitleView(categories[currentCategoryIndex])
+
+        // インデックス値と対応する画面を表示する
+        moveToCurrentPageIndex(targetDirection: targetDirection)
     }
 }

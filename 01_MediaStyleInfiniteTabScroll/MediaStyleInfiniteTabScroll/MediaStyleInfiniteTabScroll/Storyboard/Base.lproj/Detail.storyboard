@@ -54,14 +54,28 @@
                                     <constraint firstAttribute="height" constant="40" id="ABR-m8-M54"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSL-d9-s1m">
+                                <rect key="frame" x="24" y="611" width="327" height="40"/>
+                                <color key="backgroundColor" red="0.91752451660000001" green="0.44062179330000001" blue="0.4399811924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UTH-yG-YQ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="13"/>
+                                <state key="normal" title="投稿者からのメッセージはこちら">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="IIR-8B-ePU" firstAttribute="top" secondItem="mGT-hx-PTj" secondAttribute="top" id="1WH-lM-gE7"/>
                             <constraint firstItem="y6i-Hh-kfC" firstAttribute="leading" secondItem="mGT-hx-PTj" secondAttribute="leading" id="2wf-Jz-XOo"/>
                             <constraint firstItem="TdA-VS-tUg" firstAttribute="width" secondItem="a7S-Bj-cHk" secondAttribute="width" id="45L-tV-Pnt"/>
+                            <constraint firstItem="oSL-d9-s1m" firstAttribute="leading" secondItem="mGT-hx-PTj" secondAttribute="leading" constant="24" id="48F-Ny-K4G"/>
+                            <constraint firstItem="mGT-hx-PTj" firstAttribute="trailing" secondItem="oSL-d9-s1m" secondAttribute="trailing" constant="24" id="7yy-6I-AIo"/>
                             <constraint firstItem="y6i-Hh-kfC" firstAttribute="top" secondItem="PbG-nH-bvF" secondAttribute="bottom" id="IBx-iL-erN"/>
                             <constraint firstItem="PbG-nH-bvF" firstAttribute="trailing" secondItem="mGT-hx-PTj" secondAttribute="trailing" id="Sxt-Lg-Xcq"/>
+                            <constraint firstItem="mGT-hx-PTj" firstAttribute="bottom" secondItem="oSL-d9-s1m" secondAttribute="bottom" constant="16" id="W7G-g3-OYp"/>
                             <constraint firstItem="IIR-8B-ePU" firstAttribute="leading" secondItem="mGT-hx-PTj" secondAttribute="leading" id="bwU-eB-eCI"/>
                             <constraint firstItem="IIR-8B-ePU" firstAttribute="bottom" secondItem="a7S-Bj-cHk" secondAttribute="bottom" id="g8M-Rt-8bS"/>
                             <constraint firstItem="y6i-Hh-kfC" firstAttribute="trailing" secondItem="mGT-hx-PTj" secondAttribute="trailing" id="gTE-XH-hb0"/>

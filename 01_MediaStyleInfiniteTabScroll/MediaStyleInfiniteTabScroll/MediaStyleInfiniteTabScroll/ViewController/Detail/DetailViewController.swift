@@ -64,6 +64,7 @@ final class DetailViewController: UIViewController {
         }
         detailScrollView.delegate = self
         detailScrollView.isPagingEnabled = true
+        detailScrollView.showsHorizontalScrollIndicator = false
     }
 
     private func setupDetailHeaderView() {
@@ -88,20 +89,8 @@ final class DetailViewController: UIViewController {
         let _ = tableViews.map { tableView in
             tableView.delegate = self
             tableView.dataSource = self
-            tableView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 0, right: 0)
-        }
-    }
-
-    private func setButtonState() {
-
-        // MEMO: 変数tableViewsにまとめて取り扱いたいUITableViewを登録する
-        tableViews = [detailInformationTableView, detailCommentTableView]
-
-        // MEMO: detailInformationTableView・detailCommentTableViewの初期設定
-        let _ = tableViews.map { tableView in
-            tableView.delegate = self
-            tableView.dataSource = self
-            tableView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 0, right: 0)
+            tableView.estimatedRowHeight = 100.0
+            tableView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 72.0, right: 0)
         }
     }
 }
@@ -111,11 +100,7 @@ final class DetailViewController: UIViewController {
 extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
-    }
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 30
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -197,17 +182,15 @@ extension DetailViewController: UIScrollViewDelegate {
 
         ② scrollViewDidScroll内で実行する処理
         '''
-        var offset = ...（0~1の間に収まるようにscrollView.contentOffset.yの値を利用して算出する）...
-        if offset > 1 {
+        var offset = ...（scrollView.contentOffset.yの値を利用して割合を算出する）...
+        if offset < 0 {
+            offset = 0
+        } else if offset > 1 {
             offset = 1
-            let color = UIColor.init(code: "#ff6600", alpha: offset)
-            self.navigationController?.navigationBar.tintColor = UIColor.init(hue: 1, saturation: offset, brightness: 1, alpha: 1)
-            self.navigationController?.navigationBar.backgroundColor = color
-        } else {
-            let color = UIColor.init(code: "#ff6600", alpha: offset)
-            self.navigationController?.navigationBar.tintColor = UIColor.init(hue: 1, saturation: offset, brightness: 1, alpha: 1)
-            self.navigationController?.navigationBar.backgroundColor = color
         }
+        let color = UIColor.init(code: "#ff6600", alpha: offset)
+        self.navigationController?.navigationBar.tintColor = UIColor.init(hue: 1, saturation: offset, brightness: 1, alpha: 1)
+        self.navigationController?.navigationBar.backgroundColor = color
         '''
         */
     }
