@@ -10,9 +10,16 @@ import UIKit
 
 final class DetailInformationTableViewCell: UITableViewCell {
 
+    // MARK: - @IBOutlets
+
+    @IBOutlet weak private var informationTitleLabel: UILabel!
+    @IBOutlet weak private var informationSummaryLabel: UILabel!
+
     // MARK: - Initializer
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+
+    // MARK: - Function
 }

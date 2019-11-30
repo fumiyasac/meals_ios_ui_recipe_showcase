@@ -36,6 +36,7 @@
 		DE8DBDFC238A1EE500E09AD7 /* SemiModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8DBDFB238A1EE500E09AD7 /* SemiModalViewController.swift */; };
 		DEA5B350238B98930047F2DF /* MainScrollTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5B34F238B98930047F2DF /* MainScrollTitleViewController.swift */; };
 		DEAEB7862381F78C007924B2 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */; };
+		DED6F1DF238D708300A0168E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6F1DE238D708300A0168E /* UITableViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		DE8DBDFB238A1EE500E09AD7 /* SemiModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalViewController.swift; sourceTree = "<group>"; };
 		DEA5B34F238B98930047F2DF /* MainScrollTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTitleViewController.swift; sourceTree = "<group>"; };
 		DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		DED6F1DE238D708300A0168E /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		DE066B0F236711090029383E /* MediaStyleInfiniteTabScroll */ = {
 			isa = PBXGroup;
 			children = (
+				DE154ABD239204A500EA1F89 /* New Group */,
 				DE066B1E2367110C0029383E /* Info.plist */,
 				DE066B10236711090029383E /* AppDelegate.swift */,
 				DE066B12236711090029383E /* SceneDelegate.swift */,
@@ -183,6 +186,7 @@
 				DE066BC5236718740029383E /* UICollectionViewExtension.swift */,
 				DE066BC7236718AD0029383E /* UIColorExtension.swift */,
 				DE066BC9236719420029383E /* UIViewControllerExtension.swift */,
+				DED6F1DE238D708300A0168E /* UITableViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -230,10 +234,10 @@
 		DE066BBE236716350029383E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DE8DBDF1238902D200E09AD7 /* DetailCommentTableViewCell */,
-				DE8DBDEC2389028C00E09AD7 /* DetailInformationTableViewCell */,
 				DE066BC1236716840029383E /* CustomViewBase.swift */,
 				DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */,
+				DE8DBDF1238902D200E09AD7 /* DetailCommentTableViewCell */,
+				DE8DBDEC2389028C00E09AD7 /* DetailInformationTableViewCell */,
 				DE86A93F23882E0B00086622 /* DetailSwitchButtonsView */,
 				DE248990236A4C060081751C /* ListCollectionViewCell */,
 			);
@@ -281,6 +285,13 @@
 				DE066BDB23673B110029383E /* ListViewController.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		DE154ABD239204A500EA1F89 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		DE248990236A4C060081751C /* ListCollectionViewCell */ = {
@@ -480,6 +491,7 @@
 				DE066BC6236718740029383E /* UICollectionViewExtension.swift in Sources */,
 				DE066BC42367183E0029383E /* NSObjectProtocolExtension.swift in Sources */,
 				DE86A94323882E6300086622 /* DetailSwitchButtonsView.swift in Sources */,
+				DED6F1DF238D708300A0168E /* UITableViewExtension.swift in Sources */,
 				DE8DBDFC238A1EE500E09AD7 /* SemiModalViewController.swift in Sources */,
 				DEAEB7862381F78C007924B2 /* DetailHeaderView.swift in Sources */,
 			);

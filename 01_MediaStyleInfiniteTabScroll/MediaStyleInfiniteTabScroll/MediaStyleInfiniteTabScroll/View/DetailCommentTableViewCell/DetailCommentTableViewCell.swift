@@ -10,9 +10,15 @@ import UIKit
 
 final class DetailCommentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak private var commentMessageLabel: UILabel!
+    @IBOutlet weak private var commentUserNameLabel: UILabel!
+    @IBOutlet weak private var commentDateLabel: UILabel!
+    
     // MARK: - Initializer
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+
+    // MARK: - Function
 }

@@ -105,6 +105,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        // TODO: 仮の値を当てただけ
         let random:Int = Int(arc4random() % 9)
         let text = ["👽","💀","😻","🙀","🤖","🎃","🤟","🐰","🐹"][random]
         
