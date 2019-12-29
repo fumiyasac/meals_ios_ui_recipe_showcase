@@ -42,6 +42,9 @@ final class DetailViewController: UIViewController {
     @IBOutlet weak private var detailInformationTableView: UITableView!
     @IBOutlet weak private var detailCommentTableView: UITableView!    
 
+    // セミモーダル表示用ボタン
+    @IBOutlet weak private var semiModalButton: UIButton!
+
     // MARK: - Override
 
     override func viewDidLoad() {
@@ -52,9 +55,19 @@ final class DetailViewController: UIViewController {
         setupDetailHeaderView()
         setupDetailSwitchButtonsView()
         setupTableViewsInDetailScrollView()
+        setupSemiModalButton()
     }
 
     // MARK: - Private Function
+
+    @objc private func handleSemiModalButtonTapped(sender: UIButton) {
+
+        // MEMO: この場合はModalの遷移ではあるが、iOS13以降とそれ以前でのPresent/Dismiss時の調整は不要
+        // → ModalPresentetionStyleの調整をSemiModalViewControllerの初期化時に実行しているため
+        let sb = UIStoryboard(name: "SemiModal", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! SemiModalViewController
+        self.present(vc, animated: true, completion: nil)
+    }
 
     private func setupDetailScrollView() {
 
@@ -92,6 +105,12 @@ final class DetailViewController: UIViewController {
             tableView.estimatedRowHeight = 100.0
             tableView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 72.0, right: 0)
         }
+    }
+
+    private func setupSemiModalButton() {
+
+        //
+        semiModalButton.addTarget(self, action:  #selector(self.handleSemiModalButtonTapped(sender:)), for: .touchUpInside)
     }
 }
 

@@ -93,6 +93,7 @@
                         <outlet property="detailScrollView" destination="IIR-8B-ePU" id="B32-uc-4hM"/>
                         <outlet property="detailSwitchButtonsView" destination="y6i-Hh-kfC" id="bYn-DK-WsH"/>
                         <outlet property="headerViewTopConstraint" destination="z1u-x3-ZxG" id="jQr-9l-fqd"/>
+                        <outlet property="semiModalButton" destination="oSL-d9-s1m" id="SyF-oY-wfF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sz-TS-Jad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
