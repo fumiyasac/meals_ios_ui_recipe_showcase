@@ -80,7 +80,8 @@ extension SemiModalTransitionable {
         default:
             break
         }
-        print("Interactor SemiModalState: \(interactor.semiModalState)")
+
+        // MEMO: 状態変化のデバッグ時に利用するログ表示
+        //print("Interactor SemiModalState: \(interactor.semiModalState)")
     }
 }
-

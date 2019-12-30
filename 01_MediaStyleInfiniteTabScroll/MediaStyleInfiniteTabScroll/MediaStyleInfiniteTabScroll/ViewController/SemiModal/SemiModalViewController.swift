@@ -77,7 +77,8 @@ final class SemiModalViewController: UIViewController, SemiModalTransitionable {
             interactor.changeSemiModalStateFromNoneToShouldStartIfNeeded()
         }
 
-        // MEMO: Interactorの実行開始位置とUIScrollViewの開始位置が異なるために、Interactorの実行開始のY軸方向のオフセット位置を保持する形にしている点に注意
+        // MEMO: Interactorの実行開始位置とUIScrollViewの開始位置が異なる点に注意
+        // → Interactorの実行開始のY軸方向のオフセット位置を保持する形にしている
         let translationY = sender.translation(in: view).y
         interactor.updateValueOfStartInteractionTranslationYIfNeeded(translationY)
         handleTransitionGesture(sender)
@@ -105,6 +106,17 @@ final class SemiModalViewController: UIViewController, SemiModalTransitionable {
         scrollViewGesture.delegate = self
         semiModalScrollView.addGestureRecognizer(scrollViewGesture)
         semiModalScrollView.delegate = self
+
+        // MEMO: セミモーダル表示するUIScrollViewにおける下部のSafeAreaを考慮する
+        // → iOS13以降ではsafeAreaInsetsの取得方法が変わっている点に注意
+        var bottomInset: CGFloat
+        if #available(iOS 13.0, *) {
+            let keyWindow = UIApplication.shared.windows.first { $0.isKeyWindow }
+            bottomInset = keyWindow?.safeAreaInsets.bottom ?? 0
+        } else {
+            bottomInset = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
+        }
+        semiModalScrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottomInset, right: 0)
     }
 }
 
