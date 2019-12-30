@@ -12,13 +12,11 @@ final class ListViewController: UIViewController {
 
     // MARK: - Properties
 
-    /*
     private var selectedCategoryArticles: [ArticleEntity] = [] {
         didSet {
             self.listCollectionView.reloadData()
         }
     }
-    */
 
     // MARK: - @IBOutlets
 
@@ -34,7 +32,10 @@ final class ListViewController: UIViewController {
 
     // MARK: - Function
 
- 
+     func setArticles(articles: [ArticleEntity]) {
+        selectedCategoryArticles = articles
+     }
+
     // MARK: - Private Function
 
     private func setupListCollectionView() {
@@ -55,14 +56,14 @@ extension ListViewController: UICollectionViewDataSource {
 
     // 配置するセルの個数を設定する
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 16 //selectedCategoryArticles.count
+        return selectedCategoryArticles.count
     }
 
     // 配置するセルの表示内容を設定する
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
         let cell = collectionView.dequeueReusableCustomCell(with: ListCollectionViewCell.self, indexPath: indexPath)
-        //cell.setCellData(selectedCategoryArticles[indexPath.row])
-        cell.setCellData()
+        cell.setCellData(selectedCategoryArticles[indexPath.row])
         cell.setCellDecoration()
         return cell
     }

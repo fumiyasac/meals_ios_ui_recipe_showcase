@@ -24,13 +24,6 @@ final class ListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak private var titleLabel: UILabel!
     @IBOutlet weak private var catchcopyLabel: UILabel!
     @IBOutlet weak private var categoryLabel: UILabel!
-    @IBOutlet weak private var dateLabel: UILabel!
-
-    // MARK: - Initializer
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 
     // MARK: - Override
 
@@ -57,8 +50,12 @@ final class ListCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Function
 
-    func setCellData() {
+    func setCellData(_ article: ArticleEntity) {
 
+        thumbnailImageView.image = article.imageFile
+        titleLabel.text = article.title
+        catchcopyLabel.text = article.catchcopy
+        categoryLabel.text = article.category
     }
 
     func setCellDecoration() {

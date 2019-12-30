@@ -38,6 +38,10 @@
 		DE96B8E023B923FF009BA0AF /* SemiModalTransitioningInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8DF23B923FF009BA0AF /* SemiModalTransitioningInteractor.swift */; };
 		DE96B8E223B92438009BA0AF /* SemiModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E123B92438009BA0AF /* SemiModalPresentationController.swift */; };
 		DE96B8E423B938B4009BA0AF /* SemiModalDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E323B938B4009BA0AF /* SemiModalDismissAnimator.swift */; };
+		DE96B8E623BA0194009BA0AF /* ArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E523BA0194009BA0AF /* ArticleEntity.swift */; };
+		DE96B8E823BA01A3009BA0AF /* ArticleDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E723BA01A3009BA0AF /* ArticleDetailEntity.swift */; };
+		DE96B8EA23BA46A3009BA0AF /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E923BA46A3009BA0AF /* ArticleModel.swift */; };
+		DE96B8ED23BA60D9009BA0AF /* ArticleDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8EC23BA60D9009BA0AF /* ArticleDetailModel.swift */; };
 		DEA5B350238B98930047F2DF /* MainScrollTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5B34F238B98930047F2DF /* MainScrollTitleViewController.swift */; };
 		DEAEB7862381F78C007924B2 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */; };
 		DED6F1DF238D708300A0168E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6F1DE238D708300A0168E /* UITableViewExtension.swift */; };
@@ -98,6 +102,10 @@
 		DE96B8DF23B923FF009BA0AF /* SemiModalTransitioningInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalTransitioningInteractor.swift; sourceTree = "<group>"; };
 		DE96B8E123B92438009BA0AF /* SemiModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalPresentationController.swift; sourceTree = "<group>"; };
 		DE96B8E323B938B4009BA0AF /* SemiModalDismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalDismissAnimator.swift; sourceTree = "<group>"; };
+		DE96B8E523BA0194009BA0AF /* ArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleEntity.swift; sourceTree = "<group>"; };
+		DE96B8E723BA01A3009BA0AF /* ArticleDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailEntity.swift; sourceTree = "<group>"; };
+		DE96B8E923BA46A3009BA0AF /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		DE96B8EC23BA60D9009BA0AF /* ArticleDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailModel.swift; sourceTree = "<group>"; };
 		DEA5B34F238B98930047F2DF /* MainScrollTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTitleViewController.swift; sourceTree = "<group>"; };
 		DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		DED6F1DE238D708300A0168E /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
@@ -151,7 +159,6 @@
 		DE066B0F236711090029383E /* MediaStyleInfiniteTabScroll */ = {
 			isa = PBXGroup;
 			children = (
-				DE154ABD239204A500EA1F89 /* New Group */,
 				DE066B1E2367110C0029383E /* Info.plist */,
 				DE066B10236711090029383E /* AppDelegate.swift */,
 				DE066B12236711090029383E /* SceneDelegate.swift */,
@@ -159,7 +166,7 @@
 				DE066BBC2367161C0029383E /* Entity */,
 				DE066BB9236714E00029383E /* Enum */,
 				DE066BB8236714D40029383E /* Extension */,
-				DE066BC0236716530029383E /* JsonData */,
+				DE066BC0236716530029383E /* Model */,
 				DE066BBA2367160C0029383E /* Modules */,
 				DE066BBB236716150029383E /* Presenter */,
 				DE066BBD2367162E0029383E /* Storyboard */,
@@ -223,6 +230,8 @@
 		DE066BBC2367161C0029383E /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				DE96B8E523BA0194009BA0AF /* ArticleEntity.swift */,
+				DE96B8E723BA01A3009BA0AF /* ArticleDetailEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -243,11 +252,12 @@
 			isa = PBXGroup;
 			children = (
 				DE066BC1236716840029383E /* CustomViewBase.swift */,
-				DE8DBDF1238902D200E09AD7 /* DetailCommentTableViewCell */,
 				DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */,
+				DE8DBDF1238902D200E09AD7 /* DetailCommentTableViewCell */,
 				DE8DBDEC2389028C00E09AD7 /* DetailInformationTableViewCell */,
 				DE86A93F23882E0B00086622 /* DetailSwitchButtonsView */,
 				DE248990236A4C060081751C /* ListCollectionViewCell */,
+				DE96B8EB23BA60A2009BA0AF /* SemiModalContentsView */,
 				DE96B8DC23B90473009BA0AF /* SemiModalTransition */,
 			);
 			path = View;
@@ -264,11 +274,13 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		DE066BC0236716530029383E /* JsonData */ = {
+		DE066BC0236716530029383E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE96B8E923BA46A3009BA0AF /* ArticleModel.swift */,
+				DE96B8EC23BA60D9009BA0AF /* ArticleDetailModel.swift */,
 			);
-			path = JsonData;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DE066BCB23671C700029383E /* Main */ = {
@@ -294,13 +306,6 @@
 				DE066BDB23673B110029383E /* ListViewController.swift */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		DE154ABD239204A500EA1F89 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		DE248990236A4C060081751C /* ListCollectionViewCell */ = {
@@ -356,6 +361,13 @@
 				DE96B8DF23B923FF009BA0AF /* SemiModalTransitioningInteractor.swift */,
 			);
 			path = SemiModalTransition;
+			sourceTree = "<group>";
+		};
+		DE96B8EB23BA60A2009BA0AF /* SemiModalContentsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SemiModalContentsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,17 +514,21 @@
 				DE066BC2236716840029383E /* CustomViewBase.swift in Sources */,
 				DE8DBDF4238902F900E09AD7 /* DetailCommentTableViewCell.swift in Sources */,
 				DE066BC8236718AD0029383E /* UIColorExtension.swift in Sources */,
+				DE96B8EA23BA46A3009BA0AF /* ArticleModel.swift in Sources */,
 				DE066B15236711090029383E /* MainViewController.swift in Sources */,
 				DE066B11236711090029383E /* AppDelegate.swift in Sources */,
+				DE96B8E823BA01A3009BA0AF /* ArticleDetailEntity.swift in Sources */,
 				DE066BCA236719420029383E /* UIViewControllerExtension.swift in Sources */,
 				DE96B8DE23B923EA009BA0AF /* SemiModalTransitionable.swift in Sources */,
 				DE248993236A4C890081751C /* ListCollectionViewCell.swift in Sources */,
+				DE96B8ED23BA60D9009BA0AF /* ArticleDetailModel.swift in Sources */,
 				DE8DBDEF238902C600E09AD7 /* DetailInformationTableViewCell.swift in Sources */,
 				DEA5B350238B98930047F2DF /* MainScrollTitleViewController.swift in Sources */,
 				DE96B8E023B923FF009BA0AF /* SemiModalTransitioningInteractor.swift in Sources */,
 				DE066B13236711090029383E /* SceneDelegate.swift in Sources */,
 				DE066BC6236718740029383E /* UICollectionViewExtension.swift in Sources */,
 				DE066BC42367183E0029383E /* NSObjectProtocolExtension.swift in Sources */,
+				DE96B8E623BA0194009BA0AF /* ArticleEntity.swift in Sources */,
 				DE86A94323882E6300086622 /* DetailSwitchButtonsView.swift in Sources */,
 				DED6F1DF238D708300A0168E /* UITableViewExtension.swift in Sources */,
 				DE8DBDFC238A1EE500E09AD7 /* SemiModalViewController.swift in Sources */,

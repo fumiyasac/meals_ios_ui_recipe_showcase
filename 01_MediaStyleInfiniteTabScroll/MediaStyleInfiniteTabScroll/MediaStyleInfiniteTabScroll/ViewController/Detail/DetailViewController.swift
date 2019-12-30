@@ -95,10 +95,11 @@ final class DetailViewController: UIViewController {
 
     private func setupTableViewsInDetailScrollView() {
 
-        // MEMO: 変数tableViewsにまとめて取り扱いたいUITableViewを登録する
-        tableViews = [detailInformationTableView, detailCommentTableView]
-
         // MEMO: detailInformationTableView・detailCommentTableViewの初期設定
+        detailInformationTableView.registerCustomCell(DetailInformationTableViewCell.self)
+        detailCommentTableView.registerCustomCell(DetailCommentTableViewCell.self)
+
+        tableViews = [detailInformationTableView, detailCommentTableView]
         let _ = tableViews.map { tableView in
             tableView.delegate = self
             tableView.dataSource = self
@@ -109,7 +110,7 @@ final class DetailViewController: UIViewController {
 
     private func setupSemiModalButton() {
 
-        //
+        // セミモーダル表示用ボタンの初期設定
         semiModalButton.addTarget(self, action:  #selector(self.handleSemiModalButtonTapped(sender:)), for: .touchUpInside)
     }
 }

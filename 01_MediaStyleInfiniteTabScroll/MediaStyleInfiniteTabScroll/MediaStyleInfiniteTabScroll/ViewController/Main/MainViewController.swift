@@ -65,6 +65,7 @@ final class MainViewController: UIViewController {
             let sb = UIStoryboard(name: "List", bundle: nil)
             let vc = sb.instantiateInitialViewController() as! ListViewController
             vc.view.tag = index
+            vc.setArticles(articles: ArticleModel.getArticles())
             targetViewControllerLists.append(vc)
         }
 
