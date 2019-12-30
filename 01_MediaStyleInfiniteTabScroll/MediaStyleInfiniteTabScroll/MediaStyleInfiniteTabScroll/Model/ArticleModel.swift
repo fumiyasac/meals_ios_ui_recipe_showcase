@@ -14,7 +14,7 @@ class ArticleModel {
     // MARK: - Static Function
 
     // 14個分のサンプルデータを作成する
-    static func getArticles() -> [ArticleEntity] {
+    static func getSampleArticles() -> [ArticleEntity] {
 
         let articles: [ArticleEntity] = (1...14).map{
             ArticleEntity(
@@ -22,6 +22,8 @@ class ArticleModel {
                 category: "カテゴリー\($0)", imageFileName: "sample\($0)"
             )
         }
+        // MEMO: 組み立てたデータをすシャッフルする
+        // (参考) https://qiita.com/BMJr/items/913e031f78f44d9675f8
         return articles.shuffled()
     }
 }
