@@ -39,9 +39,11 @@
 		DE96B8E223B92438009BA0AF /* SemiModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E123B92438009BA0AF /* SemiModalPresentationController.swift */; };
 		DE96B8E423B938B4009BA0AF /* SemiModalDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E323B938B4009BA0AF /* SemiModalDismissAnimator.swift */; };
 		DE96B8E623BA0194009BA0AF /* ArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E523BA0194009BA0AF /* ArticleEntity.swift */; };
-		DE96B8E823BA01A3009BA0AF /* ArticleDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E723BA01A3009BA0AF /* ArticleDetailEntity.swift */; };
+		DE96B8E823BA01A3009BA0AF /* ArticleInformationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E723BA01A3009BA0AF /* ArticleInformationEntity.swift */; };
 		DE96B8EA23BA46A3009BA0AF /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8E923BA46A3009BA0AF /* ArticleModel.swift */; };
 		DE96B8ED23BA60D9009BA0AF /* ArticleDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8EC23BA60D9009BA0AF /* ArticleDetailModel.swift */; };
+		DE96B8F123BA84D1009BA0AF /* ArticleCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8F023BA84D1009BA0AF /* ArticleCommentEntity.swift */; };
+		DE96B8F323BA8ED6009BA0AF /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8F223BA8ED6009BA0AF /* UILabelDecorator.swift */; };
 		DEA5B350238B98930047F2DF /* MainScrollTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5B34F238B98930047F2DF /* MainScrollTitleViewController.swift */; };
 		DEAEB7862381F78C007924B2 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */; };
 		DED6F1DF238D708300A0168E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6F1DE238D708300A0168E /* UITableViewExtension.swift */; };
@@ -103,9 +105,11 @@
 		DE96B8E123B92438009BA0AF /* SemiModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalPresentationController.swift; sourceTree = "<group>"; };
 		DE96B8E323B938B4009BA0AF /* SemiModalDismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalDismissAnimator.swift; sourceTree = "<group>"; };
 		DE96B8E523BA0194009BA0AF /* ArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleEntity.swift; sourceTree = "<group>"; };
-		DE96B8E723BA01A3009BA0AF /* ArticleDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailEntity.swift; sourceTree = "<group>"; };
+		DE96B8E723BA01A3009BA0AF /* ArticleInformationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInformationEntity.swift; sourceTree = "<group>"; };
 		DE96B8E923BA46A3009BA0AF /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		DE96B8EC23BA60D9009BA0AF /* ArticleDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailModel.swift; sourceTree = "<group>"; };
+		DE96B8F023BA84D1009BA0AF /* ArticleCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCommentEntity.swift; sourceTree = "<group>"; };
+		DE96B8F223BA8ED6009BA0AF /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
 		DEA5B34F238B98930047F2DF /* MainScrollTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTitleViewController.swift; sourceTree = "<group>"; };
 		DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		DED6F1DE238D708300A0168E /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 		DE066BBA2367160C0029383E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DE96B8F223BA8ED6009BA0AF /* UILabelDecorator.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -231,7 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				DE96B8E523BA0194009BA0AF /* ArticleEntity.swift */,
-				DE96B8E723BA01A3009BA0AF /* ArticleDetailEntity.swift */,
+				DE96B8F023BA84D1009BA0AF /* ArticleCommentEntity.swift */,
+				DE96B8E723BA01A3009BA0AF /* ArticleInformationEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -517,11 +523,12 @@
 				DE96B8EA23BA46A3009BA0AF /* ArticleModel.swift in Sources */,
 				DE066B15236711090029383E /* MainViewController.swift in Sources */,
 				DE066B11236711090029383E /* AppDelegate.swift in Sources */,
-				DE96B8E823BA01A3009BA0AF /* ArticleDetailEntity.swift in Sources */,
+				DE96B8E823BA01A3009BA0AF /* ArticleInformationEntity.swift in Sources */,
 				DE066BCA236719420029383E /* UIViewControllerExtension.swift in Sources */,
 				DE96B8DE23B923EA009BA0AF /* SemiModalTransitionable.swift in Sources */,
 				DE248993236A4C890081751C /* ListCollectionViewCell.swift in Sources */,
 				DE96B8ED23BA60D9009BA0AF /* ArticleDetailModel.swift in Sources */,
+				DE96B8F323BA8ED6009BA0AF /* UILabelDecorator.swift in Sources */,
 				DE8DBDEF238902C600E09AD7 /* DetailInformationTableViewCell.swift in Sources */,
 				DEA5B350238B98930047F2DF /* MainScrollTitleViewController.swift in Sources */,
 				DE96B8E023B923FF009BA0AF /* SemiModalTransitioningInteractor.swift in Sources */,
@@ -532,6 +539,7 @@
 				DE86A94323882E6300086622 /* DetailSwitchButtonsView.swift in Sources */,
 				DED6F1DF238D708300A0168E /* UITableViewExtension.swift in Sources */,
 				DE8DBDFC238A1EE500E09AD7 /* SemiModalViewController.swift in Sources */,
+				DE96B8F123BA84D1009BA0AF /* ArticleCommentEntity.swift in Sources */,
 				DEAEB7862381F78C007924B2 /* DetailHeaderView.swift in Sources */,
 				DE96B8E223B92438009BA0AF /* SemiModalPresentationController.swift in Sources */,
 			);

@@ -21,6 +21,11 @@ final class DetailViewController: UIViewController {
     // DetailSwitchButtonsViewの高さ
     private let tabHeight: CGFloat = 40.0
 
+    // UITableViewで表示する対象のデータ
+    // → 今回はStaticなダミーデータの表示なのでこの形にしている
+    private let detailInformation: [ArticleInformationEntity] = ArticleDetailModel.getSampleInformation()
+    private let detailComments: [ArticleCommentEntity] = ArticleDetailModel.getSampleComments()
+
     // UITableViewで表示するものをひとまとめにするための変数
     private var tableViews: [UITableView] = []
     
@@ -84,7 +89,7 @@ final class DetailViewController: UIViewController {
 
         // MEMO: 画像を表示すると同時にスクロール可能にするためにタッチイベントを無効にする
         detailHeaderView.isUserInteractionEnabled = false
-        detailHeaderView.setHeaderImage(UIImage.init(named: "sample"))
+        detailHeaderView.setHeaderImage(UIImage.init(named: "header"))
     }
 
     private func setupDetailSwitchButtonsView() {
@@ -103,8 +108,9 @@ final class DetailViewController: UIViewController {
         let _ = tableViews.map { tableView in
             tableView.delegate = self
             tableView.dataSource = self
-            tableView.estimatedRowHeight = 100.0
+            tableView.rowHeight = UITableView.automaticDimension
             tableView.contentInset = UIEdgeInsets(top: headerHeight, left: 0, bottom: 72.0, right: 0)
+            tableView.reloadData()
         }
     }
 
@@ -120,25 +126,29 @@ final class DetailViewController: UIViewController {
 extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+
+        if tableView == detailInformationTableView {
+            return detailInformation.count
+        }
+        if tableView == detailCommentTableView {
+            return detailComments.count
+        }
+        return 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        // TODO: 仮の値を当てただけ
-        let random:Int = Int(arc4random() % 9)
-        let text = ["👽","💀","😻","🙀","🤖","🎃","🤟","🐰","🐹"][random]
-        
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = "\(indexPath.row) : " + text
-        
+
         if tableView == detailInformationTableView {
-            cell.contentView.backgroundColor = UIColor(red: 1, green: 0.9, blue: 0.9, alpha: 1)
+            let cell = tableView.dequeueReusableCustomCell(with: DetailInformationTableViewCell.self)
+            cell.setCell(detailInformation[indexPath.row])
+            return cell
         }
         if tableView == detailCommentTableView {
-            cell.contentView.backgroundColor = UIColor(red: 0.9, green: 1, blue: 0.9, alpha: 1)
+            let cell = tableView.dequeueReusableCustomCell(with: DetailCommentTableViewCell.self)
+            cell.setCell(detailComments[indexPath.row])
+            return cell
         }
-        return cell
+        return UITableViewCell()
     }
 }
 
