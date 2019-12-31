@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryPatternCollectionViewCell" customModule="MosaicPhotoGalleryLayouts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="068-Y8-k0V">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                        <color key="backgroundColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nF-gk-39v">
+                        <rect key="frame" x="8" y="182" width="41.5" height="9"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトルが入ります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DQ-op-9t7">
+                        <rect key="frame" x="8" y="199" width="144" height="12"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/01/01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMJ-9k-dCH">
+                        <rect key="frame" x="8" y="219" width="144" height="9"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaJ-fT-Q8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tMJ-9k-dCH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="ALs-I7-cr9"/>
+                <constraint firstItem="2nF-gk-39v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="BDz-GS-6oW"/>
+                <constraint firstAttribute="bottom" secondItem="tMJ-9k-dCH" secondAttribute="bottom" constant="12" id="BSj-nn-1U0"/>
+                <constraint firstAttribute="bottom" secondItem="068-Y8-k0V" secondAttribute="bottom" id="Jzq-ah-yx6"/>
+                <constraint firstAttribute="trailing" secondItem="5DQ-op-9t7" secondAttribute="trailing" constant="8" id="QvR-9c-XpO"/>
+                <constraint firstItem="5DQ-op-9t7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="TP5-rl-QB4"/>
+                <constraint firstItem="tMJ-9k-dCH" firstAttribute="top" secondItem="5DQ-op-9t7" secondAttribute="bottom" constant="8" id="ZZH-8Q-D2N"/>
+                <constraint firstItem="068-Y8-k0V" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eFI-Fv-DwF"/>
+                <constraint firstItem="5DQ-op-9t7" firstAttribute="top" secondItem="2nF-gk-39v" secondAttribute="bottom" constant="8" id="eFo-Bg-dcr"/>
+                <constraint firstAttribute="trailing" secondItem="KaJ-fT-Q8Z" secondAttribute="trailing" id="gPr-M5-ISL"/>
+                <constraint firstAttribute="bottom" secondItem="KaJ-fT-Q8Z" secondAttribute="bottom" id="i6Z-sC-rs4"/>
+                <constraint firstItem="068-Y8-k0V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kna-jF-1Ot"/>
+                <constraint firstItem="KaJ-fT-Q8Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="npZ-hE-u5X"/>
+                <constraint firstAttribute="trailing" secondItem="068-Y8-k0V" secondAttribute="trailing" id="qmM-bQ-saK"/>
+                <constraint firstAttribute="trailing" secondItem="tMJ-9k-dCH" secondAttribute="trailing" constant="8" id="sA5-wD-say"/>
+                <constraint firstItem="KaJ-fT-Q8Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xiG-t1-hXd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="categoryLabel" destination="2nF-gk-39v" id="n7Z-BA-kqs"/>
+                <outlet property="cellButton" destination="KaJ-fT-Q8Z" id="UFN-D1-Uce"/>
+                <outlet property="dateLabel" destination="tMJ-9k-dCH" id="Pvx-6F-Ywl"/>
+                <outlet property="thumbnailImageView" destination="068-Y8-k0V" id="sXK-DK-ObL"/>
+                <outlet property="titleLabel" destination="5DQ-op-9t7" id="KC2-DZ-8yl"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
