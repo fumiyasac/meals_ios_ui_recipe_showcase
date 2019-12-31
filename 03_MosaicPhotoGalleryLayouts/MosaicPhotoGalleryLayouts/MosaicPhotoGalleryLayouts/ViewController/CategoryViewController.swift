@@ -1,14 +1,14 @@
 //
-//  MainViewController.swift
+//  CategoryViewController.swift
 //  MosaicPhotoGalleryLayouts
 //
-//  Created by 酒井文也 on 2019/10/28.
+//  Created by 酒井文也 on 2019/12/31.
 //  Copyright © 2019 酒井文也. All rights reserved.
 //
 
 import UIKit
 
-final class MainViewController: UIViewController {
+final class CategoryViewController: UIViewController {
 
     // MARK: - Override
 

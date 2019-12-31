@@ -17,4 +17,5 @@ target 'MosaicPhotoGalleryLayouts' do
   pod 'PanModal'
   pod 'PTCardTabBar'
   pod 'Nuke'
+  pod 'TagListView', '~> 1.0'
 end

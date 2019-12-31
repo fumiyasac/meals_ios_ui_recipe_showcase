@@ -16,6 +16,18 @@
 		DE066B95236712120029383E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE066B93236712120029383E /* LaunchScreen.storyboard */; };
 		DE066BA0236712120029383E /* MosaicPhotoGalleryLayoutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066B9F236712120029383E /* MosaicPhotoGalleryLayoutsTests.swift */; };
 		DE066BAB236712120029383E /* MosaicPhotoGalleryLayoutsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE066BAA236712120029383E /* MosaicPhotoGalleryLayoutsUITests.swift */; };
+		DEE5E0AC23BB36ED00CA3E9B /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0AB23BB36ED00CA3E9B /* CustomViewBase.swift */; };
+		DEE5E0AE23BB375800CA3E9B /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0AD23BB375800CA3E9B /* NSObjectProtocolExtension.swift */; };
+		DEE5E0B023BB37B200CA3E9B /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0AF23BB37B200CA3E9B /* StoryboardInstantiatable.swift */; };
+		DEE5E0B223BB37CD00CA3E9B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0B123BB37CD00CA3E9B /* UIColorExtension.swift */; };
+		DEE5E0B423BB39E200CA3E9B /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0B323BB39E200CA3E9B /* UICollectionViewExtension.swift */; };
+		DEE5E0B623BB39FC00CA3E9B /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0B523BB39FC00CA3E9B /* UITableViewExtension.swift */; };
+		DEE5E0B923BB3A5100CA3E9B /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E0B723BB3A5100CA3E9B /* Category.storyboard */; };
+		DEE5E0BB23BB3A9B00CA3E9B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0BA23BB3A9B00CA3E9B /* CategoryViewController.swift */; };
+		DEE5E0BE23BB3B5900CA3E9B /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E0BC23BB3B5900CA3E9B /* Detail.storyboard */; };
+		DEE5E0C023BB3BA700CA3E9B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0BF23BB3BA700CA3E9B /* DetailViewController.swift */; };
+		DEE5E0C223BB3C8600CA3E9B /* MosaicCollectionViewLayoutPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0C123BB3C8600CA3E9B /* MosaicCollectionViewLayoutPattern.swift */; };
+		DEE5E0C523BB3D7C00CA3E9B /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0C423BB3D7C00CA3E9B /* UILabelDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +65,18 @@
 		DE066BA6236712120029383E /* MosaicPhotoGalleryLayoutsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosaicPhotoGalleryLayoutsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE066BAA236712120029383E /* MosaicPhotoGalleryLayoutsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicPhotoGalleryLayoutsUITests.swift; sourceTree = "<group>"; };
 		DE066BAC236712120029383E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE5E0AB23BB36ED00CA3E9B /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
+		DEE5E0AD23BB375800CA3E9B /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
+		DEE5E0AF23BB37B200CA3E9B /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		DEE5E0B123BB37CD00CA3E9B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DEE5E0B323BB39E200CA3E9B /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		DEE5E0B523BB39FC00CA3E9B /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		DEE5E0B823BB3A5100CA3E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Category.storyboard; sourceTree = "<group>"; };
+		DEE5E0BA23BB3A9B00CA3E9B /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		DEE5E0BD23BB3B5900CA3E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
+		DEE5E0BF23BB3BA700CA3E9B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DEE5E0C123BB3C8600CA3E9B /* MosaicCollectionViewLayoutPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicCollectionViewLayoutPattern.swift; sourceTree = "<group>"; };
+		DEE5E0C423BB3D7C00CA3E9B /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +152,10 @@
 				DE066B8A236712110029383E /* SceneDelegate.swift */,
 				DE066B91236712120029383E /* Assets.xcassets */,
 				DEE5E0A423BAEBA900CA3E9B /* Entity */,
+				DEE5E0AA23BB34C100CA3E9B /* Enum */,
 				DEE5E0A823BAED9D00CA3E9B /* Extension */,
 				DEE5E0A523BAEBB300CA3E9B /* Model */,
+				DEE5E0C323BB3D5400CA3E9B /* Modules */,
 				DEE5E0A923BAEE4C00CA3E9B /* Storyboard */,
 				DEE5E0A723BAEC0400CA3E9B /* View */,
 				DEE5E0A623BAEBFA00CA3E9B /* ViewController */,
@@ -155,6 +181,20 @@
 			path = MosaicPhotoGalleryLayoutsUITests;
 			sourceTree = "<group>";
 		};
+		DE3345A323BB415A0017E173 /* CategoryPatternCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CategoryPatternCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		DE3345A423BB41830017E173 /* DetailEffectiveHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailEffectiveHeaderView;
+			sourceTree = "<group>";
+		};
 		DEE5E0A423BAEBA900CA3E9B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				DE066B8C236712110029383E /* MainViewController.swift */,
+				DEE5E0BA23BB3A9B00CA3E9B /* CategoryViewController.swift */,
+				DEE5E0BF23BB3BA700CA3E9B /* DetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -180,6 +222,11 @@
 		DEE5E0A723BAEC0400CA3E9B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DEE5E0AB23BB36ED00CA3E9B /* CustomViewBase.swift */,
+				DEE5E0C623BB3F3600CA3E9B /* ArticleNavigationTitleView */,
+				DE3345A323BB415A0017E173 /* CategoryPatternCollectionViewCell */,
+				DEE5E0C723BB412700CA3E9B /* ContainerCollectionViewCell */,
+				DE3345A423BB41830017E173 /* DetailEffectiveHeaderView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +234,11 @@
 		DEE5E0A823BAED9D00CA3E9B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DEE5E0AD23BB375800CA3E9B /* NSObjectProtocolExtension.swift */,
+				DEE5E0AF23BB37B200CA3E9B /* StoryboardInstantiatable.swift */,
+				DEE5E0B323BB39E200CA3E9B /* UICollectionViewExtension.swift */,
+				DEE5E0B123BB37CD00CA3E9B /* UIColorExtension.swift */,
+				DEE5E0B523BB39FC00CA3E9B /* UITableViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -196,8 +248,40 @@
 			children = (
 				DE066B93236712120029383E /* LaunchScreen.storyboard */,
 				DE066B8E236712110029383E /* Main.storyboard */,
+				DEE5E0B723BB3A5100CA3E9B /* Category.storyboard */,
+				DEE5E0BC23BB3B5900CA3E9B /* Detail.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DEE5E0AA23BB34C100CA3E9B /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				DEE5E0C123BB3C8600CA3E9B /* MosaicCollectionViewLayoutPattern.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		DEE5E0C323BB3D5400CA3E9B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DEE5E0C423BB3D7C00CA3E9B /* UILabelDecorator.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DEE5E0C623BB3F3600CA3E9B /* ArticleNavigationTitleView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ArticleNavigationTitleView;
+			sourceTree = "<group>";
+		};
+		DEE5E0C723BB412700CA3E9B /* ContainerCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContainerCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +390,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE5E0B923BB3A5100CA3E9B /* Category.storyboard in Resources */,
 				DE066B95236712120029383E /* LaunchScreen.storyboard in Resources */,
 				DE066B92236712120029383E /* Assets.xcassets in Resources */,
+				DEE5E0BE23BB3B5900CA3E9B /* Detail.storyboard in Resources */,
 				DE066B90236712110029383E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,9 +461,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE5E0C023BB3BA700CA3E9B /* DetailViewController.swift in Sources */,
+				DEE5E0BB23BB3A9B00CA3E9B /* CategoryViewController.swift in Sources */,
+				DEE5E0AC23BB36ED00CA3E9B /* CustomViewBase.swift in Sources */,
+				DEE5E0B223BB37CD00CA3E9B /* UIColorExtension.swift in Sources */,
 				DE066B8D236712110029383E /* MainViewController.swift in Sources */,
 				DE066B89236712110029383E /* AppDelegate.swift in Sources */,
+				DEE5E0B423BB39E200CA3E9B /* UICollectionViewExtension.swift in Sources */,
+				DEE5E0B023BB37B200CA3E9B /* StoryboardInstantiatable.swift in Sources */,
+				DEE5E0B623BB39FC00CA3E9B /* UITableViewExtension.swift in Sources */,
+				DEE5E0C223BB3C8600CA3E9B /* MosaicCollectionViewLayoutPattern.swift in Sources */,
 				DE066B8B236712110029383E /* SceneDelegate.swift in Sources */,
+				DEE5E0C523BB3D7C00CA3E9B /* UILabelDecorator.swift in Sources */,
+				DEE5E0AE23BB375800CA3E9B /* NSObjectProtocolExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +523,22 @@
 				DE066B94236712120029383E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DEE5E0B723BB3A5100CA3E9B /* Category.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE5E0B823BB3A5100CA3E9B /* Base */,
+			);
+			name = Category.storyboard;
+			sourceTree = "<group>";
+		};
+		DEE5E0BC23BB3B5900CA3E9B /* Detail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE5E0BD23BB3B5900CA3E9B /* Base */,
+			);
+			name = Detail.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

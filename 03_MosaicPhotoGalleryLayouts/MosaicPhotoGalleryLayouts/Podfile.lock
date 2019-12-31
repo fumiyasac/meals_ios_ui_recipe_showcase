@@ -12,6 +12,7 @@ PODS:
   - Parchment (1.7.0)
   - PTCardTabBar (1.0.1)
   - SWXMLHash (5.0.1)
+  - TagListView (1.4.0)
 
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
@@ -23,6 +24,7 @@ DEPENDENCIES:
   - PanModal
   - Parchment
   - PTCardTabBar
+  - TagListView (~> 1.0)
 
 SPEC REPOS:
   trunk:
@@ -37,6 +39,7 @@ SPEC REPOS:
     - Parchment
     - PTCardTabBar
     - SWXMLHash
+    - TagListView
 
 SPEC CHECKSUMS:
   AnimatedCollectionViewLayout: 00f0997fd26f0fd02d8b99765023b95570b5d826
@@ -50,7 +53,8 @@ SPEC CHECKSUMS:
   Parchment: cae686f73685d16742cec9c19239b7578a15f0f5
   PTCardTabBar: 9112a6d4eb2b73da9cf4e7f3aefe04504479cf98
   SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
+  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
 
-PODFILE CHECKSUM: e0409caf852077da6b2e02a77c8ad3259d8d355c
+PODFILE CHECKSUM: f56ffa5c831fba233b61a3c17ffc84b74a25f8ad
 
 COCOAPODS: 1.8.4
