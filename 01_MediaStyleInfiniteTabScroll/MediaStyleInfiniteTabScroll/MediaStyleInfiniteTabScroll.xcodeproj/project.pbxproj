@@ -172,11 +172,9 @@
 				DE066B12236711090029383E /* SceneDelegate.swift */,
 				DE066B192367110C0029383E /* Assets.xcassets */,
 				DE066BBC2367161C0029383E /* Entity */,
-				DE066BB9236714E00029383E /* Enum */,
 				DE066BB8236714D40029383E /* Extension */,
 				DE066BC0236716530029383E /* Model */,
 				DE066BBA2367160C0029383E /* Modules */,
-				DE066BBB236716150029383E /* Presenter */,
 				DE066BBD2367162E0029383E /* Storyboard */,
 				DE066BBE236716350029383E /* View */,
 				DE066BBF236716440029383E /* ViewController */,
@@ -214,26 +212,12 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		DE066BB9236714E00029383E /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enum;
-			sourceTree = "<group>";
-		};
 		DE066BBA2367160C0029383E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				DE96B8F223BA8ED6009BA0AF /* UILabelDecorator.swift */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		DE066BBB236716150029383E /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		DE066BBC2367161C0029383E /* Entity */ = {
