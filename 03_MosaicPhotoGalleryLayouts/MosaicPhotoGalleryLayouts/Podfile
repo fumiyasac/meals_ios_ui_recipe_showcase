@@ -15,4 +15,6 @@ target 'MosaicPhotoGalleryLayouts' do
   pod 'Parchment'
   pod 'Nantes'
   pod 'PanModal'
+  pod 'PTCardTabBar'
+  pod 'Nuke'
 end

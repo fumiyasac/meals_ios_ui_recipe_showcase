@@ -7,8 +7,10 @@ PODS:
   - Macaw (0.9.5):
     - SWXMLHash
   - Nantes (0.0.9)
+  - Nuke (8.3.1)
   - PanModal (1.2.5)
   - Parchment (1.7.0)
+  - PTCardTabBar (1.0.1)
   - SWXMLHash (5.0.1)
 
 DEPENDENCIES:
@@ -17,8 +19,10 @@ DEPENDENCIES:
   - Blueprints
   - FanMenu
   - Nantes
+  - Nuke
   - PanModal
   - Parchment
+  - PTCardTabBar
 
 SPEC REPOS:
   trunk:
@@ -28,8 +32,10 @@ SPEC REPOS:
     - FanMenu
     - Macaw
     - Nantes
+    - Nuke
     - PanModal
     - Parchment
+    - PTCardTabBar
     - SWXMLHash
 
 SPEC CHECKSUMS:
@@ -39,10 +45,12 @@ SPEC CHECKSUMS:
   FanMenu: 773836538a63cddcbf0c5bf320727bb47669f7fd
   Macaw: 10bf9e327cb75f24e3225d5229a80ed544df85f0
   Nantes: c1b4eec0748c01f4c6b83e16a11e52ab2007cd4d
+  Nuke: 85fb80f8df0cb26c28d2f4e0cb7fb93bcd6548d3
   PanModal: 7c5af3ad4fe22b91508040965bebffb89fb607ae
   Parchment: cae686f73685d16742cec9c19239b7578a15f0f5
+  PTCardTabBar: 9112a6d4eb2b73da9cf4e7f3aefe04504479cf98
   SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
 
-PODFILE CHECKSUM: 9f58c63bcfac18f01acb1fa09eef8a90191961f1
+PODFILE CHECKSUM: e0409caf852077da6b2e02a77c8ad3259d8d355c
 
 COCOAPODS: 1.8.4
