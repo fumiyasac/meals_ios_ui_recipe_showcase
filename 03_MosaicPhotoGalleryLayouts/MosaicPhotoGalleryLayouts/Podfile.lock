@@ -1,0 +1,48 @@
+PODS:
+  - AnimatedCollectionViewLayout (1.0.1)
+  - BetterSegmentedControl (1.3.0)
+  - Blueprints (0.13.1)
+  - FanMenu (0.7.4):
+    - Macaw
+  - Macaw (0.9.5):
+    - SWXMLHash
+  - Nantes (0.0.9)
+  - PanModal (1.2.5)
+  - Parchment (1.7.0)
+  - SWXMLHash (5.0.1)
+
+DEPENDENCIES:
+  - AnimatedCollectionViewLayout
+  - BetterSegmentedControl (~> 1.3)
+  - Blueprints
+  - FanMenu
+  - Nantes
+  - PanModal
+  - Parchment
+
+SPEC REPOS:
+  trunk:
+    - AnimatedCollectionViewLayout
+    - BetterSegmentedControl
+    - Blueprints
+    - FanMenu
+    - Macaw
+    - Nantes
+    - PanModal
+    - Parchment
+    - SWXMLHash
+
+SPEC CHECKSUMS:
+  AnimatedCollectionViewLayout: 00f0997fd26f0fd02d8b99765023b95570b5d826
+  BetterSegmentedControl: 85d1b0343a09603b098884d527f550dfc8e6cdd9
+  Blueprints: ddd6ab1e455c98471aaef2fdd0b09b5f9b53af5b
+  FanMenu: 773836538a63cddcbf0c5bf320727bb47669f7fd
+  Macaw: 10bf9e327cb75f24e3225d5229a80ed544df85f0
+  Nantes: c1b4eec0748c01f4c6b83e16a11e52ab2007cd4d
+  PanModal: 7c5af3ad4fe22b91508040965bebffb89fb607ae
+  Parchment: cae686f73685d16742cec9c19239b7578a15f0f5
+  SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
+
+PODFILE CHECKSUM: 9f58c63bcfac18f01acb1fa09eef8a90191961f1
+
+COCOAPODS: 1.8.4

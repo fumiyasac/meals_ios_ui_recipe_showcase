@@ -7,4 +7,12 @@ target 'MosaicPhotoGalleryLayouts' do
 
   # Pods for MosaicPhotoGalleryLayouts
   
+  # UI表現の際に利用するライブラリ
+  pod 'AnimatedCollectionViewLayout'
+  pod 'Blueprints'
+  pod 'FanMenu'
+  pod 'BetterSegmentedControl', '~> 1.3'
+  pod 'Parchment'
+  pod 'Nantes'
+  pod 'PanModal'
 end
