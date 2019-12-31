@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="320" width="375" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="感謝の言葉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1A-at-oDt">
-                                        <rect key="frame" x="154.5" y="11.5" width="66" height="13"/>
+                                        <rect key="frame" x="155" y="11.5" width="65.5" height="13"/>
                                         <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -41,7 +41,24 @@
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pk7-Tc-Lo5">
                                 <rect key="frame" x="0.0" y="356" width="375" height="311"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9Q-oj-G2w" customClass="SemiModalContentsView" customModule="MediaStyleInfiniteTabScroll" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="128" id="o7b-KB-sA8"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="red-x6-q82"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="z9Q-oj-G2w" firstAttribute="top" secondItem="Pk7-Tc-Lo5" secondAttribute="top" id="5Q3-V1-UvF"/>
+                                    <constraint firstItem="z9Q-oj-G2w" firstAttribute="width" secondItem="Pk7-Tc-Lo5" secondAttribute="width" id="DoY-e1-6gE"/>
+                                    <constraint firstAttribute="trailing" secondItem="z9Q-oj-G2w" secondAttribute="trailing" id="gqB-MK-0rc"/>
+                                    <constraint firstItem="z9Q-oj-G2w" firstAttribute="leading" secondItem="Pk7-Tc-Lo5" secondAttribute="leading" id="mKE-gB-6cm"/>
+                                    <constraint firstAttribute="bottom" secondItem="z9Q-oj-G2w" secondAttribute="bottom" id="oYT-36-UGx"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

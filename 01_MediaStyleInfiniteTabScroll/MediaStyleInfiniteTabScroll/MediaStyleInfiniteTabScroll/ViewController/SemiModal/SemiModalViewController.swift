@@ -74,6 +74,7 @@ final class SemiModalViewController: UIViewController, SemiModalTransitionable {
  
         // MEMO: UIScrollViewが一番上まで到達していた場合にはセミモーダルビューのInteractorを実行する
         if scrollViewContentOffsetY <= 0.0 {
+            semiModalScrollView.contentOffset.y = 0.0
             interactor.changeSemiModalStateFromNoneToShouldStartIfNeeded()
         }
 

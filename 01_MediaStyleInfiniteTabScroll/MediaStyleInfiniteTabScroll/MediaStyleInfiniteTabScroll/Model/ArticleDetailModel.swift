@@ -28,14 +28,18 @@ class ArticleDetailModel {
             title: "補足情報",
             summary: "今回紹介した方法の他にも、プロフィール画面の構成自体をUIScrollViewではなく単一のUITableViewやUICollectionViewのHeader部分を利用して実装する方法も考えられるかと思いますが、この場合Header部分の画像に対してパララックスを実装する等の表現は実現できますが、2つのコンテンツを並べて表示するような構造を実現する場合は難しくなってしまいます。実現したい画面の構造や表示データの取得タイミング等の条件を確認した上で、要件に沿った実装方針を採用すると良い選択ができるのではないかと思います。"
         )
+        let column = ArticleInformationEntity(
+            title: "コラム",
+            summary: "以前にメディア系のアプリ開発をしていた経緯もあってか、このようなUI実装や表現を考察したり実装方法を紐解いていく作業や試行錯誤をする時間は私にとっては結構楽しい時間でもあります。この経験が元になって、様々なiOSアプリにおける気になった表現や綺麗なアニメーションやインタラクションに関する実装方針の考察やサンプルアプリの開発、ひいてはUI実装に関するTIPS集の執筆など今日における活動の礎となっています。流石に「仕事＝趣味」という感じでは決してありませんが、このような活動をずっと継続していくと同時に、実務の中でも生かしていけるような引き出しをこれからも増やし続けていきたいと感じています。"
+        )
         // MEMO: こちらはテスト用に同じ値を繰り返して入れています
-        return [introduction, point, appendix, introduction, point, appendix]
+        return [introduction, point, appendix, column]
     }
 
     // 20個分のサンプルデータを作成する
     static func getSampleComments() -> [ArticleCommentEntity] {
 
-        let articles: [ArticleCommentEntity] = (1...20).map{
+        let articles: [ArticleCommentEntity] = (1...10).map{
             ArticleCommentEntity(
                 username: "ユーザーNo.\($0)",
                 message: "こちらはサンプルのコメントになります。\nコメントの詳細な内容に関してですが、あくまで表示サンプル用に作成したダミーのデタラメな文章になりますが、その点ご了承ください。",

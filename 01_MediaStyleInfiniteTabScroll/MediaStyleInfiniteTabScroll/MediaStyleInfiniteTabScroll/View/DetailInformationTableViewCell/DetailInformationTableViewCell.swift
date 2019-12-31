@@ -30,7 +30,7 @@ final class DetailInformationTableViewCell: UITableViewCell {
         // MEMO: 概要部分表示用ラベルについてはテキスト属性による装飾を適用して表示する
         let summaryKeys = (
             lineSpacing: CGFloat(8),
-            font: UIFont(name: "HiraKakuProN-W3", size: 11.0)!,
+            font: UIFont(name: "HiraKakuProN-W3", size: 14.0)!,
             foregroundColor: UIColor(code: "#999999")
         )
         let summaryAttributes = UILabelDecorator.getLabelAttributesBy(keys: summaryKeys)

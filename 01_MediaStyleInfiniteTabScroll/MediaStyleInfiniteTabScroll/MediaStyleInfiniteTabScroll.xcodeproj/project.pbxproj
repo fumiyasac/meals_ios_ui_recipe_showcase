@@ -44,6 +44,8 @@
 		DE96B8ED23BA60D9009BA0AF /* ArticleDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8EC23BA60D9009BA0AF /* ArticleDetailModel.swift */; };
 		DE96B8F123BA84D1009BA0AF /* ArticleCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8F023BA84D1009BA0AF /* ArticleCommentEntity.swift */; };
 		DE96B8F323BA8ED6009BA0AF /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8F223BA8ED6009BA0AF /* UILabelDecorator.swift */; };
+		DE96B8F523BAA8BE009BA0AF /* SemiModalContentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE96B8F423BAA8BE009BA0AF /* SemiModalContentsView.xib */; };
+		DE96B8F723BAA8CF009BA0AF /* SemiModalContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96B8F623BAA8CF009BA0AF /* SemiModalContentsView.swift */; };
 		DEA5B350238B98930047F2DF /* MainScrollTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5B34F238B98930047F2DF /* MainScrollTitleViewController.swift */; };
 		DEAEB7862381F78C007924B2 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */; };
 		DED6F1DF238D708300A0168E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6F1DE238D708300A0168E /* UITableViewExtension.swift */; };
@@ -110,6 +112,8 @@
 		DE96B8EC23BA60D9009BA0AF /* ArticleDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailModel.swift; sourceTree = "<group>"; };
 		DE96B8F023BA84D1009BA0AF /* ArticleCommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCommentEntity.swift; sourceTree = "<group>"; };
 		DE96B8F223BA8ED6009BA0AF /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
+		DE96B8F423BAA8BE009BA0AF /* SemiModalContentsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SemiModalContentsView.xib; sourceTree = "<group>"; };
+		DE96B8F623BAA8CF009BA0AF /* SemiModalContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalContentsView.swift; sourceTree = "<group>"; };
 		DEA5B34F238B98930047F2DF /* MainScrollTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollTitleViewController.swift; sourceTree = "<group>"; };
 		DEAEB7852381F78C007924B2 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		DED6F1DE238D708300A0168E /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
@@ -372,6 +376,8 @@
 		DE96B8EB23BA60A2009BA0AF /* SemiModalContentsView */ = {
 			isa = PBXGroup;
 			children = (
+				DE96B8F623BAA8CF009BA0AF /* SemiModalContentsView.swift */,
+				DE96B8F423BAA8BE009BA0AF /* SemiModalContentsView.xib */,
 			);
 			path = SemiModalContentsView;
 			sourceTree = "<group>";
@@ -484,6 +490,7 @@
 				DE8DBDF0238902C600E09AD7 /* DetailInformationTableViewCell.xib in Resources */,
 				DE248994236A4C890081751C /* ListCollectionViewCell.xib in Resources */,
 				DE86A94123882E5600086622 /* DetailSwitchButtonsView.xib in Resources */,
+				DE96B8F523BAA8BE009BA0AF /* SemiModalContentsView.xib in Resources */,
 				DE8DBDF5238902F900E09AD7 /* DetailCommentTableViewCell.xib in Resources */,
 				DE066B1A2367110C0029383E /* Assets.xcassets in Resources */,
 				DE066B18236711090029383E /* Main.storyboard in Resources */,
@@ -535,6 +542,7 @@
 				DE066B13236711090029383E /* SceneDelegate.swift in Sources */,
 				DE066BC6236718740029383E /* UICollectionViewExtension.swift in Sources */,
 				DE066BC42367183E0029383E /* NSObjectProtocolExtension.swift in Sources */,
+				DE96B8F723BAA8CF009BA0AF /* SemiModalContentsView.swift in Sources */,
 				DE96B8E623BA0194009BA0AF /* ArticleEntity.swift in Sources */,
 				DE86A94323882E6300086622 /* DetailSwitchButtonsView.swift in Sources */,
 				DED6F1DF238D708300A0168E /* UITableViewExtension.swift in Sources */,

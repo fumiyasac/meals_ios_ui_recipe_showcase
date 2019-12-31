@@ -28,8 +28,8 @@ final class DetailCommentTableViewCell: UITableViewCell {
 
         // MEMO: コメント部分表示用ラベルについてはテキスト属性による装飾を適用して表示する
         let messageKeys = (
-            lineSpacing: CGFloat(6),
-            font: UIFont(name: "HiraKakuProN-W3", size: 11.0)!,
+            lineSpacing: CGFloat(8),
+            font: UIFont(name: "HiraKakuProN-W3", size: 14.0)!,
             foregroundColor: UIColor(code: "#999999")
         )
         let messageAttributes = UILabelDecorator.getLabelAttributesBy(keys: messageKeys)
