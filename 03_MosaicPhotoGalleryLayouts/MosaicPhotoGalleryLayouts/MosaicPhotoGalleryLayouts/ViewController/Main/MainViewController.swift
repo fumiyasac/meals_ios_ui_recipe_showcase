@@ -28,7 +28,7 @@ final class MainViewController: UIViewController {
 
     // MARK: - Typealias
 
-    typealias DisplayViewControllerSet = (title: String, viewController: CategoryViewController)
+    typealias DisplayViewControllerSet = (title: String, viewController: MainCategoryViewController)
 
     // MARK: - Override
 
@@ -45,13 +45,13 @@ final class MainViewController: UIViewController {
 
         // UICollectionViewCell内に表示するUIViewControllerの設定
         displayViewControllerSet = [
-            CategoryViewController.make(with:
+            MainCategoryViewController.make(with:
                 (title: "出会った風景と食べ物集(1)", layoutPattern: MosaicCollectionViewLayoutPattern.first.getLayoutPattern())
             ),
-            CategoryViewController.make(with:
+            MainCategoryViewController.make(with:
                 (title: "出会った風景と食べ物集(2)", layoutPattern: MosaicCollectionViewLayoutPattern.second.getLayoutPattern())
             ),
-            CategoryViewController.make(with:
+            MainCategoryViewController.make(with:
                 (title: "出会った風景と食べ物集(3)", layoutPattern: MosaicCollectionViewLayoutPattern.third.getLayoutPattern())
             )
         ]

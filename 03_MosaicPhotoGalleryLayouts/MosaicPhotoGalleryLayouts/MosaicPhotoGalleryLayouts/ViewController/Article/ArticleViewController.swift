@@ -15,4 +15,6 @@ final class ArticleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
+    // MARK: - Private Function
 }

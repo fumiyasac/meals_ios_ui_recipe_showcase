@@ -34,8 +34,8 @@
 		DEE5E0B223BB37CD00CA3E9B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0B123BB37CD00CA3E9B /* UIColorExtension.swift */; };
 		DEE5E0B423BB39E200CA3E9B /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0B323BB39E200CA3E9B /* UICollectionViewExtension.swift */; };
 		DEE5E0B623BB39FC00CA3E9B /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0B523BB39FC00CA3E9B /* UITableViewExtension.swift */; };
-		DEE5E0B923BB3A5100CA3E9B /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E0B723BB3A5100CA3E9B /* Category.storyboard */; };
-		DEE5E0BB23BB3A9B00CA3E9B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0BA23BB3A9B00CA3E9B /* CategoryViewController.swift */; };
+		DEE5E0B923BB3A5100CA3E9B /* MainCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E0B723BB3A5100CA3E9B /* MainCategory.storyboard */; };
+		DEE5E0BB23BB3A9B00CA3E9B /* MainCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0BA23BB3A9B00CA3E9B /* MainCategoryViewController.swift */; };
 		DEE5E0BE23BB3B5900CA3E9B /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E0BC23BB3B5900CA3E9B /* Detail.storyboard */; };
 		DEE5E0C023BB3BA700CA3E9B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0BF23BB3BA700CA3E9B /* DetailViewController.swift */; };
 		DEE5E0C223BB3C8600CA3E9B /* MosaicCollectionViewLayoutPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0C123BB3C8600CA3E9B /* MosaicCollectionViewLayoutPattern.swift */; };
@@ -95,8 +95,8 @@
 		DEE5E0B123BB37CD00CA3E9B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DEE5E0B323BB39E200CA3E9B /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		DEE5E0B523BB39FC00CA3E9B /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
-		DEE5E0B823BB3A5100CA3E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Category.storyboard; sourceTree = "<group>"; };
-		DEE5E0BA23BB3A9B00CA3E9B /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		DEE5E0B823BB3A5100CA3E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainCategory.storyboard; sourceTree = "<group>"; };
+		DEE5E0BA23BB3A9B00CA3E9B /* MainCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategoryViewController.swift; sourceTree = "<group>"; };
 		DEE5E0BD23BB3B5900CA3E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		DEE5E0BF23BB3BA700CA3E9B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DEE5E0C123BB3C8600CA3E9B /* MosaicCollectionViewLayoutPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicCollectionViewLayoutPattern.swift; sourceTree = "<group>"; };
@@ -223,6 +223,65 @@
 			path = DetailEffectiveHeaderView;
 			sourceTree = "<group>";
 		};
+		DE8E308723BD608100BD6AB8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DE066B8C236712110029383E /* MainViewController.swift */,
+				DEE5E0BA23BB3A9B00CA3E9B /* MainCategoryViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DE8E308823BD609000BD6AB8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DEE5E0BF23BB3BA700CA3E9B /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DE8E308923BD60A000BD6AB8 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E308523BC1DBD00BD6AB8 /* ArticleViewController.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		DE8E308A23BD60D100BD6AB8 /* GlobalTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E307E23BC1D6200BD6AB8 /* GlobalTabBar.storyboard */,
+				DE066B93236712120029383E /* LaunchScreen.storyboard */,
+			);
+			path = GlobalTabBar;
+			sourceTree = "<group>";
+		};
+		DE8E308B23BD60F000BD6AB8 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E308223BC1DA400BD6AB8 /* Article.storyboard */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		DE8E308C23BD60FE00BD6AB8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DE066B8E236712110029383E /* Main.storyboard */,
+				DEE5E0B723BB3A5100CA3E9B /* MainCategory.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DE8E308D23BD610800BD6AB8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DEE5E0BC23BB3B5900CA3E9B /* Detail.storyboard */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		DEE5E0A423BAEBA900CA3E9B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,10 +299,9 @@
 		DEE5E0A623BAEBFA00CA3E9B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DE8E308523BC1DBD00BD6AB8 /* ArticleViewController.swift */,
-				DEE5E0BA23BB3A9B00CA3E9B /* CategoryViewController.swift */,
-				DEE5E0BF23BB3BA700CA3E9B /* DetailViewController.swift */,
-				DE066B8C236712110029383E /* MainViewController.swift */,
+				DE8E308923BD60A000BD6AB8 /* Article */,
+				DE8E308823BD609000BD6AB8 /* Detail */,
+				DE8E308723BD608100BD6AB8 /* Main */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -276,12 +334,10 @@
 		DEE5E0A923BAEE4C00CA3E9B /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				DE8E308223BC1DA400BD6AB8 /* Article.storyboard */,
-				DEE5E0B723BB3A5100CA3E9B /* Category.storyboard */,
-				DEE5E0BC23BB3B5900CA3E9B /* Detail.storyboard */,
-				DE8E307E23BC1D6200BD6AB8 /* GlobalTabBar.storyboard */,
-				DE066B93236712120029383E /* LaunchScreen.storyboard */,
-				DE066B8E236712110029383E /* Main.storyboard */,
+				DE8E308B23BD60F000BD6AB8 /* Article */,
+				DE8E308D23BD610800BD6AB8 /* Detail */,
+				DE8E308A23BD60D100BD6AB8 /* GlobalTabBar */,
+				DE8E308C23BD60FE00BD6AB8 /* Main */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -430,7 +486,7 @@
 				DE8E308023BC1D6200BD6AB8 /* GlobalTabBar.storyboard in Resources */,
 				DE39542523BBBBB2007D4C71 /* CategoryPatternCollectionViewCell.xib in Resources */,
 				DE39542923BBCF0C007D4C71 /* DetailEffectiveHeaderView.xib in Resources */,
-				DEE5E0B923BB3A5100CA3E9B /* Category.storyboard in Resources */,
+				DEE5E0B923BB3A5100CA3E9B /* MainCategory.storyboard in Resources */,
 				DE066B95236712120029383E /* LaunchScreen.storyboard in Resources */,
 				DE3345A623BBB8230017E173 /* MainNavigationTitleView.xib in Resources */,
 				DE066B92236712120029383E /* Assets.xcassets in Resources */,
@@ -505,7 +561,7 @@
 			files = (
 				DEE5E0C023BB3BA700CA3E9B /* DetailViewController.swift in Sources */,
 				DE39542023BBBB95007D4C71 /* ContainerCollectionViewCell.swift in Sources */,
-				DEE5E0BB23BB3A9B00CA3E9B /* CategoryViewController.swift in Sources */,
+				DEE5E0BB23BB3A9B00CA3E9B /* MainCategoryViewController.swift in Sources */,
 				DEE5E0AC23BB36ED00CA3E9B /* CustomViewBase.swift in Sources */,
 				DEE5E0B223BB37CD00CA3E9B /* UIColorExtension.swift in Sources */,
 				DE39542423BBBBB2007D4C71 /* CategoryPatternCollectionViewCell.swift in Sources */,
@@ -589,12 +645,12 @@
 			name = Article.storyboard;
 			sourceTree = "<group>";
 		};
-		DEE5E0B723BB3A5100CA3E9B /* Category.storyboard */ = {
+		DEE5E0B723BB3A5100CA3E9B /* MainCategory.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DEE5E0B823BB3A5100CA3E9B /* Base */,
 			);
-			name = Category.storyboard;
+			name = MainCategory.storyboard;
 			sourceTree = "<group>";
 		};
 		DEE5E0BC23BB3B5900CA3E9B /* Detail.storyboard */ = {

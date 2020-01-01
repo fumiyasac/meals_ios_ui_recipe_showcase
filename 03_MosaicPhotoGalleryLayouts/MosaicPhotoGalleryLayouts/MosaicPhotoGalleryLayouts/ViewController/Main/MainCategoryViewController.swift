@@ -1,5 +1,5 @@
 //
-//  CategoryViewController.swift
+//  MainCategoryViewController.swift
 //  MosaicPhotoGalleryLayouts
 //
 //  Created by 酒井文也 on 2019/12/31.
@@ -9,7 +9,7 @@
 import UIKit
 import Blueprints
 
-final class CategoryViewController: UIViewController {
+final class MainCategoryViewController: UIViewController {
 
     // MARK: - Property
 
@@ -36,10 +36,10 @@ final class CategoryViewController: UIViewController {
     static func make(with dependency: CategoryInformation) -> MainViewController.DisplayViewControllerSet {
 
         // MEMO: ViewControllerを生成する際に必要な要素をあらかじめ引き渡す
-        let viewController = CategoryViewController.instantiate()
+        let viewController = MainCategoryViewController.instantiate()
         viewController.bluePrintPatternLayout = dependency.layoutPattern
 
-        // MEMO: ArticleViewControllerに定義したTypealiasに適合した形にする
+        // MEMO: MainViewControllerに定義したTypealiasに適合した形にする
         return (
             title: dependency.title,
             viewController: viewController
@@ -69,7 +69,7 @@ final class CategoryViewController: UIViewController {
 
 // MARK: - UICollectionViewDataSource
 
-extension CategoryViewController: UICollectionViewDataSource {
+extension MainCategoryViewController: UICollectionViewDataSource {
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -106,7 +106,7 @@ extension CategoryViewController: UICollectionViewDataSource {
 
 // MARK: - UIViewControllerTransitioningDelegate
 
-extension CategoryViewController: UIViewControllerTransitioningDelegate {
+extension MainCategoryViewController: UIViewControllerTransitioningDelegate {
 
     // 進む場合のアニメーションの設定を行う
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -139,11 +139,11 @@ extension CategoryViewController: UIViewControllerTransitioningDelegate {
 
 // MARK: - StoryboardInstantiatable
 
-extension CategoryViewController: StoryboardInstantiatable {
+extension MainCategoryViewController: StoryboardInstantiatable {
 
     // このViewControllerに対応するStoryboard名
     static var storyboardName: String {
-        return "Category"
+        return "MainCategory"
     }
 
     // このViewControllerに対応するViewControllerのIdentifier名
