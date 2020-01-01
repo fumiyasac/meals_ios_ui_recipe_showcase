@@ -16,7 +16,7 @@ final class MainViewController: UIViewController {
     // MARK: - Property
 
     // タイトル表示用のView
-    private let titleView = ArticleNavigationTitleView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
+    private let titleView = MainNavigationTitleView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
 
     // MEMO: UICollectionViewCell内に表示させる要素を格納するための変数
     private var displayViewControllerSet: [DisplayViewControllerSet] = []
@@ -58,7 +58,7 @@ final class MainViewController: UIViewController {
 
         // タイトル表示部分の初期設定と初期表示を行う
         self.navigationController?.navigationBar.addSubview(titleView)
-        let initialTitleInfo: ArticleNavigationTitleView.ArticleNavigationTitleInformation = (
+        let initialTitleInfo: MainNavigationTitleView.MainNavigationTitleInformation = (
             title: displayViewControllerSet[0].title,
             cellIndex: 0
         )
@@ -100,7 +100,7 @@ extension MainViewController: UIScrollViewDelegate {
         if let visibleIndexPath = collectionView.indexPathForItem(at: visiblePoint) {
 
             // タイトル表示部分の切り替えと反映を行う
-            let titleInfo: ArticleNavigationTitleView.ArticleNavigationTitleInformation = (
+            let titleInfo: MainNavigationTitleView.MainNavigationTitleInformation = (
                 title: displayViewControllerSet[visibleIndexPath.row].title,
                 cellIndex: visibleIndexPath.row
             )

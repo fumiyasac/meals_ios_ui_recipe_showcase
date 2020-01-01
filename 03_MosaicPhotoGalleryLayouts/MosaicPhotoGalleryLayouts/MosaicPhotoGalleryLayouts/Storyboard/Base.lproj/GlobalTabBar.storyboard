@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sfY-iy-oBi">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card Tab Bar Controller-->
+        <scene sceneID="VaK-3L-epQ">
+            <objects>
+                <tabBarController id="sfY-iy-oBi" customClass="PTCardTabBarController" customModule="PTCardTabBar" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Rw-pG-2ds">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" red="1" green="0.66666666666666663" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="s2o-jM-IRg" kind="relationship" relationship="viewControllers" id="Sdc-vZ-YPd"/>
+                        <segue destination="c33-Lj-VQb" kind="relationship" relationship="viewControllers" id="ENd-uv-Rer"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAY-2f-J4b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-933" y="-150"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="8Qb-nk-Tbk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="s2o-jM-IRg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="フォトギャラリー" image="photo.fill.on.rectangle.fill" catalog="system" id="hGw-CU-jlX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJg-md-NQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330" y="-231"/>
+        </scene>
+        <!--Article-->
+        <scene sceneID="kjj-dl-nsF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Article" id="c33-Lj-VQb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="おすすめ記事" image="rectangle.stack.fill" catalog="system" id="kYy-ZD-DEk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uO7-fe-qP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-329" y="-76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo.fill.on.rectangle.fill" catalog="system" width="64" height="48"/>
+        <image name="rectangle.stack.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
