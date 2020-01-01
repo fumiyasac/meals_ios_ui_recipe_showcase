@@ -29,11 +29,11 @@ final class MainCategoryViewController: UIViewController {
 
     // MARK: - Typealias
 
-    typealias CategoryInformation = (title: String, layoutPattern: VerticalMosaicBlueprintLayout)
+    typealias MainCategoryInformation = (title: String, layoutPattern: VerticalMosaicBlueprintLayout)
 
     // MARK: - Static Function (for Dependency Injection)
 
-    static func make(with dependency: CategoryInformation) -> MainViewController.DisplayViewControllerSet {
+    static func make(with dependency: MainCategoryInformation) -> MainViewController.DisplayViewControllerSet {
 
         // MEMO: ViewControllerを生成する際に必要な要素をあらかじめ引き渡す
         let viewController = MainCategoryViewController.instantiate()
