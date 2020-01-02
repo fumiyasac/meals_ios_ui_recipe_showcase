@@ -121,9 +121,13 @@ final class DetailViewController: UIViewController {
     }
 }
 
-// MARK: - UITableViewDelegate, UITableViewDataSource
+// MARK: - UITableViewDelegate
 
-extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
+extension DetailViewController: UITableViewDelegate {}
+
+// MARK: - UITableViewDataSource
+
+extension DetailViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
