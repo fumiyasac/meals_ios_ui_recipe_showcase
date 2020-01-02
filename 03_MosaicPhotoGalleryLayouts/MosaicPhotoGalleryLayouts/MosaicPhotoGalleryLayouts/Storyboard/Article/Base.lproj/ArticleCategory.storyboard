@@ -15,16 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lux-9X-Vr1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lux-9X-Vr1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lux-9X-Vr1" firstAttribute="top" secondItem="zYq-2F-CFt" secondAttribute="top" id="IEt-oW-vf4"/>
+                            <constraint firstItem="lux-9X-Vr1" firstAttribute="top" secondItem="lOY-yf-XQi" secondAttribute="top" id="IEt-oW-vf4"/>
                             <constraint firstItem="lux-9X-Vr1" firstAttribute="leading" secondItem="zYq-2F-CFt" secondAttribute="leading" id="MDi-av-36u"/>
-                            <constraint firstItem="lux-9X-Vr1" firstAttribute="bottom" secondItem="zYq-2F-CFt" secondAttribute="bottom" id="MZe-yy-xFf"/>
+                            <constraint firstItem="lux-9X-Vr1" firstAttribute="bottom" secondItem="lOY-yf-XQi" secondAttribute="bottom" id="MZe-yy-xFf"/>
                             <constraint firstItem="lux-9X-Vr1" firstAttribute="trailing" secondItem="zYq-2F-CFt" secondAttribute="trailing" id="yEY-iJ-U9l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zYq-2F-CFt"/>

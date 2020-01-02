@@ -10,9 +10,25 @@ import UIKit
 
 final class ArticleCategoryViewController: UIViewController {
 
+    private var articleCategoryPattern: ArticleCategoryPattern!
+
     // MARK: - @IBOutlet
     
     @IBOutlet weak private var tableView: UITableView!
+
+    // MARK: - Typealias
+
+    typealias ArticleCategoryInformation = ArticleCategoryPattern
+
+    // MARK: - Static Function (for Dependency Injection)
+
+    static func make(with dependency: ArticleCategoryInformation) -> ArticleCategoryViewController {
+
+        // MEMO: ViewControllerを生成する際に必要な要素をあらかじめ引き渡す
+        let viewController = ArticleCategoryViewController.instantiate()
+        viewController.articleCategoryPattern = dependency
+        return viewController
+    }
 
     // MARK: - Override
 
@@ -29,7 +45,9 @@ final class ArticleCategoryViewController: UIViewController {
         // UITableViewに関する初期設定
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.registerCustomCell(ArticleListTableViewCell.self)
+        tableView.reloadData()
     }
 }
 
@@ -42,7 +60,7 @@ extension ArticleCategoryViewController: UITableViewDelegate {}
 extension ArticleCategoryViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 8
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

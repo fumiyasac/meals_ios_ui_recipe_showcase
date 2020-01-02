@@ -15,10 +15,17 @@ final class ArticleListTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        setupArticleListTableViewCell()
     }
 
     // MARK: - Function
 
     // MARK: - Private Function
 
+    private func setupArticleListTableViewCell() {
+
+        // UITableViewCellに関するそれ自体に関する設定
+        self.accessoryType = .none
+        self.selectionStyle = .none
+    }
 }

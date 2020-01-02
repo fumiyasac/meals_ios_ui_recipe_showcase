@@ -14,14 +14,29 @@
                     <view key="view" contentMode="scaleToFill" id="ywl-66-KxJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEV-mO-gxi">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NEV-mO-gxi" firstAttribute="trailing" secondItem="GRX-VF-fOj" secondAttribute="trailing" id="kAv-O5-Vu2"/>
+                            <constraint firstItem="NEV-mO-gxi" firstAttribute="bottom" secondItem="ywl-66-KxJ" secondAttribute="bottom" id="uiE-4Y-Xbh"/>
+                            <constraint firstItem="NEV-mO-gxi" firstAttribute="leading" secondItem="GRX-VF-fOj" secondAttribute="leading" id="vb1-2z-cBh"/>
+                            <constraint firstItem="NEV-mO-gxi" firstAttribute="top" secondItem="GRX-VF-fOj" secondAttribute="top" id="yLg-i3-8yv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GRX-VF-fOj"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZEZ-29-xWJ"/>
+                    <connections>
+                        <outlet property="screenView" destination="NEV-mO-gxi" id="mt1-jd-Svf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysD-W2-beu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3" y="52"/>
+            <point key="canvasLocation" x="-4" y="51.724137931034484"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bqq-3G-S3l">
