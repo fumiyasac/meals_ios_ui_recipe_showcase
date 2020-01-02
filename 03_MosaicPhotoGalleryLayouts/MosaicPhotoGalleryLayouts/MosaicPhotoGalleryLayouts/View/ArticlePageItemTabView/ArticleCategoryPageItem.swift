@@ -9,9 +9,11 @@
 import Foundation
 import Parchment
 
-//
+// MEMO: ライブラリ「Parchment」で提供されているPagingItemプロトコルを適用する
 
 struct ArticleCategoryPageItem: PagingItem, Hashable, Comparable {
+
+    // MEMO: 割当てるのはEnum値とインデックス（ArticleCategoryPatternの数）の2つ
 
     let type: ArticleCategoryPattern
     let index: Int

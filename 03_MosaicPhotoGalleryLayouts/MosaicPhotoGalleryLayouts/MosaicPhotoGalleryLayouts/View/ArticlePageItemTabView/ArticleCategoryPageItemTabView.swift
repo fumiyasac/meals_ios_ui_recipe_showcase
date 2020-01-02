@@ -10,10 +10,13 @@ import Foundation
 import UIKit
 import Parchment
 
-//
+// MEMO: ライブラリ「Parchment」で提供されているPagingCellクラスを継承する
+// → タブ表示用のViewクラス（今回は一部の実装においてコードで組み立てている点に注意）
 
 class ArticleCategoryPageItemTabView: PagingCell {
 
+    // MEMO: ライブラリ「Parchment」で提供されている見た目やデザインに関するオプション値
+    // → ここでは、オプション値の定義は配置元のViewControllerにて定義しています
     private var options: PagingOptions?
 
     private lazy var titleLabel: UILabel = {
@@ -50,19 +53,23 @@ class ArticleCategoryPageItemTabView: PagingCell {
         titleLabel.center = contentView.center
     }
 
-    //
+    // タブ表示に利用するデータをタブ表示用Viewに反映する(※ PagingCellクラスにて定義)
     override func setPagingItem(_ pagingItem: PagingItem, selected: Bool, options: PagingOptions) {
+
         self.options = options
         let item = pagingItem as! ArticleCategoryPageItem
         titleLabel.text = item.type.getTabTitle()
         updateSelectedState(selected: selected)
     }
 
-    //
+    // タブ表示用Viewのレイアウト属性値を更新する(※ PagingCellクラスにて定義)
+    // → ライブラリの元を辿るとUICollectionViewを継承して作られていることがわかる
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
+
         guard let options = options else { return }
 
+        // 任意のタブを移動する or 表示要素をスワイプする際に色がふわりと補間を伴った変化の演出をする
         if let attributes = layoutAttributes as? PagingCellLayoutAttributes {
             titleLabel.textColor = UIColor.interpolate(
                 from: options.textColor,

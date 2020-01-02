@@ -11,13 +11,13 @@ import Parchment
 
 final class ArticleViewController: UIViewController {
 
-    //
+    // MEMO: ライブラリ「Parchment」におけるタブ要素データを格納する配列
     private var articleCategoryPageItemSet: [ArticleCategoryPageItem] = []
 
-    //
+    // MEMO: ライブラリ「Parchment」におけるタブ要素で表示する画面を格納する配列
     private var articleCategoryViewControllerSet: [ArticleCategoryViewController] = []
 
-    //
+    // MEMO: ライブラリ「Parchment」におけるタブ要素で表示対象の画面を格納する
     private var targetPagingViewController: PagingViewController<ArticleCategoryPageItem>!
 
     @IBOutlet weak private var screenView: UIView!
@@ -35,7 +35,7 @@ final class ArticleViewController: UIViewController {
 
     private func setupPagingViewController() {
 
-        //
+        // タブ要素データとタブ要素で表示する画面を組み立てる
         for (_, patternType) in ArticleCategoryPattern.allCases.enumerated() {
             articleCategoryPageItemSet.append(ArticleCategoryPageItem(type: patternType, index: patternType.rawValue))
         }
@@ -43,19 +43,20 @@ final class ArticleViewController: UIViewController {
             articleCategoryViewControllerSet.append(ArticleCategoryViewController.make(with: patternType))
         }
 
-        // MEMO: ライブラリ「Parchment」に関する見た目の調整処理
+        // MEMO: ライブラリ「Parchment」における見た目(PagingOptions)の調整処理
         targetPagingViewController = PagingViewController<ArticleCategoryPageItem>()
         targetPagingViewController.menuItemSource = .class(type: ArticleCategoryPageItemTabView.self)
         targetPagingViewController.menuItemSize = .fixed(width: 150, height: 44)
+        targetPagingViewController.font = UIFont(name: "HiraKakuProN-W3", size: 12.0)!
+        targetPagingViewController.selectedFont = UIFont(name: "HiraKakuProN-W3", size: 12.0)!
         targetPagingViewController.textColor = UIColor.lightGray
-        targetPagingViewController.font = UIFont.systemFont(ofSize: 14)
-        targetPagingViewController.selectedFont = UIFont.systemFont(ofSize: 14)
         targetPagingViewController.selectedTextColor = UIColor.black
         targetPagingViewController.indicatorColor = UIColor.black
+        targetPagingViewController.borderColor = UIColor(code: "#dddddd")
         targetPagingViewController.indicatorOptions = .visible(height: 2, zIndex: 0, spacing: UIEdgeInsets.zero, insets: UIEdgeInsets.zero)
-        targetPagingViewController.borderColor = .clear
 
-        //
+        // MEMO: ライブラリ「Parchment」で定義されているプロトコルの適用
+        // → コードでのAutoLayoutを利用してスクリーンとなるView要素の中に配置する
         screenView.addSubview(targetPagingViewController.view)
         targetPagingViewController.view.translatesAutoresizingMaskIntoConstraints = false
         targetPagingViewController.view.topAnchor.constraint(equalTo: screenView.topAnchor).isActive = true
@@ -68,11 +69,11 @@ final class ArticleViewController: UIViewController {
         targetPagingViewController.didMove(toParent: self)
 
         // MEMO: ライブラリ「Parchment」で定義されているプロトコルの適用
-        //
+        // → UIPageViewControllerのものと似ているがこれはライブラリで提供されているもの
         targetPagingViewController.infiniteDataSource = self
         targetPagingViewController.delegate = self
 
-        // 初期値の設定
+        // 初期表示状態の設定
         targetPagingViewController.reloadMenu()
         targetPagingViewController.select(pagingItem: articleCategoryPageItemSet[0])
     }
@@ -82,7 +83,7 @@ final class ArticleViewController: UIViewController {
 
 extension ArticleViewController: PagingViewControllerDelegate {
 
-    //
+    // 表示要素を切り替えるトランジションの完了状態を検知するための処理
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, didScrollToItem pagingItem: T, startingViewController: UIViewController?, destinationViewController: UIViewController, transitionSuccessful: Bool) {
 
         // MEMO: スワイプアニメーションが完了していない時には処理をさせなくする
@@ -98,14 +99,14 @@ extension ArticleViewController: PagingViewControllerDelegate {
 
 extension ArticleViewController: PagingViewControllerInfiniteDataSource {
 
-    //
+    // タブ要素データ内のインデックス値に該当する画面を表示するための処理
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForPagingItem pagingItem: T) -> UIViewController {
 
         let item = pagingItem as! ArticleCategoryPageItem
         return articleCategoryViewControllerSet[item.index]
     }
 
-    //
+    // ページ要素を移動した際にタブ要素データ内のインデックス値が+1増加する場合における処理
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, pagingItemBeforePagingItem pagingItem: T) -> T? {
 
         // MEMO: PagingViewControllerInfiniteDataSourceを利用しているが、無限スクロールを適用しないのでこの形にする点に注意
@@ -117,7 +118,7 @@ extension ArticleViewController: PagingViewControllerInfiniteDataSource {
         }
     }
 
-    //
+    // ページ要素を移動した際にタブ要素データ内のインデックス値が-1減少する場合における処理
     func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, pagingItemAfterPagingItem pagingItem: T) -> T? {
 
         // MEMO: PagingViewControllerInfiniteDataSourceを利用しているが、無限スクロールを適用しないのでこの形にする点に注意
@@ -132,11 +133,14 @@ extension ArticleViewController: PagingViewControllerInfiniteDataSource {
 
 // MARK: - Fileprivate Array Extension
 
+// MEMO: このファイル内のみで利用できるExtensionの定義
 fileprivate extension Array {
 
     // MARK: - Subscript
-    
+
     subscript (safe index: Index) -> Element? {
+
+        // MEMO: 任意の配列要素に含まれないインデックスを指定した場合にnilを返すようにする
         return indices.contains(index) ? self[index] : nil
     }
 }
