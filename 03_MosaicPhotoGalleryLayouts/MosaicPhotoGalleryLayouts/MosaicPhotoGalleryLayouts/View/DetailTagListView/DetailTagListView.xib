@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailTagListView" customModule="MosaicPhotoGalleryLayouts" customModuleProvider="target">
+            <connections>
+                <outlet property="detailTagListView" destination="mgy-ea-kkr" id="WMg-HI-XpQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="関連するタグ一覧" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8f-I2-u9k">
+                    <rect key="frame" x="12" y="16" width="351" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20.5" id="Ghi-am-DEf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サンプルで作成したタグ一覧になります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-Oq-UQM">
+                    <rect key="frame" x="12" y="48.5" width="351" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgy-ea-kkr" customClass="TagListView" customModule="TagListView">
+                    <rect key="frame" x="12" y="77" width="351" height="61"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6zs-Oq-UQM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="538-EG-1o1"/>
+                <constraint firstItem="6zs-Oq-UQM" firstAttribute="top" secondItem="C8f-I2-u9k" secondAttribute="bottom" constant="12" id="92m-tn-cdM"/>
+                <constraint firstItem="mgy-ea-kkr" firstAttribute="top" secondItem="6zs-Oq-UQM" secondAttribute="bottom" constant="12" id="So0-qI-mLn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="C8f-I2-u9k" secondAttribute="trailing" constant="12" id="U7p-PU-TpG"/>
+                <constraint firstItem="mgy-ea-kkr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="WQi-od-Imm"/>
+                <constraint firstItem="C8f-I2-u9k" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="iDd-mt-ysp"/>
+                <constraint firstItem="C8f-I2-u9k" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="kE9-Rm-tkW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6zs-Oq-UQM" secondAttribute="trailing" constant="12" id="mWd-fe-XwO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mgy-ea-kkr" secondAttribute="bottom" constant="12" id="sPc-Yw-8dX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mgy-ea-kkr" secondAttribute="trailing" constant="12" id="xSg-fn-nZN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="127.736131934033"/>
+        </view>
+    </objects>
+</document>

@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="bDU-Qw-Ug5" customClass="DetailViewController" customModule="MosaicPhotoGalleryLayouts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="by6-Nl-ag6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="860"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7E2-YF-jbq">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="860"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RY3-QK-A0O">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1650"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="920"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2N-eh-eh2">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
@@ -28,11 +28,35 @@
                                                     <constraint firstAttribute="width" secondItem="Q2N-eh-eh2" secondAttribute="height" multiplier="5:6" id="0Qk-ux-jL3"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys1-TT-emV">
-                                                <rect key="frame" x="0.0" y="450" width="375" height="1200"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4M-6T-fsR" customClass="DetailDescriptionView" customModule="MosaicPhotoGalleryLayouts" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="450" width="375" height="128"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1200" id="8cL-of-SCD"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="128" id="2bs-0X-hv2"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="qkW-Qx-aTd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDI-MJ-Pg0" customClass="DetailTagListView" customModule="MosaicPhotoGalleryLayouts" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="578" width="375" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="X9B-uC-zsh"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="128" id="d3O-b5-pvY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys1-TT-emV" customClass="DetailAdditionalView" customModule="MosaicPhotoGalleryLayouts" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="706" width="375" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="250" constant="128" id="8cL-of-SCD"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="fUM-8n-sEY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWq-as-b0X">
+                                                <rect key="frame" x="0.0" y="834" width="375" height="86"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="86" id="qOj-aS-miX"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -86,6 +110,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kEr-3T-Iog"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="860"/>
                     <connections>
                         <outlet property="detailEffectiveHeaderHeightConstraint" destination="zlH-f1-ZEe" id="D9g-Qk-0Ti"/>
                         <outlet property="detailEffectiveHeaderView" destination="MeB-mJ-hgM" id="FHq-Oi-7x2"/>
