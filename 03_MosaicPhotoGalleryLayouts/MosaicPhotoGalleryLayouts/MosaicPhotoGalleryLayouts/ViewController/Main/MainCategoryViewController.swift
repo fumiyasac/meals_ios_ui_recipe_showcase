@@ -58,7 +58,8 @@ final class MainCategoryViewController: UIViewController {
 
     private func setupCollectionView() {
 
-        // UICollectionViewDelegate & UICollectionViewDataSourceに関する初期設定
+        // UICollectionViewに関する初期設定
+        collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.registerCustomCell(CategoryPatternCollectionViewCell.self)
 
@@ -67,7 +68,9 @@ final class MainCategoryViewController: UIViewController {
     }
 }
 
-// MARK: - UICollectionViewDataSource
+// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
+
+extension MainCategoryViewController: UICollectionViewDelegate {}
 
 extension MainCategoryViewController: UICollectionViewDataSource {
 

@@ -14,7 +14,11 @@ final class ArticleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setupNavigationBarTitle("特選記事集サンプル")
     }
 
     // MARK: - Private Function
+
+
 }

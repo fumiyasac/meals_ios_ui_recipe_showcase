@@ -109,7 +109,9 @@ extension MainViewController: UIScrollViewDelegate {
     }
 }
 
-// MARK: - UICollectionViewDataSource
+// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
+
+extension MainViewController: UICollectionViewDelegate {}
 
 extension MainViewController: UICollectionViewDataSource {
 

@@ -28,6 +28,11 @@
 		DE8E308023BC1D6200BD6AB8 /* GlobalTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8E307E23BC1D6200BD6AB8 /* GlobalTabBar.storyboard */; };
 		DE8E308423BC1DA400BD6AB8 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8E308223BC1DA400BD6AB8 /* Article.storyboard */; };
 		DE8E308623BC1DBD00BD6AB8 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E308523BC1DBD00BD6AB8 /* ArticleViewController.swift */; };
+		DE8E308F23BD64BB00BD6AB8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E308E23BD64BB00BD6AB8 /* UIViewControllerExtension.swift */; };
+		DE8E309223BD6A0300BD6AB8 /* ArticleCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8E309023BD6A0300BD6AB8 /* ArticleCategory.storyboard */; };
+		DE8E309423BD6AEE00BD6AB8 /* ArticleCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E309323BD6AEE00BD6AB8 /* ArticleCategoryViewController.swift */; };
+		DED581C423BD6FF300395012 /* ArticleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED581C223BD6FF300395012 /* ArticleListTableViewCell.swift */; };
+		DED581C523BD6FF300395012 /* ArticleListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED581C323BD6FF300395012 /* ArticleListTableViewCell.xib */; };
 		DEE5E0AC23BB36ED00CA3E9B /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0AB23BB36ED00CA3E9B /* CustomViewBase.swift */; };
 		DEE5E0AE23BB375800CA3E9B /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0AD23BB375800CA3E9B /* NSObjectProtocolExtension.swift */; };
 		DEE5E0B023BB37B200CA3E9B /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E0AF23BB37B200CA3E9B /* StoryboardInstantiatable.swift */; };
@@ -89,6 +94,11 @@
 		DE8E307F23BC1D6200BD6AB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GlobalTabBar.storyboard; sourceTree = "<group>"; };
 		DE8E308323BC1DA400BD6AB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Article.storyboard; sourceTree = "<group>"; };
 		DE8E308523BC1DBD00BD6AB8 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		DE8E308E23BD64BB00BD6AB8 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		DE8E309123BD6A0300BD6AB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ArticleCategory.storyboard; sourceTree = "<group>"; };
+		DE8E309323BD6AEE00BD6AB8 /* ArticleCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCategoryViewController.swift; sourceTree = "<group>"; };
+		DED581C223BD6FF300395012 /* ArticleListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewCell.swift; sourceTree = "<group>"; };
+		DED581C323BD6FF300395012 /* ArticleListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleListTableViewCell.xib; sourceTree = "<group>"; };
 		DEE5E0AB23BB36ED00CA3E9B /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 		DEE5E0AD23BB375800CA3E9B /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
 		DEE5E0AF23BB37B200CA3E9B /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
@@ -244,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				DE8E308523BC1DBD00BD6AB8 /* ArticleViewController.swift */,
+				DE8E309323BD6AEE00BD6AB8 /* ArticleCategoryViewController.swift */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -261,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				DE8E308223BC1DA400BD6AB8 /* Article.storyboard */,
+				DE8E309023BD6A0300BD6AB8 /* ArticleCategory.storyboard */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -280,6 +292,15 @@
 				DEE5E0BC23BB3B5900CA3E9B /* Detail.storyboard */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		DED581C123BD6F3100395012 /* ArticleListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DED581C223BD6FF300395012 /* ArticleListTableViewCell.swift */,
+				DED581C323BD6FF300395012 /* ArticleListTableViewCell.xib */,
+			);
+			path = ArticleListTableViewCell;
 			sourceTree = "<group>";
 		};
 		DEE5E0A423BAEBA900CA3E9B /* Entity */ = {
@@ -311,10 +332,11 @@
 			children = (
 				DEE5E0AB23BB36ED00CA3E9B /* CustomViewBase.swift */,
 				DE39542623BBC405007D4C71 /* DetailTransition.swift */,
-				DEE5E0C623BB3F3600CA3E9B /* MainNavigationTitleView */,
+				DED581C123BD6F3100395012 /* ArticleListTableViewCell */,
 				DE3345A323BB415A0017E173 /* CategoryPatternCollectionViewCell */,
 				DEE5E0C723BB412700CA3E9B /* ContainerCollectionViewCell */,
 				DE3345A423BB41830017E173 /* DetailEffectiveHeaderView */,
+				DEE5E0C623BB3F3600CA3E9B /* MainNavigationTitleView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +349,7 @@
 				DEE5E0B323BB39E200CA3E9B /* UICollectionViewExtension.swift */,
 				DEE5E0B123BB37CD00CA3E9B /* UIColorExtension.swift */,
 				DEE5E0B523BB39FC00CA3E9B /* UITableViewExtension.swift */,
+				DE8E308E23BD64BB00BD6AB8 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -482,9 +505,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED581C523BD6FF300395012 /* ArticleListTableViewCell.xib in Resources */,
 				DE39542123BBBB95007D4C71 /* ContainerCollectionViewCell.xib in Resources */,
 				DE8E308023BC1D6200BD6AB8 /* GlobalTabBar.storyboard in Resources */,
 				DE39542523BBBBB2007D4C71 /* CategoryPatternCollectionViewCell.xib in Resources */,
+				DE8E309223BD6A0300BD6AB8 /* ArticleCategory.storyboard in Resources */,
 				DE39542923BBCF0C007D4C71 /* DetailEffectiveHeaderView.xib in Resources */,
 				DEE5E0B923BB3A5100CA3E9B /* MainCategory.storyboard in Resources */,
 				DE066B95236712120029383E /* LaunchScreen.storyboard in Resources */,
@@ -567,13 +592,16 @@
 				DE39542423BBBBB2007D4C71 /* CategoryPatternCollectionViewCell.swift in Sources */,
 				DE3345A823BBB82C0017E173 /* MainNavigationTitleView.swift in Sources */,
 				DE066B8D236712110029383E /* MainViewController.swift in Sources */,
+				DED581C423BD6FF300395012 /* ArticleListTableViewCell.swift in Sources */,
 				DE39542B23BBCF14007D4C71 /* DetailEffectiveHeaderView.swift in Sources */,
 				DE066B89236712110029383E /* AppDelegate.swift in Sources */,
 				DEE5E0B423BB39E200CA3E9B /* UICollectionViewExtension.swift in Sources */,
 				DEE5E0B023BB37B200CA3E9B /* StoryboardInstantiatable.swift in Sources */,
+				DE8E308F23BD64BB00BD6AB8 /* UIViewControllerExtension.swift in Sources */,
 				DE39542723BBC405007D4C71 /* DetailTransition.swift in Sources */,
 				DEE5E0B623BB39FC00CA3E9B /* UITableViewExtension.swift in Sources */,
 				DEE5E0C223BB3C8600CA3E9B /* MosaicCollectionViewLayoutPattern.swift in Sources */,
+				DE8E309423BD6AEE00BD6AB8 /* ArticleCategoryViewController.swift in Sources */,
 				DE066B8B236712110029383E /* SceneDelegate.swift in Sources */,
 				DE8E308623BC1DBD00BD6AB8 /* ArticleViewController.swift in Sources */,
 				DEE5E0C523BB3D7C00CA3E9B /* UILabelDecorator.swift in Sources */,
@@ -643,6 +671,14 @@
 				DE8E308323BC1DA400BD6AB8 /* Base */,
 			);
 			name = Article.storyboard;
+			sourceTree = "<group>";
+		};
+		DE8E309023BD6A0300BD6AB8 /* ArticleCategory.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE8E309123BD6A0300BD6AB8 /* Base */,
+			);
+			name = ArticleCategory.storyboard;
 			sourceTree = "<group>";
 		};
 		DEE5E0B723BB3A5100CA3E9B /* MainCategory.storyboard */ = {
