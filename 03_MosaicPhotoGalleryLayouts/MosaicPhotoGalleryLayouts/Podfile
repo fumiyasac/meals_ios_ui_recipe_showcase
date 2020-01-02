@@ -14,5 +14,4 @@ target 'MosaicPhotoGalleryLayouts' do
   pod 'Nantes'
   pod 'PTCardTabBar'
   pod 'TagListView', '~> 1.0'
-  pod 'FontAwesome.swift'
 end

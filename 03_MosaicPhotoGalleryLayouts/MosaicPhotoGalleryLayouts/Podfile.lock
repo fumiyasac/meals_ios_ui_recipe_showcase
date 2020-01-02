@@ -1,7 +1,6 @@
 PODS:
   - AnimatedCollectionViewLayout (1.0.1)
   - Blueprints (0.13.1)
-  - FontAwesome.swift (1.8.2)
   - Nantes (0.0.9)
   - Parchment (1.7.0)
   - PTCardTabBar (1.0.1)
@@ -10,7 +9,6 @@ PODS:
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
   - Blueprints
-  - FontAwesome.swift
   - Nantes
   - Parchment
   - PTCardTabBar
@@ -20,7 +18,6 @@ SPEC REPOS:
   trunk:
     - AnimatedCollectionViewLayout
     - Blueprints
-    - FontAwesome.swift
     - Nantes
     - Parchment
     - PTCardTabBar
@@ -29,12 +26,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AnimatedCollectionViewLayout: 00f0997fd26f0fd02d8b99765023b95570b5d826
   Blueprints: ddd6ab1e455c98471aaef2fdd0b09b5f9b53af5b
-  FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
   Nantes: c1b4eec0748c01f4c6b83e16a11e52ab2007cd4d
   Parchment: cae686f73685d16742cec9c19239b7578a15f0f5
   PTCardTabBar: 9112a6d4eb2b73da9cf4e7f3aefe04504479cf98
   TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
 
-PODFILE CHECKSUM: 0a60fbde176376f9edb09ec5610ca279277c6ffa
+PODFILE CHECKSUM: 332d1da7d169e2247994513c6d2fe3c0f8b8bbf2
 
 COCOAPODS: 1.8.4
