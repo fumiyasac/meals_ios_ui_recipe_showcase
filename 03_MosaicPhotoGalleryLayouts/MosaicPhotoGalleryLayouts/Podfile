@@ -10,7 +10,6 @@ target 'MosaicPhotoGalleryLayouts' do
   # UI表現の際に利用するライブラリ
   pod 'AnimatedCollectionViewLayout'
   pod 'Blueprints'
-  pod 'FanMenu'
   pod 'Parchment'
   pod 'Nantes'
   pod 'PTCardTabBar'

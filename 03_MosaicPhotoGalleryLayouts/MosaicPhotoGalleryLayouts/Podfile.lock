@@ -1,21 +1,15 @@
 PODS:
   - AnimatedCollectionViewLayout (1.0.1)
   - Blueprints (0.13.1)
-  - FanMenu (0.7.4):
-    - Macaw
   - FontAwesome.swift (1.8.2)
-  - Macaw (0.9.5):
-    - SWXMLHash
   - Nantes (0.0.9)
   - Parchment (1.7.0)
   - PTCardTabBar (1.0.1)
-  - SWXMLHash (5.0.1)
   - TagListView (1.4.0)
 
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
   - Blueprints
-  - FanMenu
   - FontAwesome.swift
   - Nantes
   - Parchment
@@ -26,27 +20,21 @@ SPEC REPOS:
   trunk:
     - AnimatedCollectionViewLayout
     - Blueprints
-    - FanMenu
     - FontAwesome.swift
-    - Macaw
     - Nantes
     - Parchment
     - PTCardTabBar
-    - SWXMLHash
     - TagListView
 
 SPEC CHECKSUMS:
   AnimatedCollectionViewLayout: 00f0997fd26f0fd02d8b99765023b95570b5d826
   Blueprints: ddd6ab1e455c98471aaef2fdd0b09b5f9b53af5b
-  FanMenu: 773836538a63cddcbf0c5bf320727bb47669f7fd
   FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
-  Macaw: 10bf9e327cb75f24e3225d5229a80ed544df85f0
   Nantes: c1b4eec0748c01f4c6b83e16a11e52ab2007cd4d
   Parchment: cae686f73685d16742cec9c19239b7578a15f0f5
   PTCardTabBar: 9112a6d4eb2b73da9cf4e7f3aefe04504479cf98
-  SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
   TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
 
-PODFILE CHECKSUM: 473149ad1c3e8d8d405a48df8f892790699591c4
+PODFILE CHECKSUM: 0a60fbde176376f9edb09ec5610ca279277c6ffa
 
 COCOAPODS: 1.8.4

@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="860"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RY3-QK-A0O">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="920"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="878"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2N-eh-eh2">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
@@ -53,10 +53,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWq-as-b0X">
-                                                <rect key="frame" x="0.0" y="834" width="375" height="86"/>
+                                                <rect key="frame" x="0.0" y="834" width="375" height="44"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="86" id="qOj-aS-miX"/>
+                                                    <constraint firstAttribute="height" constant="44" id="qOj-aS-miX"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
