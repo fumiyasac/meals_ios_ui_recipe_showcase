@@ -42,7 +42,6 @@ final class ListViewController: UIViewController {
         listCollectionView.delegate = self
         listCollectionView.dataSource = self
         listCollectionView.registerCustomCell(ListCollectionViewCell.self)
-        listCollectionView.reloadData()
     }
 }
 
