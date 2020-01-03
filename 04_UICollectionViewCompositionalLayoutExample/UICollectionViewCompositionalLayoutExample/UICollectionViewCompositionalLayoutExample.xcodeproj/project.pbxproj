@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67ED26E1B10717AF08805BAA /* Pods_UICollectionViewCompositionalLayoutExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC98828A26D15CEA4E1E19 /* Pods_UICollectionViewCompositionalLayoutExample.framework */; };
 		DEE5E07523BACF8300CA3E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07423BACF8300CA3E9B /* AppDelegate.swift */; };
 		DEE5E07723BACF8300CA3E9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07623BACF8300CA3E9B /* SceneDelegate.swift */; };
 		DEE5E07923BACF8300CA3E9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07823BACF8300CA3E9B /* ViewController.swift */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15643D8768A95C6D79188D2F /* Pods-UICollectionViewCompositionalLayoutExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewCompositionalLayoutExample.release.xcconfig"; path = "Target Support Files/Pods-UICollectionViewCompositionalLayoutExample/Pods-UICollectionViewCompositionalLayoutExample.release.xcconfig"; sourceTree = "<group>"; };
+		6EDC98828A26D15CEA4E1E19 /* Pods_UICollectionViewCompositionalLayoutExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICollectionViewCompositionalLayoutExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2465750F607CE30D8B72997 /* Pods-UICollectionViewCompositionalLayoutExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewCompositionalLayoutExample.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionViewCompositionalLayoutExample/Pods-UICollectionViewCompositionalLayoutExample.debug.xcconfig"; sourceTree = "<group>"; };
 		DEE5E07123BACF8300CA3E9B /* UICollectionViewCompositionalLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewCompositionalLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE5E07423BACF8300CA3E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE5E07623BACF8300CA3E9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67ED26E1B10717AF08805BAA /* Pods_UICollectionViewCompositionalLayoutExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		118CBCB08F3C7EBD77454737 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2465750F607CE30D8B72997 /* Pods-UICollectionViewCompositionalLayoutExample.debug.xcconfig */,
+				15643D8768A95C6D79188D2F /* Pods-UICollectionViewCompositionalLayoutExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		45B22A2F39FB4F3505A1EA79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EDC98828A26D15CEA4E1E19 /* Pods_UICollectionViewCompositionalLayoutExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DEE5E06823BACF8300CA3E9B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 				DEE5E08A23BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleTests */,
 				DEE5E09523BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleUITests */,
 				DEE5E07223BACF8300CA3E9B /* Products */,
+				118CBCB08F3C7EBD77454737 /* Pods */,
+				45B22A2F39FB4F3505A1EA79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEE5E09B23BACF8500CA3E9B /* Build configuration list for PBXNativeTarget "UICollectionViewCompositionalLayoutExample" */;
 			buildPhases = (
+				615B8FAA6D010DC59A04D1A3 /* [CP] Check Pods Manifest.lock */,
 				DEE5E06D23BACF8300CA3E9B /* Sources */,
 				DEE5E06E23BACF8300CA3E9B /* Frameworks */,
 				DEE5E06F23BACF8300CA3E9B /* Resources */,
+				DDF666E5A42F63C671BE8A38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		615B8FAA6D010DC59A04D1A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UICollectionViewCompositionalLayoutExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDF666E5A42F63C671BE8A38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UICollectionViewCompositionalLayoutExample/Pods-UICollectionViewCompositionalLayoutExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UICollectionViewCompositionalLayoutExample/Pods-UICollectionViewCompositionalLayoutExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UICollectionViewCompositionalLayoutExample/Pods-UICollectionViewCompositionalLayoutExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DEE5E06D23BACF8300CA3E9B /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		DEE5E09C23BACF8500CA3E9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2465750F607CE30D8B72997 /* Pods-UICollectionViewCompositionalLayoutExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +520,7 @@
 		};
 		DEE5E09D23BACF8500CA3E9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15643D8768A95C6D79188D2F /* Pods-UICollectionViewCompositionalLayoutExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

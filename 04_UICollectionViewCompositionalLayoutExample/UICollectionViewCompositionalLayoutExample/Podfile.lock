@@ -1,0 +1,32 @@
+PODS:
+  - ESPullToRefresh (2.9.1)
+  - FontAwesome.swift (1.8.2)
+  - Loaf (0.5.0)
+  - Nuke (8.3.1)
+  - PanModal (1.2.5)
+
+DEPENDENCIES:
+  - ESPullToRefresh
+  - FontAwesome.swift
+  - Loaf
+  - Nuke
+  - PanModal
+
+SPEC REPOS:
+  trunk:
+    - ESPullToRefresh
+    - FontAwesome.swift
+    - Loaf
+    - Nuke
+    - PanModal
+
+SPEC CHECKSUMS:
+  ESPullToRefresh: 8efd37e4cb400addfd28add6757aaf1a461483eb
+  FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
+  Loaf: 0800b444431366bc395d54267975d4ad4ad5c99c
+  Nuke: 85fb80f8df0cb26c28d2f4e0cb7fb93bcd6548d3
+  PanModal: 7c5af3ad4fe22b91508040965bebffb89fb607ae
+
+PODFILE CHECKSUM: c821e22bf02f5b339957ae185dc4c093b8757b88
+
+COCOAPODS: 1.8.4

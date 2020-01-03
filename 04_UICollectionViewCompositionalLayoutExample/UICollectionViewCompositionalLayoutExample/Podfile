@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'UICollectionViewCompositionalLayoutExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for UICollectionViewCompositionalLayoutExample
+
+  # UI表現の際に利用するライブラリ
+  pod 'Nuke'
+  pod 'FontAwesome.swift'
+  pod 'PanModal'
+  pod 'ESPullToRefresh'
+  pod 'Loaf'
+end
