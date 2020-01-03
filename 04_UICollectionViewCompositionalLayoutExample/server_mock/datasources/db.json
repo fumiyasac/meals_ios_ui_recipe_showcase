@@ -1,0 +1,14 @@
+{
+    "get_photos": [
+        {
+            "page": 1,
+            "articles": [],
+            "has_next_page": false
+        }
+    ],
+    "get_banners": [],
+    "get_pickups": [],
+    "get_keywords": [],
+    "get_recommends": [],
+    "get_photo_by_id": []
+}
