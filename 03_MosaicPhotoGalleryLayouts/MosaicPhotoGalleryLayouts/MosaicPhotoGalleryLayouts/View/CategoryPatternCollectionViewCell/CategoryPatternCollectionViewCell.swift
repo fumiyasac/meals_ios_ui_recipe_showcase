@@ -10,6 +10,8 @@ import UIKit
 
 final class CategoryPatternCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - @IBOutlets
+
     // MEMO: カスタムトランジション実行時にUIImageViewの情報が必要なのでinternalにする
     @IBOutlet weak var thumbnailImageView: UIImageView!
 
@@ -29,6 +31,14 @@ final class CategoryPatternCollectionViewCell: UICollectionViewCell {
     }
 
     // MARK: - Function
+
+    func setCell(_ photo: PhotoEntitiy) {
+
+        thumbnailImageView.image = photo.imageFile
+        categoryLabel.text = photo.category
+        titleLabel.text = photo.title
+        dateLabel.text = photo.date
+    }
 
     // MARK: - Private Function
 

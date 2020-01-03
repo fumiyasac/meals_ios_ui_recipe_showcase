@@ -39,8 +39,8 @@ final class ArticleViewController: UIViewController {
         for (_, patternType) in ArticleCategoryPattern.allCases.enumerated() {
             articleCategoryPageItemSet.append(ArticleCategoryPageItem(type: patternType, index: patternType.rawValue))
         }
-        for (_, patternType) in ArticleCategoryPattern.allCases.enumerated() {
-            articleCategoryViewControllerSet.append(ArticleCategoryViewController.make(with: patternType))
+        for _ in ArticleCategoryPattern.allCases {
+            articleCategoryViewControllerSet.append(ArticleCategoryViewController.make())
         }
 
         // MEMO: ライブラリ「Parchment」における見た目(PagingOptions)の調整処理

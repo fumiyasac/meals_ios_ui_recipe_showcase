@@ -10,23 +10,25 @@ import UIKit
 
 final class ArticleCategoryViewController: UIViewController {
 
+    // MARK: - Property
+
+    private var articles: [ArticleEntity] = [] {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    
     private var articleCategoryPattern: ArticleCategoryPattern!
 
     // MARK: - @IBOutlet
     
     @IBOutlet weak private var tableView: UITableView!
 
-    // MARK: - Typealias
-
-    typealias ArticleCategoryInformation = ArticleCategoryPattern
-
     // MARK: - Static Function (for Dependency Injection)
 
-    static func make(with dependency: ArticleCategoryInformation) -> ArticleCategoryViewController {
+    static func make() -> ArticleCategoryViewController {
 
-        // MEMO: ViewControllerを生成する際に必要な要素をあらかじめ引き渡す
         let viewController = ArticleCategoryViewController.instantiate()
-        viewController.articleCategoryPattern = dependency
         return viewController
     }
 
@@ -47,7 +49,9 @@ final class ArticleCategoryViewController: UIViewController {
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.registerCustomCell(ArticleListTableViewCell.self)
-        tableView.reloadData()
+
+        // 表示データの反映
+        articles = ArticleModel.getSampleArticles()
     }
 }
 
@@ -60,11 +64,13 @@ extension ArticleCategoryViewController: UITableViewDelegate {}
 extension ArticleCategoryViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return articles.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let cell = tableView.dequeueReusableCustomCell(with: ArticleListTableViewCell.self)
+        cell.setCell(articles[indexPath.row])
         return cell
     }
 }

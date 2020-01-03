@@ -13,6 +13,12 @@ final class MainCategoryViewController: UIViewController {
 
     // MARK: - Property
 
+    private var photos: [PhotoEntitiy] = [] {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
+
     // カスタムトランジションを実行するためのクラス
     private let detailTransition = DetailTransition()
 
@@ -65,6 +71,9 @@ final class MainCategoryViewController: UIViewController {
 
         // ライブラリ「Blueprints」を活用したレイアウトパターンの適用
         collectionView.collectionViewLayout = bluePrintPatternLayout
+
+        // 表示データの反映
+        photos = PhotoModel.getSamplePhotos()
     }
 }
 
@@ -79,12 +88,14 @@ extension MainCategoryViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return photos.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
         let cell = collectionView.dequeueReusableCustomCell(with: CategoryPatternCollectionViewCell.self, indexPath: indexPath)
-     
+        cell.setCell(photos[indexPath.row])
+
         // MEMO: UICollectionViewCell内部にボタンを仕込んでおきタップ時の挙動をハンドリングする
         cell.cellButtonTappedHandler = {
 

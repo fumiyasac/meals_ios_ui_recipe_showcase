@@ -116,6 +116,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryLabel" destination="z2s-c2-39u" id="zDy-a7-nG6"/>
+                <outlet property="dateLabel" destination="b9K-QQ-tix" id="Rvd-rL-eZE"/>
+                <outlet property="remarkLabel" destination="wDa-MN-1Ye" id="d7b-43-DFb"/>
+                <outlet property="summaryLabel" destination="S8D-As-j5u" id="EdS-gz-Pit"/>
+                <outlet property="titleLabel" destination="Q2e-iG-Zg1" id="dXk-tJ-bRc"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="58.928571428571423"/>
         </tableViewCell>
     </objects>
