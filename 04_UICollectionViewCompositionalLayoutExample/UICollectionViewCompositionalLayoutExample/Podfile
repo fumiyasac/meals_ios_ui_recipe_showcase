@@ -13,4 +13,6 @@ target 'UICollectionViewCompositionalLayoutExample' do
   pod 'PanModal'
   pod 'ESPullToRefresh'
   pod 'Loaf'
+  pod 'MXParallaxHeader'
+  pod 'BetterSegmentedControl'
 end
