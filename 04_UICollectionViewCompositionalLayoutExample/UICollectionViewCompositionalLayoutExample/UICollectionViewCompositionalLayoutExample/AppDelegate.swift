@@ -8,10 +8,12 @@
 
 import UIKit
 
+// MEMO: DarkModeのキャンセル対応
+// → Info.plist内で「User Interface Style」を「Light」に設定する
+// (参考) https://stackoverflow.com/questions/56537855/is-it-possible-to-opt-out-of-dark-mode-on-ios-13
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

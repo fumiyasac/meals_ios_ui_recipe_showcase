@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		67ED26E1B10717AF08805BAA /* Pods_UICollectionViewCompositionalLayoutExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC98828A26D15CEA4E1E19 /* Pods_UICollectionViewCompositionalLayoutExample.framework */; };
 		DEE5E07523BACF8300CA3E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07423BACF8300CA3E9B /* AppDelegate.swift */; };
 		DEE5E07723BACF8300CA3E9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07623BACF8300CA3E9B /* SceneDelegate.swift */; };
-		DEE5E07923BACF8300CA3E9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07823BACF8300CA3E9B /* ViewController.swift */; };
+		DEE5E07923BACF8300CA3E9B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07823BACF8300CA3E9B /* MainViewController.swift */; };
 		DEE5E07C23BACF8300CA3E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E07A23BACF8300CA3E9B /* Main.storyboard */; };
 		DEE5E07E23BACF8500CA3E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E07D23BACF8500CA3E9B /* Assets.xcassets */; };
 		DEE5E08123BACF8500CA3E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E07F23BACF8500CA3E9B /* LaunchScreen.storyboard */; };
@@ -42,7 +42,7 @@
 		DEE5E07123BACF8300CA3E9B /* UICollectionViewCompositionalLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewCompositionalLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE5E07423BACF8300CA3E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE5E07623BACF8300CA3E9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEE5E07823BACF8300CA3E9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEE5E07823BACF8300CA3E9B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DEE5E07B23BACF8300CA3E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEE5E07D23BACF8500CA3E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEE5E08023BACF8500CA3E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,6 @@
 				A2465750F607CE30D8B72997 /* Pods-UICollectionViewCompositionalLayoutExample.debug.xcconfig */,
 				15643D8768A95C6D79188D2F /* Pods-UICollectionViewCompositionalLayoutExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -124,13 +123,19 @@
 		DEE5E07323BACF8300CA3E9B /* UICollectionViewCompositionalLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
+				DEE5E08223BACF8500CA3E9B /* Info.plist */,
 				DEE5E07423BACF8300CA3E9B /* AppDelegate.swift */,
 				DEE5E07623BACF8300CA3E9B /* SceneDelegate.swift */,
-				DEE5E07823BACF8300CA3E9B /* ViewController.swift */,
-				DEE5E07A23BACF8300CA3E9B /* Main.storyboard */,
 				DEE5E07D23BACF8500CA3E9B /* Assets.xcassets */,
-				DEE5E07F23BACF8500CA3E9B /* LaunchScreen.storyboard */,
-				DEE5E08223BACF8500CA3E9B /* Info.plist */,
+				DEF24C9723BFA07600A82D93 /* APIManager */,
+				DEF24C9423BF9F3B00A82D93 /* Enum */,
+				DEF24C9823BFA08300A82D93 /* Extension */,
+				DEF24C9523BF9F4800A82D93 /* Model */,
+				DEF24C9923BFA09200A82D93 /* Modules */,
+				DEF24C9A23BFA0A000A82D93 /* Storyboard */,
+				DEF24C9B23BFA0A700A82D93 /* View */,
+				DEF24C9C23BFA0AD00A82D93 /* ViewController */,
+				DEF24C9623BF9F5700A82D93 /* ViewModel */,
 			);
 			path = UICollectionViewCompositionalLayoutExample;
 			sourceTree = "<group>";
@@ -151,6 +156,72 @@
 				DEE5E09823BACF8500CA3E9B /* Info.plist */,
 			);
 			path = UICollectionViewCompositionalLayoutExampleUITests;
+			sourceTree = "<group>";
+		};
+		DEF24C9423BF9F3B00A82D93 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		DEF24C9523BF9F4800A82D93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEF24C9623BF9F5700A82D93 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEF24C9723BFA07600A82D93 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		DEF24C9823BFA08300A82D93 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DEF24C9923BFA09200A82D93 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DEF24C9A23BFA0A000A82D93 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DEE5E07F23BACF8500CA3E9B /* LaunchScreen.storyboard */,
+				DEE5E07A23BACF8300CA3E9B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DEF24C9B23BFA0A700A82D93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEF24C9C23BFA0AD00A82D93 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DEE5E07823BACF8300CA3E9B /* MainViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE5E07923BACF8300CA3E9B /* ViewController.swift in Sources */,
+				DEE5E07923BACF8300CA3E9B /* MainViewController.swift in Sources */,
 				DEE5E07523BACF8300CA3E9B /* AppDelegate.swift in Sources */,
 				DEE5E07723BACF8300CA3E9B /* SceneDelegate.swift in Sources */,
 			);
