@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: - Protocol
+
 protocol MainScrollTitleViewControllerDelegate: NSObjectProtocol {
 
     // 進むボタン・戻るボタンを押下時についての処理
@@ -17,11 +19,9 @@ protocol MainScrollTitleViewControllerDelegate: NSObjectProtocol {
 
 final class MainScrollTitleViewController: UIViewController {
 
-    // MARK: - Protocol Variables
-
     weak var delegate: MainScrollTitleViewControllerDelegate?
 
-    // MARK: - Properties
+    // MARK: - Property
 
     // ボタン押下時の軽微な振動を追加する
     private let buttonFeedbackGenerator: UIImpactFeedbackGenerator = {

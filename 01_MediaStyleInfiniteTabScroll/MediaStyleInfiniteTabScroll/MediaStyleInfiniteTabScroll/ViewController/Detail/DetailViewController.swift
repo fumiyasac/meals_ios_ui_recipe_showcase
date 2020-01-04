@@ -13,7 +13,7 @@ import UIKit
 
 final class DetailViewController: UIViewController {
 
-    // MARK: - Properties
+    // MARK: - Property
 
     // ヘッダー部分の表示エリアのトータルの高さ
     private let headerHeight: CGFloat = 300.0
@@ -29,7 +29,7 @@ final class DetailViewController: UIViewController {
     // UITableViewで表示するものをひとまとめにするための変数
     private var tableViews: [UITableView] = []
     
-    // MARK: - @IBOutlets
+    // MARK: - @IBOutlet
 
     // ヘッダー部分の写真パララックス表現をするViewにおける上方向の制約値
     @IBOutlet weak private var headerViewTopConstraint: NSLayoutConstraint!

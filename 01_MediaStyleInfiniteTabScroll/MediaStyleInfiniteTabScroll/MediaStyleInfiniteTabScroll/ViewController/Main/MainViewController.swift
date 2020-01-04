@@ -10,7 +10,7 @@ import UIKit
 
 final class MainViewController: UIViewController {
 
-    // MARK: - Properties
+    // MARK: - Property
 
     // 表示対象データ
     private let categories: [String] = [

@@ -16,7 +16,7 @@ import UIKit
 
 final class SemiModalViewController: UIViewController, SemiModalTransitionable {
 
-    // MARK: - Variables
+    // MARK: - Property
 
     // MEMO: HalfModalTransitionableプロトコルを適用に伴い定義する変数
     var percentThreshold: CGFloat = 0.36
@@ -25,7 +25,7 @@ final class SemiModalViewController: UIViewController, SemiModalTransitionable {
     // MEMO: 配置したUIScrollViewのY軸方向のオフセット値を保存するための変数
     private var scrollViewContentOffsetY: CGFloat = 0.0
 
-    // MARK: - @IBOutlets
+    // MARK: - @IBOutlet
 
     @IBOutlet weak private var semiModalBackgroundView: UIView!
     @IBOutlet weak private var semiModalHeaderView: UIView!

@@ -10,7 +10,7 @@ import UIKit
 
 final class ListViewController: UIViewController {
 
-    // MARK: - Properties
+    // MARK: - Property
 
     private var selectedCategoryArticles: [ArticleEntity] = [] {
         didSet {
@@ -18,7 +18,7 @@ final class ListViewController: UIViewController {
         }
     }
 
-    // MARK: - @IBOutlets
+    // MARK: - @IBOutlet
 
     @IBOutlet weak private var listCollectionView: UICollectionView!
 
