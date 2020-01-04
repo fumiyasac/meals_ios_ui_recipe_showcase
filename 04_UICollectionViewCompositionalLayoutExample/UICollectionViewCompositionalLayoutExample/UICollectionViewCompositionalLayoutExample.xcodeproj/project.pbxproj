@@ -16,6 +16,13 @@
 		DEE5E08123BACF8500CA3E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E07F23BACF8500CA3E9B /* LaunchScreen.storyboard */; };
 		DEE5E08C23BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E08B23BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleTests.swift */; };
 		DEE5E09723BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E09623BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleUITests.swift */; };
+		DEF24C9E23C0E56200A82D93 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24C9D23C0E56200A82D93 /* PhotoViewController.swift */; };
+		DEF24CA023C1363800A82D93 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24C9F23C1363800A82D93 /* SearchViewController.swift */; };
+		DEF24CA223C13CFA00A82D93 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CA123C13CFA00A82D93 /* NSObjectProtocolExtension.swift */; };
+		DEF24CA423C13F2E00A82D93 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CA323C13F2E00A82D93 /* UIColorExtension.swift */; };
+		DEF24CA623C13F7A00A82D93 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CA523C13F7A00A82D93 /* UICollectionViewExtension.swift */; };
+		DEF24CA823C13F9700A82D93 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CA723C13F9700A82D93 /* UITableViewExtension.swift */; };
+		DEF24CAA23C13FE900A82D93 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CA923C13FE900A82D93 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		DEE5E09223BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewCompositionalLayoutExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE5E09623BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCompositionalLayoutExampleUITests.swift; sourceTree = "<group>"; };
 		DEE5E09823BACF8500CA3E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF24C9D23C0E56200A82D93 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		DEF24C9F23C1363800A82D93 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DEF24CA123C13CFA00A82D93 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
+		DEF24CA323C13F2E00A82D93 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DEF24CA523C13F7A00A82D93 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		DEF24CA723C13F9700A82D93 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		DEF24CA923C13FE900A82D93 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +203,11 @@
 		DEF24C9823BFA08300A82D93 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DEF24CA123C13CFA00A82D93 /* NSObjectProtocolExtension.swift */,
+				DEF24CA323C13F2E00A82D93 /* UIColorExtension.swift */,
+				DEF24CA523C13F7A00A82D93 /* UICollectionViewExtension.swift */,
+				DEF24CA723C13F9700A82D93 /* UITableViewExtension.swift */,
+				DEF24CA923C13FE900A82D93 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -220,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				DEE5E07823BACF8300CA3E9B /* MainViewController.swift */,
+				DEF24C9D23C0E56200A82D93 /* PhotoViewController.swift */,
+				DEF24C9F23C1363800A82D93 /* SearchViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -399,7 +420,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF24CA023C1363800A82D93 /* SearchViewController.swift in Sources */,
+				DEF24CA423C13F2E00A82D93 /* UIColorExtension.swift in Sources */,
+				DEF24CAA23C13FE900A82D93 /* UIViewControllerExtension.swift in Sources */,
 				DEE5E07923BACF8300CA3E9B /* MainViewController.swift in Sources */,
+				DEF24C9E23C0E56200A82D93 /* PhotoViewController.swift in Sources */,
+				DEF24CA623C13F7A00A82D93 /* UICollectionViewExtension.swift in Sources */,
+				DEF24CA223C13CFA00A82D93 /* NSObjectProtocolExtension.swift in Sources */,
+				DEF24CA823C13F9700A82D93 /* UITableViewExtension.swift in Sources */,
 				DEE5E07523BACF8300CA3E9B /* AppDelegate.swift in Sources */,
 				DEE5E07723BACF8300CA3E9B /* SceneDelegate.swift in Sources */,
 			);

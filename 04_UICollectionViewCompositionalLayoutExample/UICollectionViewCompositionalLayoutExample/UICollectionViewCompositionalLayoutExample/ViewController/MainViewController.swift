@@ -7,8 +7,19 @@
 //
 
 import UIKit
+import BetterSegmentedControl
 
 class MainViewController: UIViewController {
+
+    // MARK: - Property
+
+    // MARK: - @IBOutlet
+
+    @IBOutlet weak private var photoContainerView: UIView!
+    @IBOutlet weak private var searchContainerView: UIView!
+    @IBOutlet weak private var screenSegmentControl: BetterSegmentedControl!
+
+    // MARK: - Override
 
     override func viewDidLoad() {
         super.viewDidLoad()
