@@ -15,39 +15,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0uH-kQ-7iI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZo-9e-sZd">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <connections>
-                                    <segue destination="hdn-hz-oCZ" kind="embed" id="rlZ-lS-hOx"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulS-sl-hpY">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <connections>
-                                    <segue destination="leY-OP-TR7" kind="embed" id="HOl-H7-bXf"/>
-                                </connections>
-                            </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0S-7n-Kqy" customClass="BetterSegmentedControl" customModule="BetterSegmentedControl">
-                                <rect key="frame" x="16" y="589" width="343" height="58"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0uH-kQ-7iI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                        <connections>
+                                            <segue destination="hdn-hz-oCZ" kind="embed" id="rlZ-lS-hOx"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulS-sl-hpY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                        <connections>
+                                            <segue destination="leY-OP-TR7" kind="embed" id="HOl-H7-bXf"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="eHK-3y-uQb"/>
+                                    <constraint firstItem="ulS-sl-hpY" firstAttribute="top" secondItem="qZo-9e-sZd" secondAttribute="top" id="733-Np-S98"/>
+                                    <constraint firstAttribute="trailing" secondItem="ulS-sl-hpY" secondAttribute="trailing" id="Wuo-dO-L9z"/>
+                                    <constraint firstItem="ulS-sl-hpY" firstAttribute="leading" secondItem="qZo-9e-sZd" secondAttribute="leading" id="bRP-aZ-LaP"/>
+                                    <constraint firstAttribute="bottom" secondItem="ulS-sl-hpY" secondAttribute="bottom" id="dF5-WZ-nBu"/>
+                                    <constraint firstAttribute="bottom" secondItem="0uH-kQ-7iI" secondAttribute="bottom" id="k9n-uy-HXS"/>
+                                    <constraint firstItem="0uH-kQ-7iI" firstAttribute="leading" secondItem="qZo-9e-sZd" secondAttribute="leading" id="lz4-Zm-7D5"/>
+                                    <constraint firstAttribute="trailing" secondItem="0uH-kQ-7iI" secondAttribute="trailing" id="tY6-J1-1d8"/>
+                                    <constraint firstItem="0uH-kQ-7iI" firstAttribute="top" secondItem="qZo-9e-sZd" secondAttribute="top" id="uGR-c3-1o4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0S-7n-Kqy" customClass="BetterSegmentedControl" customModule="BetterSegmentedControl">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eHK-3y-uQb"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="0uH-kQ-7iI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="403-oM-grf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L0S-7n-Kqy" secondAttribute="trailing" constant="16" id="9yI-VF-9Ph"/>
-                            <constraint firstItem="0uH-kQ-7iI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NOF-t0-lI4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qZo-9e-sZd" secondAttribute="trailing" id="Nhr-KM-oBC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L0S-7n-Kqy" secondAttribute="bottom" constant="20" id="R1j-45-MIU"/>
                             <constraint firstItem="L0S-7n-Kqy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UMB-99-FG3"/>
-                            <constraint firstItem="0uH-kQ-7iI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cLr-8r-SyJ"/>
-                            <constraint firstItem="ulS-sl-hpY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eOe-vL-CKi"/>
-                            <constraint firstItem="ulS-sl-hpY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iCd-hW-vtN"/>
-                            <constraint firstItem="0uH-kQ-7iI" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="qC3-rK-OeR"/>
-                            <constraint firstAttribute="bottom" secondItem="ulS-sl-hpY" secondAttribute="bottom" id="tOk-it-Qxb"/>
-                            <constraint firstItem="ulS-sl-hpY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vf5-wc-iH2"/>
+                            <constraint firstItem="qZo-9e-sZd" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="hTv-f5-V4c"/>
+                            <constraint firstItem="qZo-9e-sZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o3R-cz-t5E"/>
+                            <constraint firstItem="qZo-9e-sZd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wcy-Lj-Bcz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,6 +67,7 @@
                     <connections>
                         <outlet property="photoContainerView" destination="ulS-sl-hpY" id="1ye-uJ-zCO"/>
                         <outlet property="screenSegmentControl" destination="L0S-7n-Kqy" id="A6n-MP-EmU"/>
+                        <outlet property="screenView" destination="qZo-9e-sZd" id="Zgv-c3-N7n"/>
                         <outlet property="searchContainerView" destination="0uH-kQ-7iI" id="Kfu-bF-9jb"/>
                     </connections>
                 </viewController>
@@ -77,10 +90,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ivo-1h-zUI" firstAttribute="leading" secondItem="Slx-q2-tqw" secondAttribute="leading" id="4Bx-F1-yYf"/>
-                            <constraint firstItem="Ivo-1h-zUI" firstAttribute="top" secondItem="Slx-q2-tqw" secondAttribute="top" id="Ays-fV-3bV"/>
-                            <constraint firstItem="Ivo-1h-zUI" firstAttribute="trailing" secondItem="Slx-q2-tqw" secondAttribute="trailing" id="EY2-Wb-fvx"/>
-                            <constraint firstItem="Ivo-1h-zUI" firstAttribute="bottom" secondItem="Slx-q2-tqw" secondAttribute="bottom" id="lUV-k8-n5H"/>
+                            <constraint firstItem="Ivo-1h-zUI" firstAttribute="leading" secondItem="vwY-VA-j8q" secondAttribute="leading" id="4Bx-F1-yYf"/>
+                            <constraint firstItem="Ivo-1h-zUI" firstAttribute="top" secondItem="vwY-VA-j8q" secondAttribute="top" id="Ays-fV-3bV"/>
+                            <constraint firstItem="Ivo-1h-zUI" firstAttribute="trailing" secondItem="vwY-VA-j8q" secondAttribute="trailing" id="EY2-Wb-fvx"/>
+                            <constraint firstItem="Ivo-1h-zUI" firstAttribute="bottom" secondItem="vwY-VA-j8q" secondAttribute="bottom" id="lUV-k8-n5H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Slx-q2-tqw"/>
                     </view>
@@ -99,6 +112,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Io9-CX-ycE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.65098039220000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RqU-8J-4gf"/>
@@ -130,10 +144,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hzz-Dp-8Hs" firstAttribute="trailing" secondItem="06Q-Wf-EnC" secondAttribute="trailing" id="5D3-On-URm"/>
-                            <constraint firstItem="hzz-Dp-8Hs" firstAttribute="top" secondItem="06Q-Wf-EnC" secondAttribute="top" id="Bsh-JA-3xD"/>
-                            <constraint firstItem="hzz-Dp-8Hs" firstAttribute="bottom" secondItem="06Q-Wf-EnC" secondAttribute="bottom" id="Bzh-7t-8tB"/>
-                            <constraint firstItem="hzz-Dp-8Hs" firstAttribute="leading" secondItem="06Q-Wf-EnC" secondAttribute="leading" id="EM5-P2-Lxr"/>
+                            <constraint firstItem="hzz-Dp-8Hs" firstAttribute="trailing" secondItem="s7T-JJ-N1z" secondAttribute="trailing" id="5D3-On-URm"/>
+                            <constraint firstItem="hzz-Dp-8Hs" firstAttribute="top" secondItem="s7T-JJ-N1z" secondAttribute="top" id="Bsh-JA-3xD"/>
+                            <constraint firstItem="hzz-Dp-8Hs" firstAttribute="bottom" secondItem="s7T-JJ-N1z" secondAttribute="bottom" id="Bzh-7t-8tB"/>
+                            <constraint firstItem="hzz-Dp-8Hs" firstAttribute="leading" secondItem="s7T-JJ-N1z" secondAttribute="leading" id="EM5-P2-Lxr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="06Q-Wf-EnC"/>
                     </view>

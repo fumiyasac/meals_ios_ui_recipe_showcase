@@ -45,7 +45,7 @@ struct Photo: Hashable, Decodable {
         hasher.combine(id)
     }
 
-    static func == (lhs: Article, rhs: Article) -> Bool {
+    static func == (lhs: Photo, rhs: Photo) -> Bool {
         return lhs.id == rhs.id
     }
 }
