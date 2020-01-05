@@ -7,8 +7,7 @@
         }
     ],
     "get_banners": [],
-    "get_pickups": [],
-    "get_keywords": [],
     "get_recommends": [],
-    "get_photo_by_id": []
+    "get_keywords": [],
+    "get_articles": []
 }

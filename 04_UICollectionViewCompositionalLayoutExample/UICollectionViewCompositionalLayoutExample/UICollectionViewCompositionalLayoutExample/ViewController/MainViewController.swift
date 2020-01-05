@@ -23,6 +23,13 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setupScreenSegmentControl()
+    }
+
+    // MARK: - Private Function
+
+    private func setupScreenSegmentControl() {
+        
     }
 }
-

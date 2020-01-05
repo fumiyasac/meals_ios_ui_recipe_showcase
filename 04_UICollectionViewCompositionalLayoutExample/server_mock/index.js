@@ -12,11 +12,10 @@ const router = jsonServer.router('datasources/db.json');
 const middlewares = jsonServer.defaults();
 const rewrite_rules = jsonServer.rewriter({
     "/api/mock/v1/special/banners" : "/get_banners",
-    "/api/mock/v1/special/pickups" : "/get_pickups",
+    "/api/mock/v1/special/recommends" : "/get_recommends",
+    "/api/mock/v1/special/articles" : "/get_articles",
     "/api/mock/v1/special/photos?page=:page" : "/get_photos?page=:page",
     "/api/mock/v1/special/keywords" : "/get_keywords",
-    "/api/mock/v1/special/photo?id=:id"   : "/get_photo_by_id/:id",
-    "/api/mock/v1/special/recommends" : "/get_recommends",
 });
 
 // リクエストのルールを設定する

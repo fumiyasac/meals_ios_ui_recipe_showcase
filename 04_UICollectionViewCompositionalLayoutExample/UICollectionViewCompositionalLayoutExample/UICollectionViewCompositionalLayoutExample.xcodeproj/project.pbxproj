@@ -23,6 +23,12 @@
 		DEF24CA623C13F7A00A82D93 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CA523C13F7A00A82D93 /* UICollectionViewExtension.swift */; };
 		DEF24CA823C13F9700A82D93 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CA723C13F9700A82D93 /* UITableViewExtension.swift */; };
 		DEF24CAA23C13FE900A82D93 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CA923C13FE900A82D93 /* UIViewControllerExtension.swift */; };
+		DEF24CAC23C14CE300A82D93 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CAB23C14CE300A82D93 /* APIRequestManager.swift */; };
+		DEF24CAE23C1533100A82D93 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CAD23C1533100A82D93 /* Article.swift */; };
+		DEF24CB023C154DB00A82D93 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CAF23C154DB00A82D93 /* Banner.swift */; };
+		DEF24CB223C1558900A82D93 /* Recommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CB123C1558900A82D93 /* Recommend.swift */; };
+		DEF24CB423C155BC00A82D93 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CB323C155BC00A82D93 /* Photo.swift */; };
+		DEF24CB623C1596700A82D93 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CB523C1596700A82D93 /* Keyword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,12 @@
 		DEF24CA523C13F7A00A82D93 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		DEF24CA723C13F9700A82D93 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		DEF24CA923C13FE900A82D93 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		DEF24CAB23C14CE300A82D93 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		DEF24CAD23C1533100A82D93 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		DEF24CAF23C154DB00A82D93 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		DEF24CB123C1558900A82D93 /* Recommend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommend.swift; sourceTree = "<group>"; };
+		DEF24CB323C155BC00A82D93 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		DEF24CB523C1596700A82D93 /* Keyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +194,11 @@
 		DEF24C9523BF9F4800A82D93 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DEF24CAD23C1533100A82D93 /* Article.swift */,
+				DEF24CAF23C154DB00A82D93 /* Banner.swift */,
+				DEF24CB123C1558900A82D93 /* Recommend.swift */,
+				DEF24CB323C155BC00A82D93 /* Photo.swift */,
+				DEF24CB523C1596700A82D93 /* Keyword.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +213,7 @@
 		DEF24C9723BFA07600A82D93 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				DEF24CAB23C14CE300A82D93 /* APIRequestManager.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -422,12 +440,18 @@
 			files = (
 				DEF24CA023C1363800A82D93 /* SearchViewController.swift in Sources */,
 				DEF24CA423C13F2E00A82D93 /* UIColorExtension.swift in Sources */,
+				DEF24CB023C154DB00A82D93 /* Banner.swift in Sources */,
 				DEF24CAA23C13FE900A82D93 /* UIViewControllerExtension.swift in Sources */,
+				DEF24CB223C1558900A82D93 /* Recommend.swift in Sources */,
 				DEE5E07923BACF8300CA3E9B /* MainViewController.swift in Sources */,
+				DEF24CAE23C1533100A82D93 /* Article.swift in Sources */,
 				DEF24C9E23C0E56200A82D93 /* PhotoViewController.swift in Sources */,
 				DEF24CA623C13F7A00A82D93 /* UICollectionViewExtension.swift in Sources */,
+				DEF24CB423C155BC00A82D93 /* Photo.swift in Sources */,
+				DEF24CAC23C14CE300A82D93 /* APIRequestManager.swift in Sources */,
 				DEF24CA223C13CFA00A82D93 /* NSObjectProtocolExtension.swift in Sources */,
 				DEF24CA823C13F9700A82D93 /* UITableViewExtension.swift in Sources */,
+				DEF24CB623C1596700A82D93 /* Keyword.swift in Sources */,
 				DEE5E07523BACF8300CA3E9B /* AppDelegate.swift in Sources */,
 				DEE5E07723BACF8300CA3E9B /* SceneDelegate.swift in Sources */,
 			);
