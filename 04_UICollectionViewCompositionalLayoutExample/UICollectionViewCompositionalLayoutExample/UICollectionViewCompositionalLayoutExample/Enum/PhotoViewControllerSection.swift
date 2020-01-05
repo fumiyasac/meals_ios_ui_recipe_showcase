@@ -13,6 +13,5 @@ import Foundation
 enum PhotoViewControllerSection: Int, CaseIterable {
     case Banners
     case Recommends
-    case Articles
     case Photos
 }

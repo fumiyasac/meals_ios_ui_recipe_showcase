@@ -69,6 +69,7 @@ class MainViewController: UIViewController {
 
     private func setupScreenContainerViews() {
 
+        // コンテンツ表示用のContainerViewの初期表示状態の設定
         photoContainerView.alpha = 1
         searchContainerView.alpha = 0
     }

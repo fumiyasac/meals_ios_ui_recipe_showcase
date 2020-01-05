@@ -9,17 +9,23 @@
 import Foundation
 import Combine
 
-// MARK: - Protocol
+enum APIRequestStatus {
+    case none
+    case requesting
+    case requestSuccess
+    case requestFailure
+}
 
 enum APIError : Error {
     case error(String)
 }
 
+// MARK: - Protocol
+
 protocol APIRequestManagerProtocol {
     func getBanners() -> Future<[Banner], APIError>
-    func getArticles() -> Future<[Article], APIError>
     func getRecommends() -> Future<[Recommend], APIError>
-    func getPhotos() -> Future<[Photo], APIError>
+    func getPhotoList(perPage: Int) -> Future<[PhotoList], APIError>
     func getKeywords() -> Future<[Keyword], APIError>
 }
 
@@ -43,7 +49,6 @@ class APIRequestManager {
     private enum EndPoint: String {
 
         case banners = "banners"
-        case articles = "articles"
         case recommends = "recommends"
         case photos = "photos"
         case keywords = "keywords"
@@ -65,19 +70,15 @@ extension APIRequestManager: APIRequestManagerProtocol {
         return handleSessionTask(Banner.self, request: bannersAPIRequest)
     }
 
-    func getArticles() -> Future<[Article], APIError> {
-        let articlesAPIRequest = makeUrlForGetRequest(EndPoint.articles.getBaseUrl())
-        return handleSessionTask(Article.self, request: articlesAPIRequest)
-    }
-
     func getRecommends() -> Future<[Recommend], APIError> {
         let recommendsAPIRequest = makeUrlForGetRequest(EndPoint.recommends.getBaseUrl())
         return handleSessionTask(Recommend.self, request: recommendsAPIRequest)
     }
 
-    func getPhotos() -> Future<[Photo], APIError> {
-        let photosAPIRequest = makeUrlForGetRequest(EndPoint.photos.getBaseUrl())
-        return handleSessionTask(Photo.self, request: photosAPIRequest)
+    func getPhotoList(perPage: Int) -> Future<[PhotoList], APIError> {
+        let endPointUrl = EndPoint.photos.getBaseUrl() + "?page=" + String(perPage)
+        let photoListAPIRequest = makeUrlForGetRequest(endPointUrl)
+        return handleSessionTask(PhotoList.self, request: photoListAPIRequest)
     }
 
     func getKeywords() -> Future<[Keyword], APIError> {
