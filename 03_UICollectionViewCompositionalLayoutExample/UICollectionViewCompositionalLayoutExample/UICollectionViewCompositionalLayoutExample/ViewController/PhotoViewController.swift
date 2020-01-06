@@ -249,9 +249,11 @@ final class PhotoViewController: UIViewController {
         viewModel.outputs.banners
             .subscribe(on: RunLoop.main)
             .sink(
-                receiveValue: { [weak self] banners in
+                receiveValue: { [weak self] newBanners in
                     guard let self = self else { return }
-                    self.snapshot.appendItems(banners, toSection: .banners)
+                    let oldBanners = self.snapshot.itemIdentifiers(inSection: .banners)
+                    self.snapshot.deleteItems(oldBanners)
+                    self.snapshot.appendItems(newBanners, toSection: .banners)
                     self.dataSource.apply(self.snapshot, animatingDifferences: false)
                 }
             )
@@ -260,9 +262,11 @@ final class PhotoViewController: UIViewController {
         viewModel.outputs.recommends
             .subscribe(on: RunLoop.main)
             .sink(
-                receiveValue: { [weak self] recommends in
+                receiveValue: { [weak self] newRecommends in
                     guard let self = self else { return }
-                    self.snapshot.appendItems(recommends, toSection: .recommends)
+                    let oldRecommends = self.snapshot.itemIdentifiers(inSection: .recommends)
+                    self.snapshot.deleteItems(oldRecommends)
+                    self.snapshot.appendItems(newRecommends, toSection: .recommends)
                     self.dataSource.apply(self.snapshot, animatingDifferences: false)
                 }
             )
@@ -271,10 +275,12 @@ final class PhotoViewController: UIViewController {
         viewModel.outputs.photos
             .subscribe(on: RunLoop.main)
             .sink(
-                receiveValue: { [weak self] photos in
+                receiveValue: { [weak self] newPhotos in
                     guard let self = self else { return }
-                    self.snapshot.appendItems(photos, toSection: .photos)
-                    self.dataSource.apply(self.snapshot, animatingDifferences: false)
+                    let oldPhotos = self.snapshot.itemIdentifiers(inSection: .photos)
+                    self.snapshot.deleteItems(oldPhotos)
+                    self.snapshot.appendItems(newPhotos, toSection: .photos)
+                    self.dataSource.apply(self.snapshot, animatingDifferences: true)
                 }
             )
             .store(in: &cancellables)

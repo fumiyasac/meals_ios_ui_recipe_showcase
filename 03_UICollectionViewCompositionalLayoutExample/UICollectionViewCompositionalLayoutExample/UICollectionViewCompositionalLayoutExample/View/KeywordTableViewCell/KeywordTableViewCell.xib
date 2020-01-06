@@ -16,14 +16,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトルが入ります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMP-J2-Enl">
-                        <rect key="frame" x="8" y="10" width="304" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトルが入ります。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMP-J2-Enl">
+                        <rect key="frame" x="15" y="10" width="290" height="20.5"/>
                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カナ文字が入ります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DU-rx-Y6b">
-                        <rect key="frame" x="8" y="33.5" width="304" height="16.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カナ文字が入ります。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DU-rx-Y6b">
+                        <rect key="frame" x="15" y="33.5" width="290" height="16.5"/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                         <color key="textColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                         <nil key="highlightedColor"/>
@@ -32,11 +32,11 @@
                 <constraints>
                     <constraint firstItem="6DU-rx-Y6b" firstAttribute="top" secondItem="ZMP-J2-Enl" secondAttribute="bottom" constant="3" id="4Gv-M9-9OR"/>
                     <constraint firstItem="ZMP-J2-Enl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7e4-mY-DGO"/>
-                    <constraint firstItem="6DU-rx-Y6b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="XRv-pJ-6N0"/>
+                    <constraint firstItem="6DU-rx-Y6b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XRv-pJ-6N0"/>
                     <constraint firstAttribute="bottom" secondItem="6DU-rx-Y6b" secondAttribute="bottom" constant="8" id="aJM-FM-yTs"/>
-                    <constraint firstAttribute="trailing" secondItem="6DU-rx-Y6b" secondAttribute="trailing" constant="8" id="edB-F6-Jfe"/>
-                    <constraint firstItem="ZMP-J2-Enl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="iYH-OR-OEE"/>
-                    <constraint firstAttribute="trailing" secondItem="ZMP-J2-Enl" secondAttribute="trailing" constant="8" id="r8n-U7-fl7"/>
+                    <constraint firstAttribute="trailing" secondItem="6DU-rx-Y6b" secondAttribute="trailing" constant="15" id="edB-F6-Jfe"/>
+                    <constraint firstItem="ZMP-J2-Enl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="iYH-OR-OEE"/>
+                    <constraint firstAttribute="trailing" secondItem="ZMP-J2-Enl" secondAttribute="trailing" constant="15" id="r8n-U7-fl7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

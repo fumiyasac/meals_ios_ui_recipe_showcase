@@ -7,7 +7,7 @@
                     "id": 1,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo1.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo1.jpg",
                     "title": "のどぐろの塩焼き",
                     "description": "東京で塩焼きを注文すると小さなサイズでも5000円はいってしまう高級魚のひとつ。品の良い白身と脂の加減は本当に言葉を失うほどに美味。"
                 },
@@ -15,7 +15,7 @@
                     "id": 2,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo2.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo2.jpg",
                     "title": "金沢のズワイガニ",
                     "description": "関東では松葉ガニの愛称で呼ばれているカニ。上品で癖のない味わいをそのまま蒸して堪能するのが最高です。"
                 },
@@ -23,7 +23,7 @@
                     "id": 3,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo3.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo3.jpg",
                     "title": "能登の海辺",
                     "description": "海に囲まれた能登半島では昔ながらの民家と磯場の風景があります。長閑で波音だけが響き渡る空間。"
                 },
@@ -31,7 +31,7 @@
                     "id": 4,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo4.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo4.jpg",
                     "title": "石川県名産の日本酒",
                     "description": "菊姫・天狗舞をはじめとして数々の銘酒が並ぶ石川県。"
                 },
@@ -39,7 +39,7 @@
                     "id": 5,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo5.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo5.jpg",
                     "title": "金沢市庁の風景",
                     "description": "実は移転していました。その影響もあってか周りの風景や施設をはじめ充実していました。"
                 }
@@ -53,7 +53,7 @@
                     "id": 6,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo6.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo6.jpg",
                     "title": "えんむすびーち",
                     "description": "一見すると「子供騙しな名前？？？」と思うかもしれませんが、見附海岸から恋路海岸までの3キロぐらいの場所をこう呼ぶそうです。能登内浦の見附島をバックに素敵な海の風景が広がる隠れたパワースポットです。"
                 },
@@ -61,7 +61,7 @@
                     "id": 7,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo7.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo7.jpg",
                     "title": "金沢おでん",
                     "description": "魚介でとった豊かな出汁に浮かぶのは日本海で取れた海の幸。おでんの具材と一緒にバイ貝やかまぼこが入っていて、普通のおでんとは一味違った発見があります。ちなみにつみれみたいなものは「ふかし」って呼ばれるものです。"
                 },
@@ -69,7 +69,7 @@
                     "id": 8,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo8.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo8.jpg",
                     "title": "千枚田",
                     "description": "こちらも能登を代表する風景の1つである千枚田。段状の土地に田んぼが広がる珍しい風景。"
                 },
@@ -77,7 +77,7 @@
                     "id": 9,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo9.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo9.jpg",
                     "title": "夜の東茶屋街",
                     "description": "まるで時代の流れから取り残されてしまったように昔ながらの街なみが広がる金沢東山。金沢を代表する観光スポットの1つですが結構最近では有名になったかな？と思ったり。"
                 },
@@ -85,7 +85,7 @@
                     "id": 10,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo10.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo10.jpg",
                     "title": "兼六園の雪吊り",
                     "description": "雪が多い北陸地方での「暮らしの英知」の1つ。昔は自分の家でもあったのは覚えています。"
                 }
@@ -99,7 +99,7 @@
                     "id": 11,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo11.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo11.jpg",
                     "title": "千里浜ドライブウェイ",
                     "description": "子供の頃に海水浴をしたり、奥能登方面へ釣りに出かける際にもよく眺めていた思い出の風景です。"
                 },
@@ -107,7 +107,7 @@
                     "id": 12,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo12.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo12.jpg",
                     "title": "ボラ待ち櫓",
                     "description": "能登の内海でよく見かけるものです。実はボラって釣り人からすると物凄い外道扱いされてしまう魚なんだけど、新鮮でちゃんとしめたボラは本当に姿からは想像がつかない程に美味なのは是非覚えておいて頂きたいです！"
                 },
@@ -115,7 +115,7 @@
                     "id": 13,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo13.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo13.jpg",
                     "title": "曇りの西茶屋街",
                     "description": "こちらも金沢を代表する茶屋街の1つ。近辺には昔から残っているお屋敷や神社仏閣等が立ち並び古き良き城下町だった頃の金沢の風景を見せてくれます。"
                 },
@@ -123,7 +123,7 @@
                     "id": 14,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo14.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo14.jpg",
                     "title": "近江町市場の鮮魚",
                     "description": "金沢の美味しいものが集まるスポット。新鮮な日本海の海産物を堪能できます。"
                 },
@@ -131,7 +131,7 @@
                     "id": 15,
                     "profile_name": "TestUser",
                     "date_string": "2020.01.10",
-                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/photo15.jpg",
+                    "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo15.jpg",
                     "title": "金沢駅鼓門",
                     "description": "北陸新幹線の開通と一緒に大胆にリニューアルされた金沢駅。観光地としての発展と共に近辺の街並みも色々と美しく整っています。"
                 }
@@ -143,19 +143,19 @@
         {
             "id": 1,
             "title": "金沢の歴史的文化遺産と秋の風景",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/banner1.jpg",
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/banner1.jpg",
             "date_string": "2020.01.06"
         },
         {
             "id": 2,
             "title": "どんな料理の仕方でも美味しい香箱ガニ",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/banner2.jpg",
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/banner2.jpg",
             "date_string": "2020.01.06"
         },
         {
             "id": 3,
             "title": "ちょっと独特だけれども食べればファンになる料理",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/banner3.jpg",
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/banner3.jpg",
             "date_string": "2020.01.06"
         }
     ],
@@ -164,73 +164,73 @@
             "id": 1,
             "title": "No.1(魚市場)",
             "category": "食彩",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend1.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend1.jpg"
         },
         {
             "id": 2,
             "title": "No.2(漁港)",
             "category": "風景",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend2.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend2.jpg"
         },
         {
             "id": 3,
             "title": "No.3(長屋)",
             "category": "風景",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend3.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend3.jpg"
         },
         {
             "id": 4,
             "title": "No.4(森八)",
             "category": "風景",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend4.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend4.jpg"
         },
         {
             "id": 5,
             "title": "No.5(金箔)",
             "category": "風景",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend5.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend5.jpg"
         },
         {
             "id": 6,
             "title": "No.6(茶屋街)",
             "category": "風景",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend6.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend6.jpg"
         },
         {
             "id": 7,
             "title": "No.7(日本酒)",
             "category": "食彩",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend7.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend7.jpg"
         },
         {
             "id": 8,
             "title": "No.8(甘味)",
             "category": "食彩",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend8.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend8.jpg"
         },
         {
             "id": 9,
             "title": "No.9(お土産)",
             "category": "食彩",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend9.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend9.jpg"
         },
         {
             "id": 10,
             "title": "No.10(浅野川)",
             "category": "風景",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend10.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend10.jpg"
         },
         {
             "id": 11,
             "title": "No.11(市街地)",
             "category": "風景",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend11.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend11.jpg"
         },
         {
             "id": 12,
             "title": "No.12(逸品)",
             "category": "食彩",
-            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter04/recommend12.jpg"
+            "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/recommend12.jpg"
         }
     ],
     "get_keywords": [

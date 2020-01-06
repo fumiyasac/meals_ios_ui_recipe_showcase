@@ -15,6 +15,8 @@ struct Banner: Hashable, Decodable {
     let imageUrl: String
     let dateString: String
 
+    private let uuid = UUID()
+
     // MARK: - Enum
 
     private enum Keys: String, CodingKey {
@@ -42,10 +44,10 @@ struct Banner: Hashable, Decodable {
 
     // MEMO: Hashableプロトコルに適合させるための処理
     func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
+        hasher.combine(uuid)
     }
 
     static func == (lhs: Banner, rhs: Banner) -> Bool {
-        return lhs.id == rhs.id
+        return lhs.uuid == rhs.uuid
     }
 }

@@ -15,6 +15,8 @@ struct Recommend: Hashable, Decodable {
     let title: String
     let imageUrl: String
 
+    private let uuid = UUID()
+
     // MARK: - Enum
 
     private enum Keys: String, CodingKey {
@@ -42,10 +44,10 @@ struct Recommend: Hashable, Decodable {
 
     // MEMO: Hashableプロトコルに適合させるための処理
     func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
+        hasher.combine(uuid)
     }
 
     static func == (lhs: Recommend, rhs: Recommend) -> Bool {
-        return lhs.id == rhs.id
+        return lhs.uuid == rhs.uuid
     }
 }

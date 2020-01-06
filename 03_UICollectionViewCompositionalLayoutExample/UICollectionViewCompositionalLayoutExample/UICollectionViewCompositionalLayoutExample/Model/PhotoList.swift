@@ -63,7 +63,7 @@ struct Photo: Hashable, Decodable {
     let title: String
     let description: String
 
-    private(set) var height: CGFloat = 0.0
+    private let uuid = UUID()
 
     // MARK: - Enum
 
@@ -96,10 +96,10 @@ struct Photo: Hashable, Decodable {
 
     // MEMO: Hashableプロトコルに適合させるための処理
     func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
+        hasher.combine(uuid)
     }
 
     static func == (lhs: Photo, rhs: Photo) -> Bool {
-        return lhs.id == rhs.id
+        return lhs.uuid == rhs.uuid
     }
 }

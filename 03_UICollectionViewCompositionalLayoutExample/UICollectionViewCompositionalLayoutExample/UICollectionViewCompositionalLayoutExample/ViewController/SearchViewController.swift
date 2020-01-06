@@ -74,7 +74,7 @@ final class SearchViewController: UIViewController {
         tableView.delegate = self
 
         // MEMO: UITableViewCellの高さとした方向の隙間設定
-        tableView.estimatedRowHeight = UITableView.automaticDimension
+        tableView.rowHeight = 58.0
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 84, right: 0)
 
         // MEMO: DataSourceはUITableViewDiffableDataSourceを利用してUITableViewCellを継承したクラスを組み立てる
@@ -114,10 +114,11 @@ final class SearchViewController: UIViewController {
         viewModel.outputs.keywords
             .subscribe(on: RunLoop.main)
             .sink(
-                receiveValue: { [weak self] keywords in
-
+                receiveValue: { [weak self] newKeywords in
                     guard let self = self else { return }
-                    self.snapshot.appendItems(keywords, toSection: .keywordList)
+                    let oldKeywords = self.snapshot.itemIdentifiers(inSection: .keywordList)
+                    self.snapshot.deleteItems(oldKeywords)
+                    self.snapshot.appendItems(newKeywords, toSection: .keywordList)
                     self.dataSource.apply(self.snapshot, animatingDifferences: false)
                 }
             )
