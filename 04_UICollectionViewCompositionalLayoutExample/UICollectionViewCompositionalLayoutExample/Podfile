@@ -9,10 +9,5 @@ target 'UICollectionViewCompositionalLayoutExample' do
 
   # UI表現の際に利用するライブラリ
   pod 'Nuke'
-  pod 'FontAwesome.swift'
-  pod 'PanModal'
-  pod 'ESPullToRefresh'
-  pod 'Loaf'
-  pod 'MXParallaxHeader'
   pod 'BetterSegmentedControl'
 end
