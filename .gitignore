@@ -23,9 +23,8 @@ DerivedData
 
 # CocoaPods
 /01_MediaStyleInfiniteTabScroll/MediaStyleInfiniteTabScroll/Pods/*
-/02_PasscodeLockSensitive/PasscodeLockSensitive/Pods/*
-/03_MosaicPhotoGalleryLayouts/MosaicPhotoGalleryLayouts/Pods/*
-/04_UICollectionViewCompositionalLayoutExample/UICollectionViewCompositionalLayoutExample/Pods/*
+/02_MosaicPhotoGalleryLayouts/MosaicPhotoGalleryLayouts/Pods/*
+/03_UICollectionViewCompositionalLayoutExample/UICollectionViewCompositionalLayoutExample/Pods/*
 
 # Node.js Mock Server
-/04_UICollectionViewCompositionalLayoutExample/server_mock/node_modules/
+/03_UICollectionViewCompositionalLayoutExample/server_mock/node_modules/
