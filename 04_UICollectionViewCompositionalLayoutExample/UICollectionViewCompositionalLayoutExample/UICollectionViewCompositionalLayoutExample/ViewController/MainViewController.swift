@@ -11,8 +11,6 @@ import BetterSegmentedControl
 
 final class MainViewController: UIViewController {
 
-    // MARK: - Property
-
     // MARK: - Enum
 
     private enum ContainerViewIndex: Int {
@@ -58,7 +56,7 @@ final class MainViewController: UIViewController {
 
         // BetterSegmentedControlの表示やアクションに関する設定
         screenSegmentControl.segments = LabelSegment.segments(
-            withTitles: ["写真一覧表示", "キーワード検索"],
+            withTitles: ["写真一覧表示", "キーワード紹介"],
             normalFont: UIFont(name: "Avenir-Heavy", size: 13.0)!,
             normalTextColor: UIColor(code: "#00a6ff"),
             selectedFont: UIFont(name: "Avenir-Heavy", size: 13.0)!,

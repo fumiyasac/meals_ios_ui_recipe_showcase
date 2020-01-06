@@ -31,7 +31,6 @@
 		DEE5E08123BACF8500CA3E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE5E07F23BACF8500CA3E9B /* LaunchScreen.storyboard */; };
 		DEE5E08C23BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E08B23BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleTests.swift */; };
 		DEE5E09723BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E09623BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleUITests.swift */; };
-		DEF08C8E23C1ED9400394653 /* PhotoViewControllerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF08C8D23C1ED9400394653 /* PhotoViewControllerSection.swift */; };
 		DEF24C9E23C0E56200A82D93 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24C9D23C0E56200A82D93 /* PhotoViewController.swift */; };
 		DEF24CA023C1363800A82D93 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24C9F23C1363800A82D93 /* SearchViewController.swift */; };
 		DEF24CA223C13CFA00A82D93 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF24CA123C13CFA00A82D93 /* NSObjectProtocolExtension.swift */; };
@@ -96,7 +95,6 @@
 		DEE5E09223BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewCompositionalLayoutExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE5E09623BACF8500CA3E9B /* UICollectionViewCompositionalLayoutExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCompositionalLayoutExampleUITests.swift; sourceTree = "<group>"; };
 		DEE5E09823BACF8500CA3E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEF08C8D23C1ED9400394653 /* PhotoViewControllerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewControllerSection.swift; sourceTree = "<group>"; };
 		DEF24C9D23C0E56200A82D93 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		DEF24C9F23C1363800A82D93 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DEF24CA123C13CFA00A82D93 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 				DEE5E07623BACF8300CA3E9B /* SceneDelegate.swift */,
 				DEE5E07D23BACF8500CA3E9B /* Assets.xcassets */,
 				DEF24C9723BFA07600A82D93 /* APIManager */,
-				DEF24C9423BF9F3B00A82D93 /* Enum */,
 				DEF24C9823BFA08300A82D93 /* Extension */,
 				DEF24C9523BF9F4800A82D93 /* Model */,
 				DEAB11A223C33094000430BF /* Modules */,
@@ -274,14 +271,6 @@
 				DEE5E09823BACF8500CA3E9B /* Info.plist */,
 			);
 			path = UICollectionViewCompositionalLayoutExampleUITests;
-			sourceTree = "<group>";
-		};
-		DEF24C9423BF9F3B00A82D93 /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-				DEF08C8D23C1ED9400394653 /* PhotoViewControllerSection.swift */,
-			);
-			path = Enum;
 			sourceTree = "<group>";
 		};
 		DEF24C9523BF9F4800A82D93 /* Model */ = {
@@ -554,7 +543,6 @@
 				DEAB11A023C3118B000430BF /* PhotoCollectionViewCell.swift in Sources */,
 				DEAB119C23C279DB000430BF /* RecommendCollectionViewCell.swift in Sources */,
 				DEF24CAC23C14CE300A82D93 /* APIRequestManager.swift in Sources */,
-				DEF08C8E23C1ED9400394653 /* PhotoViewControllerSection.swift in Sources */,
 				DEF24CA223C13CFA00A82D93 /* NSObjectProtocolExtension.swift in Sources */,
 				DE73322C23C224A100FBA283 /* PhotoViewModel.swift in Sources */,
 				DEF24CA823C13F9700A82D93 /* UITableViewExtension.swift in Sources */,

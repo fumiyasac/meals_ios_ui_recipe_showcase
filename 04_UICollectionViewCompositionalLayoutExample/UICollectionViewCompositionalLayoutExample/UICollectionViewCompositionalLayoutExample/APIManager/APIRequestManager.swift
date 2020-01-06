@@ -9,6 +9,9 @@
 import Foundation
 import Combine
 
+// MARK: - Enum
+
+// APIリクエスト状態定義に関するEnum
 enum APIRequestStatus {
     case none
     case requesting
@@ -16,6 +19,7 @@ enum APIRequestStatus {
     case requestFailure
 }
 
+// APIエラーに関するEnum
 enum APIError : Error {
     case error(String)
 }

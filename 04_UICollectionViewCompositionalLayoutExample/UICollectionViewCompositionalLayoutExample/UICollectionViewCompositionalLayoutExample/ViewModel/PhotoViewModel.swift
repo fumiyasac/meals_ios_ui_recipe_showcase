@@ -24,6 +24,7 @@ protocol PhotoViewModelOutputs {
     var banners: AnyPublisher<[Banner], Never> { get }
     var recommends: AnyPublisher<[Recommend], Never> { get }
     var photos: AnyPublisher<[Photo], Never> { get }
+    var apiRequestStatus: AnyPublisher<APIRequestStatus, Never> { get }
 }
 
 // MARK: - Protocol (Types)
@@ -116,18 +117,23 @@ final class PhotoViewModel: PhotoViewModelType, PhotoViewModelInputs, PhotoViewM
             .store(in: &cancellables)
 
         // MEMO: 現在まで取得したデータのリフレッシュ処理を伴うAPIリクエスト
-        // → 実行時はViewController側でviewModel.inputs.refreshPhotoTrigger.send()で実行する
+        // → 実行時はViewController側でviewModel.inputs.refreshTrigger.send()で実行する
         refreshTrigger
             .sink(
                 receiveValue: { [weak self] in
                     guard let self = self else { return }
 
                     // MEMO: バナー・記事・おすすめセクションにおける表示データのリセット
+                    self._banners.removeAll()
+                    self.fetchBanners()
+
+                    self._recommends.removeAll()
+                    self.fetchRecommends()
 
                     // MEMO: ページング処理を伴うセクションにおける表示データのリセット
                     self.nextPageNumber = 1
                     self.hasNextPage = true
-                    self._photos = []
+                    self._photos.removeAll()
                     self.fetchPhotoLists()
                 }
             )
@@ -193,21 +199,17 @@ final class PhotoViewModel: PhotoViewModelType, PhotoViewModelInputs, PhotoViewM
         api.getPhotoList(perPage: nextPageNumber)
             .receive(on: RunLoop.main)
             .sink(
-                receiveCompletion: {  [weak self] completion in
+                receiveCompletion: { [weak self] completion in
                     guard let self = self else { return }
                     
                     switch completion {
-
                     // MEMO: 値取得に成功した場合のハンドリング
                     case .finished:
-
                         // MEMO: APIリクエストの処理結果を成功の状態に更新する
                         self._apiRequestStatus = .requestSuccess
                         print("receiveCompletion api.getPhotoList(perPage: nextPageNumber): \(completion)")
-
                     // MEMO: 値取得に失敗した場合のハンドリング
                     case .failure(let error):
-
                         // MEMO: APIリクエストの処理結果を失敗の状態に更新する
                         self._apiRequestStatus = .requestFailure
                         print("receiveCompletion error api.getPhotoList(perPage: nextPageNumber): \(error.localizedDescription)")
@@ -217,11 +219,9 @@ final class PhotoViewModel: PhotoViewModelType, PhotoViewModelInputs, PhotoViewM
                     guard let self = self else { return }
 
                     if let photoList = hashableObjects.first {
-
                         // MEMO: ViewModel内部処理用の変数を更新する
                         self.nextPageNumber = photoList.page + 1
                         self.hasNextPage = photoList.hasNextPage
-
                         // MEMO: 表示対象データを仲介役の変数へ追加する
                         let newPhotos = photoList.photos
                         let oldPhotos = self._photos

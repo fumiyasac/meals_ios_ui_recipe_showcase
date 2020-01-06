@@ -9,9 +9,20 @@
 import UIKit
 import Combine
 
+// MARK: - Enum
+
+enum PhotoSection: Int, CaseIterable {
+    case banners
+    case recommends
+    case photos
+}
+
 final class PhotoViewController: UIViewController {
 
     // MARK: - Property
+
+    // UICollectionViewに設置するRefreshControl
+    private let photoRefrashControl = UIRefreshControl()
 
     // sink(receiveCompletion:receiveValue:)実行時に返されるCancellableの保持用の変数
     private var cancellables: [AnyCancellable] = []
@@ -20,10 +31,10 @@ final class PhotoViewController: UIViewController {
     private let viewModel: PhotoViewModel = PhotoViewModel(api: APIRequestManager.shared)
 
     // MEMO: UICollectionViewを差分更新するためのNSDiffableDataSourceSnapshot
-    private var snapshot: NSDiffableDataSourceSnapshot<PhotoViewControllerSection, AnyHashable>!
+    private var snapshot: NSDiffableDataSourceSnapshot<PhotoSection, AnyHashable>!
 
     // MEMO: UICollectionViewを組み立てるためのDataSource
-    private var dataSource: UICollectionViewDiffableDataSource<PhotoViewControllerSection, AnyHashable>! = nil
+    private var dataSource: UICollectionViewDiffableDataSource<PhotoSection, AnyHashable>! = nil
 
     // MEMO: UICollectionViewCompositionalLayoutの設定（※Sectionごとに読み込ませて利用する）
     private lazy var compositionalLayout: UICollectionViewCompositionalLayout = {
@@ -32,15 +43,15 @@ final class PhotoViewController: UIViewController {
             switch sectionIndex {
 
             // MainSection: 0
-            case PhotoViewControllerSection.banners.rawValue:
+            case PhotoSection.banners.rawValue:
                 return self?.createBannersLayout()
 
             // MainSection: 1
-            case PhotoViewControllerSection.recommends.rawValue:
+            case PhotoSection.recommends.rawValue:
                 return self?.createRecommends()
 
             // MainSection: 2
-            case PhotoViewControllerSection.photos.rawValue:
+            case PhotoSection.photos.rawValue:
                 return self?.createPhotosLayout()
 
             default:
@@ -78,6 +89,35 @@ final class PhotoViewController: UIViewController {
         viewModel.inputs.fetchPhotosTrigger.send()
     }
 
+    // MARK: - Private Function
+
+    // UICollectionViewにおけるPullToRefresh実行時の処理
+    @objc private func executeRefresh() {
+
+        // MEMO: ViewModelに定義した表示データのリフレッシュ処理を実行する
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.36) {
+
+            // NSDiffableDataSourceの内容をリセットした後にAPIリクエストを実行する
+            self.resetDiffableDataSource()
+            self.viewModel.inputs.refreshTrigger.send()
+        }
+    }
+
+    // エラー発生時のアラート表示を設定をする
+    private func showAlertWith(completionHandler: (() -> ())? = nil) {
+
+        let alert = UIAlertController(
+            title: "エラーが発生しました",
+            message: "データの取得に失敗しました。通信環境等を確認の上再度お試し下さい。",
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
+            completionHandler?()
+        })
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+
     private func setupCollectionView() {
 
         // MEMO: このレイアウトで利用するセル要素・Header・Footerの登録
@@ -96,11 +136,15 @@ final class PhotoViewController: UIViewController {
         // MEMO: UICollectionViewDelegateについては従来通り
         collectionView.delegate = self
 
+        // MEMO: UICollectionViewでのRefreshControlに関する設定
+        collectionView.refreshControl = photoRefrashControl
+        photoRefrashControl.addTarget(self, action: #selector(executeRefresh), for: .valueChanged)
+
         // MEMO: UICollectionViewCompositionalLayoutを利用してレイアウトを組み立てる
         collectionView.collectionViewLayout = compositionalLayout
 
         // MEMO: DataSourceはUICollectionViewDiffableDataSourceを利用してUICollectionViewCellを継承したクラスを組み立てる
-        dataSource = UICollectionViewDiffableDataSource<PhotoViewControllerSection, AnyHashable>(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, model: AnyHashable) -> UICollectionViewCell? in
+        dataSource = UICollectionViewDiffableDataSource<PhotoSection, AnyHashable>(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, model: AnyHashable) -> UICollectionViewCell? in
             
             switch model {
 
@@ -136,7 +180,7 @@ final class PhotoViewController: UIViewController {
             switch indexPath.section {
 
             // MainSection: 1
-            case PhotoViewControllerSection.recommends.rawValue:
+            case PhotoSection.recommends.rawValue:
                 if kind == UICollectionView.elementKindSectionHeader {
                     let header = collectionView.dequeueReusableCustomHeaderView(with: RecommendCollectionHeaderView.self, indexPath: indexPath)
                     header.setHeader(
@@ -147,7 +191,7 @@ final class PhotoViewController: UIViewController {
                 }
 
             // MainSection: 2
-            case PhotoViewControllerSection.photos.rawValue:
+            case PhotoSection.photos.rawValue:
                 if kind == UICollectionView.elementKindSectionHeader {
                     let header = collectionView.dequeueReusableCustomHeaderView(with: PhotoCollectionHeaderView.self, indexPath: indexPath)
                     header.setHeader(
@@ -163,16 +207,43 @@ final class PhotoViewController: UIViewController {
             return nil
         }
 
-        // MEMO: NSDiffableDataSourceSnapshotの初期設定
-        snapshot = NSDiffableDataSourceSnapshot<PhotoViewControllerSection, AnyHashable>()
-        snapshot.appendSections(PhotoViewControllerSection.allCases)
-        for section in PhotoViewControllerSection.allCases {
+        // 表示内容を格納するDataSourceの初期化
+        resetDiffableDataSource()
+    }
+
+    // MEMO: NSDiffableDataSourceSnapshotの初期化処理
+    private func resetDiffableDataSource() {
+
+        snapshot = NSDiffableDataSourceSnapshot<PhotoSection, AnyHashable>()
+        snapshot.appendSections(PhotoSection.allCases)
+        for section in PhotoSection.allCases {
             snapshot.appendItems([], toSection: section)
         }
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 
     private func bindToMainViewModelOutputs() {
+
+        // MEMO: APIへのリクエスト状態に合わせたUI側の表示におけるハンドリングを実行する
+        viewModel.outputs.apiRequestStatus
+            .subscribe(on: RunLoop.main)
+            .sink(
+                receiveValue: { [weak self] status in
+
+                    guard let self = self else { return }
+                    switch status {
+                    case .requesting:
+                        self.photoRefrashControl.beginRefreshing()
+                    case .requestFailure:
+                        // MEMO: 通信失敗時はアラート表示 & RefreshControlの状態変更
+                        self.photoRefrashControl.endRefreshing()
+                        self.showAlertWith(completionHandler: nil)
+                    default:
+                        self.photoRefrashControl.endRefreshing()
+                    }
+                }
+            )
+            .store(in: &cancellables)
 
         // ViewModelのOutputsを経由した特集バナーデータの取得とNSDiffableDataSourceSnapshotの入れ替え処理
         viewModel.outputs.banners
@@ -280,7 +351,7 @@ final class PhotoViewController: UIViewController {
         let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(86))
         let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
         section.boundarySupplementaryItems = [header]
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 78, trailing: 0)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 84, trailing: 0)
 
         return section
     }
@@ -293,11 +364,30 @@ extension PhotoViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
         // MEMO: 該当のセクションとIndexPathからNSDiffableDataSourceSnapshot内の該当する値を取得する
-        if let targetSection = PhotoViewControllerSection(rawValue: indexPath.section) {
+        if let targetSection = PhotoSection(rawValue: indexPath.section) {
             let targetSnapshot = snapshot.itemIdentifiers(inSection: targetSection)
             print("Section: ", targetSection)
             print("IndexPath.row: ", indexPath.row)
             print("Model: ", targetSnapshot[indexPath.row])
+        }
+    }
+}
+
+// MARK: - UIScrollViewDelegate
+
+extension PhotoViewController: UIScrollViewDelegate {
+
+    // MEMO: NSCollectionLayoutSectionのScroll(section.orthogonalScrollingBehavior)ではUIScrollViewDelegateは呼ばれない
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+
+        // MEMO: UIRefreshControl表示時は以降の処理を行わない(※APIリクエストの状態とRefreshControlの状態を連動させている点がポイント)
+        if photoRefrashControl.isRefreshing {
+            return
+        }
+
+        // MEMO: UIScrollViewが一番下の状態に達した時にAPIリクエストを実行する
+        if scrollView.contentOffset.y + scrollView.frame.size.height > scrollView.contentSize.height {
+            viewModel.inputs.fetchPhotosTrigger.send()
         }
     }
 }
