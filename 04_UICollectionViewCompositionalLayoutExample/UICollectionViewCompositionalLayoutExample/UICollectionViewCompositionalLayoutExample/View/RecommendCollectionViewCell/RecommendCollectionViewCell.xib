@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecommendCollectionViewCell" customModule="UICollectionViewCompositionalLayoutExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3kv-7q-GTz">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nb6-1F-a2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No.1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgs-eC-SkL">
+                        <rect key="frame" x="12" y="8" width="216" height="22"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Arrival title is here." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fj-eo-bcZ">
+                        <rect key="frame" x="12" y="38" width="216" height="18"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3kv-7q-GTz" secondAttribute="trailing" id="1KU-W9-lbU"/>
+                <constraint firstItem="3kv-7q-GTz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4uD-EO-ZR2"/>
+                <constraint firstAttribute="trailing" secondItem="kgs-eC-SkL" secondAttribute="trailing" constant="12" id="6By-R0-luc"/>
+                <constraint firstItem="kgs-eC-SkL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Ap4-DE-1l8"/>
+                <constraint firstAttribute="trailing" secondItem="9Fj-eo-bcZ" secondAttribute="trailing" constant="12" id="Eec-L1-APp"/>
+                <constraint firstItem="kgs-eC-SkL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Hbi-TR-MFH"/>
+                <constraint firstAttribute="trailing" secondItem="Nb6-1F-a2Z" secondAttribute="trailing" id="Ib1-A6-EOt"/>
+                <constraint firstItem="Nb6-1F-a2Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UNo-xe-Ihc"/>
+                <constraint firstItem="9Fj-eo-bcZ" firstAttribute="top" secondItem="kgs-eC-SkL" secondAttribute="bottom" constant="8" id="al7-uo-5kw"/>
+                <constraint firstItem="Nb6-1F-a2Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bfg-Iy-X1c"/>
+                <constraint firstAttribute="bottom" secondItem="3kv-7q-GTz" secondAttribute="bottom" id="iJ1-jf-HTR"/>
+                <constraint firstAttribute="bottom" secondItem="Nb6-1F-a2Z" secondAttribute="bottom" id="x11-pF-9zL"/>
+                <constraint firstItem="9Fj-eo-bcZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="yD9-sx-W8l"/>
+                <constraint firstItem="3kv-7q-GTz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="z1a-WN-RZK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="categoryLabel" destination="kgs-eC-SkL" id="QHv-ZL-es9"/>
+                <outlet property="thumbnailImageView" destination="3kv-7q-GTz" id="yMx-GC-13E"/>
+                <outlet property="titleLabel" destination="9Fj-eo-bcZ" id="c2g-o3-tnE"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="143"/>
+        </collectionViewCell>
+    </objects>
+</document>

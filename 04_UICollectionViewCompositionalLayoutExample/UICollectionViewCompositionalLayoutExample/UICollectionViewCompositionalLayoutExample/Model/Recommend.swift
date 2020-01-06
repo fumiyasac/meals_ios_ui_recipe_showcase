@@ -11,6 +11,7 @@ import Foundation
 struct Recommend: Hashable, Decodable {
 
     let id: Int
+    let category: String
     let title: String
     let imageUrl: String
 
@@ -18,6 +19,7 @@ struct Recommend: Hashable, Decodable {
 
     private enum Keys: String, CodingKey {
         case id
+        case category
         case title
         case imageUrl = "image_url"
     }
@@ -31,6 +33,7 @@ struct Recommend: Hashable, Decodable {
 
         // JSONの配列内の要素にある値をDecodeして初期化する
         self.id = try container.decode(Int.self, forKey: .id)
+        self.category = try container.decode(String.self, forKey: .category)
         self.title = try container.decode(String.self, forKey: .title)
         self.imageUrl = try container.decode(String.self, forKey: .imageUrl)
     }

@@ -9,7 +9,7 @@
 import UIKit
 import BetterSegmentedControl
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     // MARK: - Property
 
@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupNavigationBarTitle("城下町金沢の風景")
+        setupNavigationBarTitle("石川県の風景")
         setupScreenSegmentControl()
         setupScreenContainerViews()
     }

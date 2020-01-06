@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BannerCollectionViewCell" customModule="UICollectionViewCompositionalLayoutExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iyn-js-VGx">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                    </imageView>
+                    <view alpha="0.36000001430511475" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tnx-wf-fNR">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured banner title is here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4b-gj-uDH">
+                        <rect key="frame" x="16" y="151" width="268" height="17"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019.00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gru-07-taY">
+                        <rect key="frame" x="16" y="172" width="268" height="16"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gru-07-taY" secondAttribute="trailing" constant="16" id="0Ok-1i-1MF"/>
+                <constraint firstAttribute="bottom" secondItem="iyn-js-VGx" secondAttribute="bottom" id="1qN-Xk-uQw"/>
+                <constraint firstAttribute="trailing" secondItem="u4b-gj-uDH" secondAttribute="trailing" constant="16" id="6Qd-Id-58z"/>
+                <constraint firstAttribute="trailing" secondItem="iyn-js-VGx" secondAttribute="trailing" id="8Rh-Sf-5zH"/>
+                <constraint firstAttribute="bottom" secondItem="Gru-07-taY" secondAttribute="bottom" constant="12" id="E72-yk-B9z"/>
+                <constraint firstAttribute="bottom" secondItem="Tnx-wf-fNR" secondAttribute="bottom" id="EpB-ZG-Yd0"/>
+                <constraint firstItem="Gru-07-taY" firstAttribute="top" secondItem="u4b-gj-uDH" secondAttribute="bottom" constant="4" id="ILH-e9-34V"/>
+                <constraint firstItem="Gru-07-taY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Y2l-Jc-PBV"/>
+                <constraint firstItem="Gru-07-taY" firstAttribute="top" secondItem="u4b-gj-uDH" secondAttribute="bottom" constant="4" id="awp-mI-ZXG"/>
+                <constraint firstItem="u4b-gj-uDH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="dey-fD-ADv"/>
+                <constraint firstItem="iyn-js-VGx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ePw-2q-RzI"/>
+                <constraint firstItem="iyn-js-VGx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gXR-2b-p8r"/>
+                <constraint firstAttribute="trailing" secondItem="Tnx-wf-fNR" secondAttribute="trailing" id="jZc-FP-IHz"/>
+                <constraint firstItem="Tnx-wf-fNR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oGe-HG-ctU"/>
+                <constraint firstItem="Tnx-wf-fNR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pdu-cu-rCf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="dateLabel" destination="Gru-07-taY" id="M4C-dy-6pe"/>
+                <outlet property="thumbnailImageView" destination="iyn-js-VGx" id="AkE-iR-Q4s"/>
+                <outlet property="titleLabel" destination="u4b-gj-uDH" id="5TJ-Jy-VBB"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>
