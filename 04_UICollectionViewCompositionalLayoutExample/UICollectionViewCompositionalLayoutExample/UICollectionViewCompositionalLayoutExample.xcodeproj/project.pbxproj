@@ -19,6 +19,10 @@
 		DEAB11A423C330B6000430BF /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB11A323C330B6000430BF /* UILabelDecorator.swift */; };
 		DEAB11A723C33E58000430BF /* KeywordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB11A523C33E58000430BF /* KeywordTableViewCell.swift */; };
 		DEAB11A823C33E58000430BF /* KeywordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAB11A623C33E58000430BF /* KeywordTableViewCell.xib */; };
+		DEAB11AC23C34AA6000430BF /* RecommendCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB11AA23C34AA6000430BF /* RecommendCollectionHeaderView.swift */; };
+		DEAB11AD23C34AA6000430BF /* RecommendCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAB11AB23C34AA6000430BF /* RecommendCollectionHeaderView.xib */; };
+		DEAB11B123C34FF3000430BF /* PhotoCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB11AF23C34FF3000430BF /* PhotoCollectionHeaderView.swift */; };
+		DEAB11B223C34FF3000430BF /* PhotoCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAB11B023C34FF3000430BF /* PhotoCollectionHeaderView.xib */; };
 		DEE5E07523BACF8300CA3E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07423BACF8300CA3E9B /* AppDelegate.swift */; };
 		DEE5E07723BACF8300CA3E9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07623BACF8300CA3E9B /* SceneDelegate.swift */; };
 		DEE5E07923BACF8300CA3E9B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5E07823BACF8300CA3E9B /* MainViewController.swift */; };
@@ -74,6 +78,10 @@
 		DEAB11A323C330B6000430BF /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
 		DEAB11A523C33E58000430BF /* KeywordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordTableViewCell.swift; sourceTree = "<group>"; };
 		DEAB11A623C33E58000430BF /* KeywordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeywordTableViewCell.xib; sourceTree = "<group>"; };
+		DEAB11AA23C34AA6000430BF /* RecommendCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionHeaderView.swift; sourceTree = "<group>"; };
+		DEAB11AB23C34AA6000430BF /* RecommendCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCollectionHeaderView.xib; sourceTree = "<group>"; };
+		DEAB11AF23C34FF3000430BF /* PhotoCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionHeaderView.swift; sourceTree = "<group>"; };
+		DEAB11B023C34FF3000430BF /* PhotoCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionHeaderView.xib; sourceTree = "<group>"; };
 		DEE5E07123BACF8300CA3E9B /* UICollectionViewCompositionalLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewCompositionalLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE5E07423BACF8300CA3E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE5E07623BACF8300CA3E9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +196,24 @@
 				DEAB11A323C330B6000430BF /* UILabelDecorator.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		DEAB11A923C34A6A000430BF /* RecommendCollectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB11AA23C34AA6000430BF /* RecommendCollectionHeaderView.swift */,
+				DEAB11AB23C34AA6000430BF /* RecommendCollectionHeaderView.xib */,
+			);
+			path = RecommendCollectionHeaderView;
+			sourceTree = "<group>";
+		};
+		DEAB11AE23C34FC7000430BF /* PhotoCollectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB11AF23C34FF3000430BF /* PhotoCollectionHeaderView.swift */,
+				DEAB11B023C34FF3000430BF /* PhotoCollectionHeaderView.xib */,
+			);
+			path = PhotoCollectionHeaderView;
 			sourceTree = "<group>";
 		};
 		DEE5E06823BACF8300CA3E9B = {
@@ -310,6 +336,8 @@
 		DEF24C9B23BFA0A700A82D93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DEAB11AE23C34FC7000430BF /* PhotoCollectionHeaderView */,
+				DEAB11A923C34A6A000430BF /* RecommendCollectionHeaderView */,
 				DEAB119523C241DC000430BF /* KeywordTableViewCell */,
 				DEAB119423C241BE000430BF /* PhotoCollectionViewCell */,
 				DEAB119323C241AF000430BF /* RecommendCollectionViewCell */,
@@ -438,6 +466,8 @@
 				DEE5E07E23BACF8500CA3E9B /* Assets.xcassets in Resources */,
 				DEAB11A823C33E58000430BF /* KeywordTableViewCell.xib in Resources */,
 				DEAB119923C27884000430BF /* BannerCollectionViewCell.xib in Resources */,
+				DEAB11B223C34FF3000430BF /* PhotoCollectionHeaderView.xib in Resources */,
+				DEAB11AD23C34AA6000430BF /* RecommendCollectionHeaderView.xib in Resources */,
 				DEAB11A123C3118B000430BF /* PhotoCollectionViewCell.xib in Resources */,
 				DEAB119D23C279DB000430BF /* RecommendCollectionViewCell.xib in Resources */,
 				DEE5E07C23BACF8300CA3E9B /* Main.storyboard in Resources */,
@@ -513,8 +543,10 @@
 				DEF24CAA23C13FE900A82D93 /* UIViewControllerExtension.swift in Sources */,
 				DEAB119823C27884000430BF /* BannerCollectionViewCell.swift in Sources */,
 				DE73322E23C224AE00FBA283 /* SearchViewModel.swift in Sources */,
+				DEAB11B123C34FF3000430BF /* PhotoCollectionHeaderView.swift in Sources */,
 				DEAB11A423C330B6000430BF /* UILabelDecorator.swift in Sources */,
 				DEF24CB223C1558900A82D93 /* Recommend.swift in Sources */,
+				DEAB11AC23C34AA6000430BF /* RecommendCollectionHeaderView.swift in Sources */,
 				DEE5E07923BACF8300CA3E9B /* MainViewController.swift in Sources */,
 				DEF24C9E23C0E56200A82D93 /* PhotoViewController.swift in Sources */,
 				DEF24CA623C13F7A00A82D93 /* UICollectionViewExtension.swift in Sources */,

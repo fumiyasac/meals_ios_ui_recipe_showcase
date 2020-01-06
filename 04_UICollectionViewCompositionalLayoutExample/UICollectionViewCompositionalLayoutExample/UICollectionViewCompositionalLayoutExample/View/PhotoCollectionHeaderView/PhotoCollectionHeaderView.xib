@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoCollectionHeaderView" customModule="UICollectionViewCompositionalLayoutExample" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="0Mi-Wc-z3s" id="rFU-Fg-Gil"/>
+                <outlet property="titleLabel" destination="5so-GA-QCg" id="O8X-fO-zmW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-fm-QFu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5so-GA-QCg">
+                            <rect key="frame" x="6" y="12" width="308" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mi-Wc-z3s">
+                            <rect key="frame" x="6" y="37.5" width="308" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※写真素材（写真AC様）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEq-e2-Xxa">
+                            <rect key="frame" x="6" y="60" width="308" height="15.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
+                            <color key="textColor" red="0.89019607840000003" green="0.084865578240000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0Mi-Wc-z3s" secondAttribute="trailing" constant="6" id="41L-PT-vwG"/>
+                        <constraint firstItem="0Mi-Wc-z3s" firstAttribute="top" secondItem="5so-GA-QCg" secondAttribute="bottom" constant="6" id="4zj-7D-ZRa"/>
+                        <constraint firstItem="0Mi-Wc-z3s" firstAttribute="leading" secondItem="OdM-fm-QFu" secondAttribute="leading" constant="6" id="60d-vL-Njy"/>
+                        <constraint firstAttribute="trailing" secondItem="uEq-e2-Xxa" secondAttribute="trailing" constant="6" id="89R-X9-93p"/>
+                        <constraint firstAttribute="trailing" secondItem="5so-GA-QCg" secondAttribute="trailing" constant="6" id="HL7-er-3rj"/>
+                        <constraint firstItem="5so-GA-QCg" firstAttribute="top" secondItem="OdM-fm-QFu" secondAttribute="top" constant="12" id="Ssf-fr-iC5"/>
+                        <constraint firstItem="uEq-e2-Xxa" firstAttribute="top" secondItem="0Mi-Wc-z3s" secondAttribute="bottom" constant="7" id="lWE-oM-uhU"/>
+                        <constraint firstItem="uEq-e2-Xxa" firstAttribute="leading" secondItem="OdM-fm-QFu" secondAttribute="leading" constant="6" id="uGn-z8-K9f"/>
+                        <constraint firstItem="5so-GA-QCg" firstAttribute="leading" secondItem="OdM-fm-QFu" secondAttribute="leading" constant="6" id="x98-L9-KZg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="OdM-fm-QFu" secondAttribute="trailing" id="UsI-13-5Uz"/>
+                <constraint firstItem="OdM-fm-QFu" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="VbW-91-AiV"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="OdM-fm-QFu" secondAttribute="bottom" id="unb-tF-zRO"/>
+                <constraint firstItem="OdM-fm-QFu" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="x8I-Ge-uv7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <point key="canvasLocation" x="131.8840579710145" y="142.96875"/>
+        </collectionReusableView>
+    </objects>
+</document>
