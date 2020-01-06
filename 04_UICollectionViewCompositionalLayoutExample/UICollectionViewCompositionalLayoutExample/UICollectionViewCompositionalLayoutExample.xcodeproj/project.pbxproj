@@ -336,12 +336,12 @@
 		DEF24C9B23BFA0A700A82D93 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DEAB11AE23C34FC7000430BF /* PhotoCollectionHeaderView */,
-				DEAB11A923C34A6A000430BF /* RecommendCollectionHeaderView */,
-				DEAB119523C241DC000430BF /* KeywordTableViewCell */,
-				DEAB119423C241BE000430BF /* PhotoCollectionViewCell */,
-				DEAB119323C241AF000430BF /* RecommendCollectionViewCell */,
 				DEAB119223C241A3000430BF /* BannerCollectionViewCell */,
+				DEAB119523C241DC000430BF /* KeywordTableViewCell */,
+				DEAB11AE23C34FC7000430BF /* PhotoCollectionHeaderView */,
+				DEAB119423C241BE000430BF /* PhotoCollectionViewCell */,
+				DEAB11A923C34A6A000430BF /* RecommendCollectionHeaderView */,
+				DEAB119323C241AF000430BF /* RecommendCollectionViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";

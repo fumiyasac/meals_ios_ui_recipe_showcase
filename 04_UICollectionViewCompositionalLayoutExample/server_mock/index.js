@@ -13,7 +13,6 @@ const middlewares = jsonServer.defaults();
 const rewrite_rules = jsonServer.rewriter({
     "/api/mock/v1/special/banners" : "/get_banners",
     "/api/mock/v1/special/recommends" : "/get_recommends",
-    "/api/mock/v1/special/articles" : "/get_articles",
     "/api/mock/v1/special/photos?page=:page" : "/get_photos?page=:page",
     "/api/mock/v1/special/keywords" : "/get_keywords",
 });

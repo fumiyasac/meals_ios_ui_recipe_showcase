@@ -66,7 +66,6 @@ final class PhotoViewModel: PhotoViewModelType, PhotoViewModelInputs, PhotoViewM
 
     // MEMO: ViewModelのOutputへ値を引き渡す際の仲介として利用する
     @Published private var _banners: [Banner] = []
-    @Published private var _articles: [Article] = []
     @Published private var _recommends: [Recommend] = []
     @Published private var _photos: [Photo] = []
     @Published private var _apiRequestStatus: APIRequestStatus = .none

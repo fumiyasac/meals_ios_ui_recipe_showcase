@@ -44,7 +44,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0S-7n-Kqy" customClass="BetterSegmentedControl" customModule="BetterSegmentedControl">
-                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <rect key="frame" x="16" y="601" width="343" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eHK-3y-uQb"/>
@@ -55,7 +55,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L0S-7n-Kqy" secondAttribute="trailing" constant="16" id="9yI-VF-9Ph"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qZo-9e-sZd" secondAttribute="trailing" id="Nhr-KM-oBC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L0S-7n-Kqy" secondAttribute="bottom" constant="20" id="R1j-45-MIU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L0S-7n-Kqy" secondAttribute="bottom" constant="16" id="R1j-45-MIU"/>
                             <constraint firstItem="L0S-7n-Kqy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UMB-99-FG3"/>
                             <constraint firstItem="qZo-9e-sZd" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="hTv-f5-V4c"/>
                             <constraint firstItem="qZo-9e-sZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o3R-cz-t5E"/>

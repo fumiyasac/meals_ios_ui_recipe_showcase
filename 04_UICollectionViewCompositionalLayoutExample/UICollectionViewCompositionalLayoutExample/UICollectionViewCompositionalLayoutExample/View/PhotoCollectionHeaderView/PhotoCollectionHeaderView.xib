@@ -7,14 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoCollectionHeaderView" customModule="UICollectionViewCompositionalLayoutExample" customModuleProvider="target">
-            <connections>
-                <outlet property="descriptionLabel" destination="0Mi-Wc-z3s" id="rFU-Fg-Gil"/>
-                <outlet property="titleLabel" destination="5so-GA-QCg" id="O8X-fO-zmW"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoCollectionHeaderView" customModule="UICollectionViewCompositionalLayoutExample" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="PhotoCollectionHeaderView" customModule="UICollectionViewCompositionalLayoutExample" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -61,6 +56,10 @@
                 <constraint firstItem="OdM-fm-QFu" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="x8I-Ge-uv7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="0Mi-Wc-z3s" id="My0-eg-bzl"/>
+                <outlet property="titleLabel" destination="5so-GA-QCg" id="yDx-Xc-YtD"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="142.96875"/>
         </collectionReusableView>
     </objects>
