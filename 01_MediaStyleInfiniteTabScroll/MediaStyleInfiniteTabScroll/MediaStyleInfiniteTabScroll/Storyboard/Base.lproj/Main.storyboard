@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Wk-Kj-NQH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Wk-Kj-NQH">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,22 +21,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v34-iC-Zy2">
-                                <rect key="frame" x="0.0" y="44" width="375" height="46"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="47"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="TFp-01-DmR"/>
+                                    <constraint firstAttribute="height" constant="47" id="TFp-01-DmR"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="gFg-Dm-VZf" kind="embed" identifier="MainScrollTitleViewContainer" id="DLp-de-Huz"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAq-Yd-F8w">
-                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                <rect key="frame" x="0.0" y="91" width="375" height="576"/>
                                 <connections>
                                     <segue destination="wcC-Gf-i2b" kind="embed" id="azv-Rk-ePx"/>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vAq-Yd-F8w" secondAttribute="trailing" id="480-FQ-aYB"/>
                             <constraint firstItem="v34-iC-Zy2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hg3-OV-rrm"/>
@@ -70,22 +72,23 @@
         <!--Main Scroll Title View Controller-->
         <scene sceneID="EzR-6h-94u">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFJ-Oi-Ayn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="gFg-Dm-VZf" customClass="MainScrollTitleViewController" customModule="MediaStyleInfiniteTabScroll" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AMu-XN-W9X"/>
                         <viewControllerLayoutGuide type="bottom" id="kb3-Nz-JEr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fK5-KD-vJQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ITz-Dk-oWd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRb-rm-tNQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="46"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRb-rm-tNQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="47"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="72" id="ZxM-Q9-3EZ"/>
+                                            <constraint firstAttribute="width" constant="72" id="RGA-l7-UOj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="12"/>
                                         <state key="normal" title="← Prev">
@@ -93,26 +96,26 @@
                                         </state>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-u1-X4I">
-                                        <rect key="frame" x="72" y="0.0" width="231" height="46"/>
+                                        <rect key="frame" x="72" y="0.0" width="231" height="47"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNr-35-5Ig">
-                                                <rect key="frame" x="10" y="16.5" width="211" height="13"/>
+                                                <rect key="frame" x="10" y="17" width="211" height="13"/>
                                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="13"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="RNr-35-5Ig" firstAttribute="centerY" secondItem="KmA-u1-X4I" secondAttribute="centerY" id="acI-PP-UpT"/>
                                             <constraint firstAttribute="trailing" secondItem="RNr-35-5Ig" secondAttribute="trailing" constant="10" id="djt-wP-Rfg"/>
                                             <constraint firstItem="RNr-35-5Ig" firstAttribute="leading" secondItem="KmA-u1-X4I" secondAttribute="leading" constant="10" id="jmT-Wr-UlB"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp4-vK-p4c">
-                                        <rect key="frame" x="303" y="0.0" width="72" height="46"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp4-vK-p4c">
+                                        <rect key="frame" x="303" y="0.0" width="72" height="47"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="72" id="MtR-iP-IEn"/>
+                                            <constraint firstAttribute="width" constant="72" id="WSc-z9-1w8"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="12"/>
                                         <state key="normal" title="Next →">
@@ -121,27 +124,39 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Mp4-vK-p4c" firstAttribute="top" secondItem="ITz-Dk-oWd" secondAttribute="top" id="79E-Io-c58"/>
                                     <constraint firstItem="Mp4-vK-p4c" firstAttribute="leading" secondItem="KmA-u1-X4I" secondAttribute="trailing" id="7aU-xB-8cA"/>
+                                    <constraint firstAttribute="bottom" secondItem="KmA-u1-X4I" secondAttribute="bottom" id="8Ke-0E-Stm"/>
+                                    <constraint firstItem="Mp4-vK-p4c" firstAttribute="leading" secondItem="KmA-u1-X4I" secondAttribute="trailing" id="8ag-8a-iXn"/>
+                                    <constraint firstItem="Mp4-vK-p4c" firstAttribute="leading" secondItem="KmA-u1-X4I" secondAttribute="trailing" id="DlA-BI-HfO"/>
+                                    <constraint firstItem="KmA-u1-X4I" firstAttribute="top" secondItem="ITz-Dk-oWd" secondAttribute="top" id="Evg-Uv-X3N"/>
+                                    <constraint firstItem="KmA-u1-X4I" firstAttribute="leading" secondItem="LRb-rm-tNQ" secondAttribute="trailing" id="FDQ-NI-8AQ"/>
+                                    <constraint firstItem="LRb-rm-tNQ" firstAttribute="leading" secondItem="ITz-Dk-oWd" secondAttribute="leading" id="M7Q-XB-cex"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mp4-vK-p4c" secondAttribute="bottom" id="Ux1-gr-hiL"/>
+                                    <constraint firstItem="LRb-rm-tNQ" firstAttribute="top" secondItem="ITz-Dk-oWd" secondAttribute="top" id="Zpr-Pi-SLU"/>
                                     <constraint firstItem="KmA-u1-X4I" firstAttribute="leading" secondItem="LRb-rm-tNQ" secondAttribute="trailing" id="gwc-mK-Zmh"/>
+                                    <constraint firstAttribute="bottom" secondItem="LRb-rm-tNQ" secondAttribute="bottom" id="hCN-FK-6xh"/>
+                                    <constraint firstItem="KmA-u1-X4I" firstAttribute="leading" secondItem="LRb-rm-tNQ" secondAttribute="trailing" id="kzg-Jl-uDZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mp4-vK-p4c" secondAttribute="trailing" id="sC5-d3-6zN"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01v-dP-d23">
-                                <rect key="frame" x="0.0" y="45.5" width="375" height="0.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ynW-3j-Rzj">
+                                <rect key="frame" x="0.0" y="46.5" width="375" height="0.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="0.5" id="4ld-BD-OJU"/>
+                                    <constraint firstAttribute="height" constant="0.5" id="ACL-qM-sE9"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="01v-dP-d23" secondAttribute="bottom" id="0Pt-jJ-3o4"/>
-                            <constraint firstItem="ITz-Dk-oWd" firstAttribute="top" secondItem="AMu-XN-W9X" secondAttribute="bottom" id="2hG-Bv-wDu"/>
-                            <constraint firstItem="01v-dP-d23" firstAttribute="leading" secondItem="fK5-KD-vJQ" secondAttribute="leading" id="Fv3-16-Mt6"/>
                             <constraint firstAttribute="trailing" secondItem="ITz-Dk-oWd" secondAttribute="trailing" id="MbW-Rh-ztS"/>
+                            <constraint firstAttribute="trailing" secondItem="ynW-3j-Rzj" secondAttribute="trailing" id="UcE-42-o9y"/>
                             <constraint firstItem="ITz-Dk-oWd" firstAttribute="leading" secondItem="fK5-KD-vJQ" secondAttribute="leading" id="VzR-tD-fzP"/>
-                            <constraint firstAttribute="trailing" secondItem="01v-dP-d23" secondAttribute="trailing" id="fus-6b-vqK"/>
-                            <constraint firstItem="kb3-Nz-JEr" firstAttribute="top" secondItem="ITz-Dk-oWd" secondAttribute="bottom" id="zKu-hJ-whA"/>
+                            <constraint firstAttribute="bottom" secondItem="ITz-Dk-oWd" secondAttribute="bottom" id="XaF-PP-jPz"/>
+                            <constraint firstItem="ITz-Dk-oWd" firstAttribute="top" secondItem="AMu-XN-W9X" secondAttribute="bottom" id="iyN-t0-37g"/>
+                            <constraint firstAttribute="bottom" secondItem="ynW-3j-Rzj" secondAttribute="bottom" id="xrP-kp-DoX"/>
+                            <constraint firstItem="ynW-3j-Rzj" firstAttribute="leading" secondItem="fK5-KD-vJQ" secondAttribute="leading" id="yTO-Xn-akE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -150,9 +165,8 @@
                         <outlet property="titleLabel" destination="RNr-35-5Ig" id="plx-bH-pau"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kFJ-Oi-Ayn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880.79999999999995" y="-157.42128935532236"/>
+            <point key="canvasLocation" x="880.79999999999995" y="-157.87106446776613"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="ayq-Gy-GJY">
@@ -163,4 +177,9 @@
             <point key="canvasLocation" x="881" y="192"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
