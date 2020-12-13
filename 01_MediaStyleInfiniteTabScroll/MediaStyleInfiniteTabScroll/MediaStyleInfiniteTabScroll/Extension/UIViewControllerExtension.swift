@@ -40,8 +40,13 @@ extension UIViewController {
         }
         nav.navigationBar.tintColor = UIColor.white
 
-        // 戻るボタンの文言を消す
-        let backButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.navigationItem.backBarButtonItem = backButtonItem
+        if #available(iOS 14.0, *) {
+            self.navigationItem.backButtonDisplayMode = .minimal
+            self.navigationItem.backButtonTitle = self.navigationItem.title
+        } else {
+            // 戻るボタンの文言を消す
+            let backButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+            self.navigationItem.backBarButtonItem = backButtonItem
+        }
     }
 }
