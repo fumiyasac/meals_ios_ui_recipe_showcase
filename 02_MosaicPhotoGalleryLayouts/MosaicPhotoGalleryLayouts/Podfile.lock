@@ -1,10 +1,10 @@
 PODS:
-  - AnimatedCollectionViewLayout (1.0.1)
+  - AnimatedCollectionViewLayout (1.1.0)
   - Blueprints (0.13.1)
-  - Nantes (0.0.9)
-  - Parchment (1.7.0)
+  - Nantes (0.1.2)
+  - Parchment (3.0.0)
   - PTCardTabBar (1.0.1)
-  - TagListView (1.4.0)
+  - TagListView (1.4.1)
 
 DEPENDENCIES:
   - AnimatedCollectionViewLayout
@@ -24,13 +24,13 @@ SPEC REPOS:
     - TagListView
 
 SPEC CHECKSUMS:
-  AnimatedCollectionViewLayout: 00f0997fd26f0fd02d8b99765023b95570b5d826
+  AnimatedCollectionViewLayout: 0c1a38c4be115c525c887be183fc91ef65737c5d
   Blueprints: ddd6ab1e455c98471aaef2fdd0b09b5f9b53af5b
-  Nantes: c1b4eec0748c01f4c6b83e16a11e52ab2007cd4d
-  Parchment: cae686f73685d16742cec9c19239b7578a15f0f5
+  Nantes: 0396442578e32242223fed46050dea1850236184
+  Parchment: 5b54e4b271719a0e94e02898ab7c3c0a00525cfa
   PTCardTabBar: 9112a6d4eb2b73da9cf4e7f3aefe04504479cf98
-  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
 PODFILE CHECKSUM: 332d1da7d169e2247994513c6d2fe3c0f8b8bbf2
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0
