@@ -18,7 +18,7 @@ final class ArticleViewController: UIViewController {
     private var articleCategoryViewControllerSet: [ArticleCategoryViewController] = []
 
     // MEMO: ライブラリ「Parchment」におけるタブ要素で表示対象の画面を格納する
-    private var targetPagingViewController: PagingViewController<ArticleCategoryPageItem>!
+    private var targetPagingViewController: PagingViewController!
 
     @IBOutlet weak private var screenView: UIView!
 
@@ -44,8 +44,8 @@ final class ArticleViewController: UIViewController {
         }
 
         // MEMO: ライブラリ「Parchment」における見た目(PagingOptions)の調整処理
-        targetPagingViewController = PagingViewController<ArticleCategoryPageItem>()
-        targetPagingViewController.menuItemSource = .class(type: ArticleCategoryPageItemTabView.self)
+        targetPagingViewController = PagingViewController()
+        targetPagingViewController.register(ArticleCategoryPageItemTabView.self, for: ArticleCategoryPageItem.self)
         targetPagingViewController.menuItemSize = .fixed(width: 150, height: 44)
         targetPagingViewController.font = UIFont(name: "HiraKakuProN-W3", size: 12.0)!
         targetPagingViewController.selectedFont = UIFont(name: "HiraKakuProN-W3", size: 12.0)!
@@ -84,14 +84,15 @@ final class ArticleViewController: UIViewController {
 extension ArticleViewController: PagingViewControllerDelegate {
 
     // 表示要素を切り替えるトランジションの完了状態を検知するための処理
-    func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, didScrollToItem pagingItem: T, startingViewController: UIViewController?, destinationViewController: UIViewController, transitionSuccessful: Bool) {
+    func pagingViewController(_ pagingViewController: PagingViewController, didScrollToItem pagingItem: PagingItem, startingViewController: UIViewController?, destinationViewController: UIViewController, transitionSuccessful: Bool) {
 
         // MEMO: スワイプアニメーションが完了していない時には処理をさせなくする
         if !transitionSuccessful { return }
 
         // MEMO: スワイプアニメーションが完了したら表示対象のインデックス値を更新する
-        let item = pagingItem as! ArticleCategoryPageItem
-        targetPagingViewController.select(pagingItem: articleCategoryPageItemSet[item.index])
+        if let targetItem = pagingItem as? ArticleCategoryPageItem {
+            targetPagingViewController.select(pagingItem: articleCategoryPageItemSet[targetItem.index])
+        }
     }
 }
 
@@ -100,31 +101,33 @@ extension ArticleViewController: PagingViewControllerDelegate {
 extension ArticleViewController: PagingViewControllerInfiniteDataSource {
 
     // タブ要素データ内のインデックス値に該当する画面を表示するための処理
-    func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, viewControllerForPagingItem pagingItem: T) -> UIViewController {
-
+    func pagingViewController(_: PagingViewController, viewControllerFor pagingItem: PagingItem) -> UIViewController {
         let item = pagingItem as! ArticleCategoryPageItem
         return articleCategoryViewControllerSet[item.index]
+
     }
 
     // ページ要素を移動した際にタブ要素データ内のインデックス値が+1増加する場合における処理
-    func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, pagingItemBeforePagingItem pagingItem: T) -> T? {
+    func pagingViewController(_ : PagingViewController, itemAfter pagingItem: PagingItem) -> PagingItem? {
 
         // MEMO: PagingViewControllerInfiniteDataSourceを利用しているが、無限スクロールを適用しないのでこの形にする点に注意
-        let item = pagingItem as! ArticleCategoryPageItem
-        if let index = articleCategoryPageItemSet.firstIndex(of: item), let item = articleCategoryPageItemSet[safe: index - 1] {
-            return item as? T
+        if let item = pagingItem as? ArticleCategoryPageItem,
+           let index = articleCategoryPageItemSet.firstIndex(of: item),
+           let targetItem = articleCategoryPageItemSet[safe: index + 1] {
+            return targetItem
         } else {
             return nil
         }
     }
 
     // ページ要素を移動した際にタブ要素データ内のインデックス値が-1減少する場合における処理
-    func pagingViewController<T>(_ pagingViewController: PagingViewController<T>, pagingItemAfterPagingItem pagingItem: T) -> T? {
+    func pagingViewController(_: PagingViewController, itemBefore pagingItem: PagingItem) -> PagingItem? {
 
         // MEMO: PagingViewControllerInfiniteDataSourceを利用しているが、無限スクロールを適用しないのでこの形にする点に注意
-        let item = pagingItem as! ArticleCategoryPageItem
-        if let index = articleCategoryPageItemSet.firstIndex(of: item), let item = articleCategoryPageItemSet[safe: index + 1] {
-            return item as? T
+        if let item = pagingItem as? ArticleCategoryPageItem,
+           let index = articleCategoryPageItemSet.firstIndex(of: item),
+           let targetItem = articleCategoryPageItemSet[safe: index - 1] {
+            return targetItem
         } else {
             return nil
         }
@@ -141,6 +144,7 @@ fileprivate extension Array {
     subscript (safe index: Index) -> Element? {
 
         // MEMO: 任意の配列要素に含まれないインデックスを指定した場合にnilを返すようにする
+        // ※ 配列での「index out of range」を少しでも防止するために用いる
         return indices.contains(index) ? self[index] : nil
     }
 }
