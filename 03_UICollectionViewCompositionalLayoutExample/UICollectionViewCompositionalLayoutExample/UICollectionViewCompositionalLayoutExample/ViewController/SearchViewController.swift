@@ -26,6 +26,7 @@ final class SearchViewController: UIViewController {
     private var cancellables: [AnyCancellable] = []
 
     // MEMO: API経由の非同期通信からデータを取得するためのViewModel
+    // 補足: Mockに接続する場合はMockAPIRequestManager.sharedを設定する（実機検証時等の場合）
     private let viewModel: SearchViewModel = SearchViewModel(api: APIRequestManager.shared)
 
     // MEMO: UICollectionViewCompositionalLayout & DiffableDataSourceの設定
