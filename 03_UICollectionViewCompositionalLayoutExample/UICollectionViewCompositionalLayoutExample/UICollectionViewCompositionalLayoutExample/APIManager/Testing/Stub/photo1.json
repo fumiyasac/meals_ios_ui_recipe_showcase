@@ -1,0 +1,48 @@
+[
+    {
+        "page": 1,
+        "photos": [
+            {
+                "id": 1,
+                "profile_name": "TestUser",
+                "date_string": "2020.01.10",
+                "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo1.jpg",
+                "title": "のどぐろの塩焼き",
+                "description": "東京で塩焼きを注文すると小さなサイズでも5000円はいってしまう高級魚のひとつ。品の良い白身と脂の加減は本当に言葉を失うほどに美味。"
+            },
+            {
+                "id": 2,
+                "profile_name": "TestUser",
+                "date_string": "2020.01.10",
+                "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo2.jpg",
+                "title": "金沢のズワイガニ",
+                "description": "関東では松葉ガニの愛称で呼ばれているカニ。上品で癖のない味わいをそのまま蒸して堪能するのが最高です。"
+            },
+            {
+                "id": 3,
+                "profile_name": "TestUser",
+                "date_string": "2020.01.10",
+                "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo3.jpg",
+                "title": "能登の海辺",
+                "description": "海に囲まれた能登半島では昔ながらの民家と磯場の風景があります。長閑で波音だけが響き渡る空間。"
+            },
+            {
+                "id": 4,
+                "profile_name": "TestUser",
+                "date_string": "2020.01.10",
+                "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo4.jpg",
+                "title": "石川県名産の日本酒",
+                "description": "菊姫・天狗舞をはじめとして数々の銘酒が並ぶ石川県。"
+            },
+            {
+                "id": 5,
+                "profile_name": "TestUser",
+                "date_string": "2020.01.10",
+                "image_url": "https://ios-ui-recipe-book.s3-ap-northeast-1.amazonaws.com/meals_chapter03/photo5.jpg",
+                "title": "金沢市庁の風景",
+                "description": "実は移転していました。その影響もあってか周りの風景や施設をはじめ充実していました。"
+            }
+        ],
+        "has_next_page": true
+    }
+]
