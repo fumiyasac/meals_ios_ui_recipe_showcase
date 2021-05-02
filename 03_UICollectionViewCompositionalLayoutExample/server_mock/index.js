@@ -35,5 +35,5 @@ server.use(router);
 
 // サーバをポート3000で起動する
 server.listen(3000, () => {
-    console.log('Chapter02 Mock Server is running...');
+    console.log('Chapter03 Mock Server is running...');
 });
