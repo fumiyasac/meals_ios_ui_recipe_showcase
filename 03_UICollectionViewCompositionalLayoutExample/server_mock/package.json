@@ -4,7 +4,7 @@
   "description": "mock server of sample app UICollectionViewCompositionalLayoutExample.",
   "main": "index.js",
   "dependencies": {
-    "lodash": "^4.17.19"
+    "lodash": ">=4.17.21"
   },
   "devDependencies": {
     "json-server": "^0.16.3"
