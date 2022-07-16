@@ -70,6 +70,9 @@ final class MainViewController: UIViewController {
         // UICollectionViewに関する初期設定
         collectionView.isPagingEnabled = true
         collectionView.isScrollEnabled = true
+        // MEMO: UIScrollViewのバウンスが発生しない様にしています
+        // → バウンスが発生するとAnimatedCollectionViewLayoutでの表示がおかしくなる場合があったため。
+        collectionView.bounces = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
 
