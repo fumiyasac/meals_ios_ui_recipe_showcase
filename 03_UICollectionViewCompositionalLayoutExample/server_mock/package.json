@@ -7,7 +7,7 @@
     "lodash": ">=4.17.21"
   },
   "devDependencies": {
-    "json-server": "^0.16.3"
+    "json-server": "^0.17.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
