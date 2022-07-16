@@ -1,6 +1,6 @@
 PODS:
   - BetterSegmentedControl (2.0.1)
-  - Nuke (9.5.0)
+  - Nuke (10.7.1)
 
 DEPENDENCIES:
   - BetterSegmentedControl
@@ -13,7 +13,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   BetterSegmentedControl: 09607b27861d49cbce48b7673b74f9150a3d371a
-  Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
 
 PODFILE CHECKSUM: e8f8e061ec51eaa1775798226254ce4d1d87cd70
 
